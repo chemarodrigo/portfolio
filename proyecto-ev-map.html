@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa Global de estaciones de carga para EV | José María Rodrigo Cruz</title>
+    <meta name="description" content="Case study del proyecto de visualización de datos de estaciones de carga para vehículos eléctricos">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- p5.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js"></script>
+</head>
+<body>
+    <!-- Background Canvas p5.js -->
+    <div id="p5-background"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">← Volver al portfolio</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Project Hero -->
+    <section class="hero project-hero">
+        <div class="hero-content">
+            <h1 class="project-title">Mapa Global de estaciones de carga para EV</h1>
+            <p class="project-subtitle">
+                Visualización de datos que muestra un mapa interactivo con planificación de rutas para 
+                vehículos eléctricos y 10.000 puntos de carga repartidos por todo el mundo.
+            </p>
+            <div class="project-tags-hero">
+                <span class="tag">HTML5</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Data Viz</span>
+                <span class="tag">GeoJson</span>
+                <span class="tag">Leaflet.js</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contexto -->
+    <section class="section project-section">
+        <div class="container">
+            <h2 class="section-title">Contexto</h2>
+            <div class="project-content">
+                <h3>El problema</h3>
+                <p>Aunque ya existen diversas visualizaciones que muestran los puntos de carga disponibles para coches eléctricos, normalmente los datos que utilizan proceden únicamente de las operadoras eléctricas y, en muchos casos, éstos son obtenidos directamente de los usuarios. Además, muchas de ellas están acotadas a sólo ciertos territorios, por lo que no muestran puntos de carga en otros países o regiones. Por último, tampoco suelen dejar filtrar por categorías como el tipo de enchufe, simplemente muestran un mapa con los puntos de carga y las características de cada uno.</p>
+                
+                <h3>Los objetivos</h3>
+                <p>El objetivo del proyecto consiste en crear una visualización en la que el usuario pueda interactuar con un mapa mundial y salve muchos de los inconvenientes anteriormente citados que se pueden encontrar en visualizaciones ya existentes. En este mapa, se muestran los puntos de carga con información detallada de cada uno de ellos y, además, se implementan diversas funcionalidades que amplían las posibilidades del mero conjunto de datos tomados como referencia.</p>
+                
+                <h3>La audiencia</h3>
+                <p>Este proyecto está dirigido a conductores actuales y futuros de vehículos eléctricos que necesitan planificar sus rutas considerando la disponibilidad de puntos de carga. También es útil para empresas de logística que gestionan flotas eléctricas, planificadores urbanos interesados en la infraestructura de movilidad sostenible, y cualquier persona que quiera explorar el estado actual de la red de carga para vehículos eléctricos a nivel mundial.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enfoque -->
+    <section class="section project-section">
+        <div class="container">
+            <h2 class="section-title">Enfoque</h2>
+            <div class="project-content">
+                <h3>Investigación realizada</h3>
+                <p>El proceso comenzó analizando diversas plataformas de visualización existentes, identificando sus limitaciones en cuanto a cobertura geográfica y funcionalidades de filtrado. Evalué herramientas como Flourish, que resultaron insuficientes al no permitir geolocalización precisa de puntos individuales. Investigué el dataset de 10.000 estaciones de carga, comprendiendo su estructura de 14 columnas con información detallada de cada punto. Finalmente, identifiqué la necesidad de convertir el formato CSV original a GeoJSON para hacerlo compatible con bibliotecas de mapas interactivos en JavaScript.</p>
+                
+                <h3>Decisiones de diseño</h3>
+                <p>Opté por desarrollar la visualización mediante código HTML y JavaScript puro, aprovechando mis conocimientos de programación para tener libertad creativa total. Implementé Leaflet.js con OpenStreetMap como base cartográfica, proporcionando un mapa mundial detallado y compatible con múltiples dispositivos. Diseñé un sistema de filtrado por países mediante un selector dropdown, permitiendo a los usuarios enfocarse en territorios específicos. Creé un panel informativo en la esquina superior izquierda que muestra estadísticas en tiempo real. Además, desarrollé un sistema de creación de rutas interactivo que calcula distancias entre puntos de carga seleccionados, añadiendo valor práctico más allá del dataset original.</p>
+                
+                <h3>Desafíos técnicos</h3>
+                <p>El mayor desafío fue implementar el cálculo preciso de distancias entre puntos de carga, lo que requirió utilizar la Fórmula de Haversine (o fórmula del semiverseno) que calcula distancias considerando la curvatura de la Tierra. Otro reto significativo fue la conversión del dataset de formato CSV a GeoJSON, asegurando que las coordenadas geoespaciales se interpretaran correctamente. La gestión de 10.000 puntos de datos en el mapa requirió optimización del rendimiento para mantener la interactividad fluida. Finalmente, desarrollar múltiples funciones JavaScript personalizadas (initMap, loadStations, calculateDistance, updateRoute, etc.) demandó extensa investigación y testeo para garantizar su correcto funcionamiento.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stack técnico -->
+    <section class="section project-section">
+        <div class="container">
+            <h2 class="section-title">Stack técnico</h2>
+            <div class="tech-stack">
+                <div class="tech-item">
+                    <h3>HTML5</h3>
+                    <p>Estructura semántica de la visualización con CSS3 para crear un diseño responsive que se adapta a diferentes dispositivos.</p>
+                </div>
+                <div class="tech-item">
+                    <h3>JavaScript</h3>
+                    <p>Motor de toda la interactividad: carga el dataset GeoJSON, gestiona eventos, calcula distancias con algoritmos matemáticos y coordina todas las funcionalidades del mapa.</p>
+                </div>
+                <div class="tech-item">
+                    <h3>Leaflet.js</h3>
+                    <p>Biblioteca open source para mapas interactivos. Permite geolocalización precisa de puntos individuales usando OpenStreetMap, manteniendo rendimiento óptimo con 10.000 datos.</p>
+                </div>
+                <div class="tech-item">
+                    <h3>GeoJson</h3>
+                    <p>Formato basado en JSON diseñado para datos geoespaciales. Permite almacenar coordenadas (latitud, longitud) que Leaflet.js puede procesar y renderizar con precisión sobre el mapa.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demostración interactiva -->
+    <section class="section project-section demo-section">
+        <div class="container-wide">
+            <div class="demo-container">
+                <iframe 
+                    src="https://regal-heliotrope-7c072b.netlify.app/" 
+                    class="project-iframe"
+                    title="Mapa interactivo de estaciones de carga para vehículos eléctricos"
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="demo-actions">
+                <a href="https://chemarodrigo.github.io/mapaEV/" target="_blank" class="btn btn-primary">
+                    Ver en pantalla completa ↗
+                </a>
+                <a href="https://github.com/chemarodrigo/mapaEV" target="_blank" class="btn btn-primary">
+                    Ver código en GitHub ↗
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 José María Rodrigo Cruz</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="sketch.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

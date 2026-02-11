@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rediseño Web y App del Ayto de Castellón | José María Rodrigo Cruz</title>
+    <meta name="description" content="Case study del proyecto de rediseño web y aplicación móvil del Ayuntamiento de Castellón con enfoque Mobile-First">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- p5.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js"></script>
+</head>
+<body>
+    <!-- Background Canvas p5.js -->
+    <div id="p5-background"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">← Volver al portfolio</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Project Hero -->
+    <section class="hero project-hero">
+        <div class="hero-content">
+            <h1 class="project-title">Rediseño Web y App del Ayto de Castellón</h1>
+            <p class="project-subtitle">
+                Transformación digital de la plataforma institucional del Ayuntamiento de Castellón mediante un diseño Mobile-First que prioriza la accesibilidad y la experiencia ciudadana
+            </p>
+            <div class="project-tags-hero">
+                <span class="tag">Figma</span>
+                <span class="tag">UX research</span>
+                <span class="tag">User experience</span>
+                <span class="tag">User interface</span>
+                <span class="tag">Wireframing</span>
+                <span class="tag">Prototiping</span>
+                <span class="tag">Mobile-First</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contexto -->
+    <section class="section project-section">
+        <div class="container">
+            <h2 class="section-title">Contexto</h2>
+            <div class="project-content">
+                <h3>El problema</h3>
+                <p>La web del Ayuntamiento de Castellón requería una actualización integral para adaptarse a los estándares actuales de diseño y usabilidad. Como institución pública, necesitaba ofrecer numerosas funciones a todos los habitantes del municipio de forma intuitiva y accesible. El desafío consistía en equilibrar la densidad informativa propia de una web institucional con la simplicidad necesaria para que todo tipo de usuarios pudieran realizar sus trámites cómodamente.</p>
+                
+                <h3>Los objetivos</h3>
+                <p>Crear un diseño sencillo, intuitivo y atractivo que permita a todos los ciudadanos, independientemente de su nivel tecnológico, acceder fácilmente a los servicios municipales. El objetivo principal era transmitir un tono accesible mediante una paleta simple de 4 colores principales y una iconografía clara que mejore la navegación. Se buscaba aplicar un enfoque Mobile-First que priorice la experiencia en dispositivos móviles, garantizando accesibilidad y facilitando la gestión de trámites administrativos.</p>
+                
+                <h3>La audiencia</h3>
+                <p>Ciudadanos de Castellón con perfiles muy diversos: desde personas mayores con manejo limitado de tecnología hasta usuarios con discapacidad visual, pasando por ciudadanos que buscan realizar trámites cotidianos. La diversidad del público objetivo demanda un diseño inclusivo que cumpla con estándares de accesibilidad y ofrezca una experiencia consistente entre plataformas web y móvil.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enfoque -->
+    <section class="section project-section">
+        <div class="container">
+            <h2 class="section-title">Enfoque</h2>
+            <div class="project-content">
+                <h3>Investigación realizada</h3>
+                <p>El proceso comenzó con un benchmarking exhaustivo de 5 sitios web gubernamentales de referencia: Ayuntamiento de Cádiz (España), GSA - General Services Administration (Estados Unidos), Norwich City Council (Reino Unido), Norway Gateway to Digital Public Services (Noruega), y Dubai Municipality (Emiratos Árabes Unidos). Los criterios de análisis incluyeron estructura de la información, diseño mobile-first, atractivo visual y nivel de accesibilidad. Esta investigación permitió identificar patrones efectivos como menús en cascada, uso del color para delimitar funciones, iconografía intuitiva y cabeceras atractivas con elementos institucionales.</p>
+                <img src="ayto-benchmarking.jpg" alt="Benchmarking de sitios web gubernamentales internacionales" style="width: 100%; margin: 32px 0; border-radius: 8px;">
+                
+                <h3>Decisiones de diseño</h3>
+                <p>La paleta de color se simplificó a 4 colores principales, cada uno asignado a una sección del sitio web para facilitar la navegación. Se incorporaron menús en cascada que distribuyen la información eficazmente con un funcionamiento intuitivo. Los iconos son grandes y representan claramente la acción que llevan a cabo, mejorando la cohesión del contenido. Se diseñó una cabecera con el escudo y nombre del ayuntamiento junto con fotografía de la ciudad, comunicando claramente el propósito institucional. Se implementaron enlaces rápidos mediante botones iconográficos, banner de avisos con delay, modal de cookies configurable, y retículas de 4 y 12 columnas con espaciado de 20px. Los estilos de tipografía se redujeron a 4: 2 para cabeceras y 2 para cuerpos de texto e iconos.</p>
+                <img src="ayto-decisiones-diseno.jpg" alt="Paleta de color, tipografía, retículas y elementos de interacción del diseño" style="width: 100%; margin: 32px 0; border-radius: 8px;">
+                
+                <h3>Desafíos técnicos</h3>
+                <p>El mayor desafío fue encontrar el equilibrio entre estética moderna y accesibilidad para un público muy diverso. Adaptar el diseño para que ambas versiones (móvil y escritorio) muestren un enfoque mobile-first requirió múltiples iteraciones. La selección de una paleta de color válida para delimitar secciones manteniendo un estilo actual demandó varias pruebas hasta lograr un resultado satisfactorio. Garantizar que la iconografía sea precisa y comprensible para la mayoría del público, manteniendo cohesión con el estilo general, requirió especial atención. Finalmente, priorizar la experiencia del usuario en todas las decisiones de diseño cuando se trabaja con instituciones públicas supuso un reto de gestión de requisitos institucionales vs. necesidades ciudadanas.</p>
+                <img src="ayto-interaccion-mockups.jpg" alt="Elementos de interacción y mockups en versión móvil y escritorio" style="width: 100%; margin: 32px 0; border-radius: 8px;">
+            </div>
+        </div>
+    </section>
+
+    <!-- Stack técnico -->
+    <section class="section project-section">
+        <div class="container">
+            <h2 class="section-title">Stack técnico</h2>
+            <div class="tech-stack">
+                <div class="tech-item">
+                    <h3>Figma</h3>
+                    <p>Herramienta principal para el diseño completo: prototipo móvil interactivo, prototipo escritorio interactivo, guía de estilo y mockups. Permitió visualizar y testear rápidamente diferentes versiones del diseño.</p>
+                </div>
+                <div class="tech-item">
+                    <h3>Mobile-First Design</h3>
+                    <p>Metodología aplicada desde el inicio para garantizar que la experiencia en dispositivos móviles sea prioritaria y óptima, adaptándose progresivamente a versiones de escritorio.</p>
+                </div>
+                <div class="tech-item">
+                    <h3>Benchmarking</h3>
+                    <p>Análisis comparativo de 5 webs gubernamentales internacionales evaluando estructura de información, diseño mobile-first, atractivo visual y accesibilidad para identificar mejores prácticas.</p>
+                </div>
+                <div class="tech-item">
+                    <h3>Design System</h3>
+                    <p>Creación de sistema de diseño con paleta de 4 colores, 4 estilos tipográficos, retículas de 4 y 12 columnas, iconografía cohesiva y componentes reutilizables (menús, modales, banners, formularios).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demostración interactiva -->
+    <section class="section project-section demo-section">
+        <div class="container-wide">
+            <div class="demo-actions">
+                <a href="https://www.figma.com/proto/T0guSWRX2R0iCWY7fTW9i5/Prototipo-interactivo--m%C3%B3vil-?node-id=0-1&t=3Fp0ERq4xOLjG94v-1" target="_blank" class="btn btn-primary">
+                    Ver prototipo móvil ↗
+                </a>
+                <a href="https://www.figma.com/proto/hvFYlM7bibes4zSMhX2j7j/Prototipo-interactivo--escritorio-?node-id=0-1&t=is24MIJx8VCA4HKz-1" target="_blank" class="btn btn-primary">
+                    Ver prototipo escritorio ↗
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 José María Rodrigo Cruz</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="sketch.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

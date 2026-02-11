@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual de Taller Honda Digital | José María Rodrigo Cruz</title>
+    <meta name="description" content="Case study del proyecto de digitalización del manual de taller Honda Accord Type R, convirtiendo software obsoleto en una Progressive Web App responsive">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- p5.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js"></script>
+</head>
+<body>
+    <!-- Background Canvas p5.js -->
+    <div id="p5-background"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">← Volver al portfolio</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Project Hero -->
+    <section class="hero project-hero">
+        <div class="hero-content">
+            <h1 class="project-title">Manual de Taller Honda Digital</h1>
+            <p class="project-subtitle">
+                Digitalización del manual de servicio oficial Honda ESM (Accord 1998) transformando un software obsoleto exclusivo para Windows en una Progressive Web App moderna, responsive y accesible desde cualquier dispositivo
+            </p>
+            <div class="project-tags-hero">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS3</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Adobe Creative Cloud</span>
+                <span class="tag">Responsive</span>
+                <span class="tag">Mobile-First</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nota proyecto personal -->
+    <section class="section project-section">
+        <div class="container">
+            <h2 class="section-title">Proyecto personal</h2>
+            <div class="project-content">
+                <p>Este es un proyecto personal actualmente en desarrollo, nacido de mi pasión por los automóviles. Soy propietario de un Honda Accord Type R CH1 del año 2000, un modelo exclusivo fabricado únicamente en Swindon (Reino Unido) para el mercado europeo con una producción muy limitada. Se trata de un vehículo que me gusta mantener en estado 100% original, sin ninguna modificación, y esta filosofía de preservación es la que me llevó a querer rescatar su documentación técnica oficial de la obsolescencia digital.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contexto -->
+    <section class="section project-section">
+        <div class="container">
+            <h2 class="section-title">Contexto</h2>
+            <div class="project-content">
+                <h3>El problema</h3>
+                <p>El manual de servicio electrónico oficial de Honda (Honda ESM v1.4.0) fue distribuido en formato de software exclusivo para Windows, utilizando archivos propietarios .CAB que no son extraíbles con herramientas convencionales. Con el paso de los años, este software ha quedado obsoleto e incompatible con los sistemas operativos actuales, haciendo que un recurso técnico imprescindible para el mantenimiento del vehículo sea prácticamente inaccesible. No existe una versión digital alternativa que ofrezca este contenido de forma moderna y accesible.</p>
+                
+                <h3>Los objetivos</h3>
+                <p>Rescatar todo el contenido técnico del Honda ESM original (más de 100 diagramas e imágenes técnicas que incluyen diagramas de motor, esquemas eléctricos y planos de carrocería) y convertirlo en una aplicación web progresiva (PWA) que sea instalable en cualquier dispositivo, funcione offline y ofrezca una experiencia de navegación moderna y responsive. El objetivo final es tener el manual de taller siempre accesible desde el móvil, incluso en el propio garaje sin conexión a internet.</p>
+                
+                <h3>La audiencia</h3>
+                <p>Principalmente uso personal para el mantenimiento de mi propio vehículo, pero también potencialmente útil para la comunidad de propietarios de Honda Accord Type R, un grupo reducido pero apasionado de entusiastas que valoran la originalidad y el mantenimiento correcto de estos vehículos cada vez más escasos.</p>
+                <img src="honda-esm-tablet-garage.jpg" alt="Uso del manual digital Honda en tablet durante el mantenimiento del vehículo" style="width: 100%; margin: 32px 0; border-radius: 8px;">
+            </div>
+        </div>
+    </section>
+
+    <!-- Enfoque -->
+    <section class="section project-section">
+        <div class="container">
+            <h2 class="section-title">Enfoque</h2>
+            <div class="project-content">
+                <h3>Investigación realizada</h3>
+                <p>El punto de partida fue el software original Honda ESM v1.4.0, un programa exclusivo para Windows que almacena todo su contenido en archivos propietarios imposibles de extraer con herramientas convencionales. Esto significó que la única vía para rescatar el contenido fue un proceso completamente manual: capturar una a una las pantallas del software original, catalogar cada imagen, documentar cada sección y mapear toda la estructura de navegación. Se analizaron las carpetas internas del programa, identificando y extrayendo hasta el momento más de 100 imágenes técnicas entre diagramas de motor, esquemas eléctricos y planos de carrocería, aunque el manual original contiene cientos más que se irán incorporando progresivamente.</p>
+                
+                <h3>Decisiones de diseño</h3>
+                <p>El reto principal fue recrear de forma fiel una arquitectura de información muy compleja, construida íntegramente de forma manual. El manual original se estructura en 16 secciones principales (desde información general, especificaciones y mantenimiento hasta motor, frenos, suspensión, carrocería, sistema eléctrico y diagramas de cableado), que a su vez se desglosan en más de 200 subsecciones con sus respectivas páginas de detalle. Toda esta jerarquía se mapeó y organizó a mano para replicar la experiencia de navegación del software original. Visualmente, se adoptaron los colores corporativos de Honda (rojo y negro) para mantener la identidad de marca, y se diseñó una interfaz con tarjetas de navegación, breadcrumbs y un sistema de búsqueda que permite localizar rápidamente cualquier procedimiento dentro de esta estructura tan extensa.</p>
+                <img src="honda-esm-arquitectura.jpg" alt="Arquitectura de información del software original Honda ESM y su versión digital" style="width: 100%; margin: 32px 0; border-radius: 8px;">
+                
+                <h3>Desafíos técnicos</h3>
+                <p>El mayor desafío fue la escala del trabajo manual: solo en la fase actual se han catalogado, capturado y organizado más de 100 imágenes técnicas vinculadas a más de 200 subsecciones, y el manual original alberga cientos de imágenes adicionales que aún quedan por digitalizar. Cualquier error en la asignación de una imagen a su sección correspondiente podría llevar a un mecánico a consultar un procedimiento incorrecto, por lo que el proceso de verificación fue exhaustivo. Además, conseguir que una aplicación con este volumen de contenido (que seguirá creciendo) funcione de forma fluida en un teléfono móvil, incluso sin conexión a internet dentro de un garaje, requirió optimizar cuidadosamente la carga de imágenes y la navegación entre secciones. Este proyecto sigue en desarrollo activo, ampliando progresivamente las secciones con contenido completo.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stack técnico -->
+    <section class="section project-section">
+        <div class="container">
+            <h2 class="section-title">Stack técnico</h2>
+            <div class="tech-stack">
+                <div class="tech-item">
+                    <h3>HTML5 / CSS3</h3>
+                    <p>Lenguajes base para construir la estructura y el aspecto visual de la aplicación, permitiendo que se adapte a cualquier tamaño de pantalla y que los diagramas técnicos se lean correctamente tanto en un móvil como en un ordenador.</p>
+                </div>
+                <div class="tech-item">
+                    <h3>JavaScript</h3>
+                    <p>Responsable de toda la interactividad de la aplicación: la navegación entre secciones, el sistema de búsqueda, la carga progresiva de imágenes y la posibilidad de usar el manual sin conexión a internet.</p>
+                </div>
+                <div class="tech-item">
+                    <h3>Adobe Creative Cloud</h3>
+                    <p>Herramientas como Photoshop se han utilizado para el tratamiento y optimización de las imágenes del manual, reduciendo su peso para que la aplicación cargue rápidamente en dispositivos móviles sin perder la calidad necesaria para leer correctamente los diagramas técnicos.</p>
+                </div>
+                <div class="tech-item">
+                    <h3>Responsive Design</h3>
+                    <p>Diseño adaptable que permite consultar los diagramas de motor, esquemas eléctricos y planos de carrocería tanto desde el móvil en el propio garaje como en una pantalla grande para estudiar procedimientos más complejos con mayor detalle.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demostración -->
+    <section class="section project-section demo-section">
+        <div class="container-wide">
+            <div class="demo-container">
+                <img src="honda-esm-demo.gif" alt="Demostración del Manual de Taller Honda Digital" style="width: 100%; border-radius: 12px;">
+            </div>
+            <div class="demo-actions">
+                <a href="https://chemarodrigo.github.io/Honda_manual/" target="_blank" class="btn btn-primary">
+                    Acceder a la app ↗
+                </a>
+                <a href="https://github.com/chemarodrigo/Honda_manual" target="_blank" class="btn btn-primary">
+                    Ver código en GitHub ↗
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 José María Rodrigo Cruz</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="sketch.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
