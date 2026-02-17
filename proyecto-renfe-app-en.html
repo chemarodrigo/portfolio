@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renfe App Redesign | José María Rodrigo Cruz</title>
+    <meta name="description" content="UX/UI redesign case study of the Renfe mobile application">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js"></script>
+</head>
+<body>
+    <div id="p5-background"></div>
+    <nav class="navbar">
+        <div class="nav-container">
+            <ul class="nav-menu">
+                <li><a href="index-en.html" class="nav-link">← Back to portfolio</a></li>
+                <li><a href="proyecto-renfe-app.html" class="lang-switch">ES</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero project-hero">
+        <div class="hero-content">
+            <h1 class="project-title">Renfe App Redesign</h1>
+            <p class="project-subtitle">
+                Improving the user experience in rail transport through user-centered research, wireframing and interactive prototyping
+            </p>
+            <div class="project-tags-hero">
+                <span class="tag">Figma</span>
+                <span class="tag">UX research</span>
+                <span class="tag">User experience</span>
+                <span class="tag">User interface</span>
+                <span class="tag">Wireframing</span>
+                <span class="tag">Prototiping</span>
+                <span class="tag">User testing</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="section project-section">
+        <div class="container">
+            <h2 class="section-title">Context</h2>
+            <div class="project-content">
+                <h3>The problem</h3>
+                <p>The current Renfe application has limitations in usability and inclusivity. Users face friction in basic processes such as ticket purchasing, schedule checking, and incident management. The navigation lacks intuitiveness and the information architecture is not optimized for travelers' actual needs.</p>
+                
+                <h3>The objectives</h3>
+                <p>Create a user experience that simplifies existing processes, improves accessibility for all audiences, and optimizes the efficiency of the rail service. The guiding question was: What improvements foster ease of use, inclusivity, sustainability, and service efficiency?</p>
+                
+                <h3>The audience</h3>
+                <p>A broad and diverse audience: frequent travelers who prioritize efficiency and speed, and occasional users who seek simplicity and clarity. Special attention to inclusivity for people with different levels of digital literacy and abilities.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section project-section">
+        <div class="container">
+            <h2 class="section-title">Approach</h2>
+            <div class="project-content">
+                <h3>Research conducted</h3>
+                <p>The process was structured around three methodologies: digital immersion in similar apps from countries with higher rail standards (HSL from Finland, NS from the Netherlands, SBB Mobile from Switzerland), identifying best practices in QR codes and multimodal integration. Empirical research as a user of the current app, documenting friction points and opportunities. Qualitative interviews with three differentiated profiles that informed the creation of User Personas and User Journeys, synthesized through Affinity Diagrams.</p>
+                <img src="renfe-investigacion.jpg" alt="Analysis of similar rail transport apps" style="width: 100%; margin: 32px 0; border-radius: 8px;">
+                
+                <h3>Design decisions</h3>
+                <p>The architecture was simplified into four categories: Trip Planner (integrating purchasing, schedules, and incidents), My Tickets (QR, PDF, history, and favorites), Profile (personal data and Renfe points), and Settings & Help (personalized alerts, chat, FAQ, and legal documentation). Card Sorting with users validated that fewer categories with clear functions significantly improves navigability.</p>
+                <img src="renfe-diseno.jpg" alt="Purchase flow and detected issues" style="width: 100%; margin: 32px 0; border-radius: 8px;">
+                
+                <h3>Technical challenges</h3>
+                <p>Simplifying without losing functionality required multiple wireframing iterations. Intuitive naming presented challenges, with terms like "Trip Planner" demanding semantic adjustments. The contextual alert system prioritizes relevant incidents with customizable options. Digital accessibility was a priority, considering touch sizes, contrast, and readability in critical flows.</p>
+                <img src="renfe-arquitectura.jpg" alt="Application information architecture" style="width: 100%; margin: 32px 0; border-radius: 8px;">
+                <img src="renfe-flujos.jpg" alt="Application interaction flows" style="width: 100%; margin: 32px 0; border-radius: 8px;">
+            </div>
+        </div>
+    </section>
+
+    <section class="section project-section">
+        <div class="container">
+            <h2 class="section-title">Tech Stack</h2>
+            <div class="tech-stack">
+                <div class="tech-item">
+                    <h3>Figma</h3>
+                    <p>Main tool for wireframing, interface design, and creation of the high-fidelity interactive prototype with over 30 connected screens.</p>
+                </div>
+                <div class="tech-item">
+                    <h3>User Research</h3>
+                    <p>Qualitative research methodologies: semi-structured interviews, empirical immersion, competitive analysis, and synthesis through Affinity Diagrams.</p>
+                </div>
+                <div class="tech-item">
+                    <h3>UX Design</h3>
+                    <p>Creation of User Personas, User Journeys, use scenarios, information architecture, Card Sorting, and thoroughly documented interaction flows.</p>
+                </div>
+                <div class="tech-item">
+                    <h3>Usability Testing</h3>
+                    <p>Evaluation with real users through specific tasks, post-test questionnaires, and findings analysis for design iteration.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section project-section demo-section">
+        <div class="container-wide">
+            <div class="demo-actions">
+                <a href="https://www.figma.com/proto/D83kKWyuZjIOvE7UkrQ5ks/App-Renfe?node-id=0-1&t=TIpuWPRbmPcmffIC-1" target="_blank" class="btn btn-primary">
+                    View interactive prototype ↗
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2026 José María Rodrigo Cruz</p>
+    </footer>
+
+    <script src="sketch.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

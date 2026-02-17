@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global EV Charging Station Map | José María Rodrigo Cruz</title>
+    <meta name="description" content="Case study of the data visualization project for electric vehicle charging stations">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js"></script>
+</head>
+<body>
+    <div id="p5-background"></div>
+    <nav class="navbar">
+        <div class="nav-container">
+            <ul class="nav-menu">
+                <li><a href="index-en.html" class="nav-link">← Back to portfolio</a></li>
+                <li><a href="proyecto-ev-map.html" class="lang-switch">ES</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero project-hero">
+        <div class="hero-content">
+            <h1 class="project-title">Global EV Charging Station Map</h1>
+            <p class="project-subtitle">
+                Data visualization featuring an interactive map with route planning for 
+                electric vehicles and 10,000 charging points distributed worldwide.
+            </p>
+            <div class="project-tags-hero">
+                <span class="tag">HTML5</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Data Viz</span>
+                <span class="tag">GeoJson</span>
+                <span class="tag">Leaflet.js</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="section project-section">
+        <div class="container">
+            <h2 class="section-title">Context</h2>
+            <div class="project-content">
+                <h3>The problem</h3>
+                <p>Although various visualizations showing available charging points for electric cars already exist, the data they use typically comes solely from electric utility companies and, in many cases, is obtained directly from users. Moreover, many of them are limited to certain territories only, so they don't show charging points in other countries or regions. Finally, they rarely allow filtering by categories such as plug type — they simply show a map with charging points and the characteristics of each one.</p>
+                
+                <h3>The objectives</h3>
+                <p>The project's goal was to create a visualization where users can interact with a world map that overcomes many of the drawbacks found in existing visualizations. This map displays charging points with detailed information for each one and also implements various functionalities that extend the possibilities beyond the reference dataset.</p>
+                
+                <h3>The audience</h3>
+                <p>This project is aimed at current and future electric vehicle drivers who need to plan their routes considering the availability of charging points. It is also useful for logistics companies managing electric fleets, urban planners interested in sustainable mobility infrastructure, and anyone who wants to explore the current state of the global electric vehicle charging network.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section project-section">
+        <div class="container">
+            <h2 class="section-title">Approach</h2>
+            <div class="project-content">
+                <h3>Research conducted</h3>
+                <p>The process began by analyzing various existing visualization platforms, identifying their limitations regarding geographic coverage and filtering functionalities. I evaluated tools like Flourish, which proved insufficient as they didn't allow precise geolocation of individual points. I investigated the dataset of 10,000 charging stations, understanding its 14-column structure with detailed information for each point. Finally, I identified the need to convert the original CSV format to GeoJSON to make it compatible with interactive map libraries in JavaScript.</p>
+                
+                <h3>Design decisions</h3>
+                <p>I chose to develop the visualization using pure HTML and JavaScript code, leveraging my programming skills for complete creative freedom. I implemented Leaflet.js with OpenStreetMap as the cartographic base, providing a detailed world map compatible with multiple devices. I designed a country filtering system using a dropdown selector, allowing users to focus on specific territories. I created an information panel in the upper left corner displaying real-time statistics. Additionally, I developed an interactive route creation system that calculates distances between selected charging points, adding practical value beyond the original dataset.</p>
+                
+                <h3>Technical challenges</h3>
+                <p>The biggest challenge was implementing precise distance calculation between charging points, which required using the Haversine Formula that calculates distances considering the Earth's curvature. Another significant challenge was converting the dataset from CSV to GeoJSON format, ensuring that geospatial coordinates were interpreted correctly. Managing 10,000 data points on the map required performance optimization to maintain smooth interactivity. Finally, developing multiple custom JavaScript functions (initMap, loadStations, calculateDistance, updateRoute, etc.) demanded extensive research and testing to ensure proper functionality.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section project-section">
+        <div class="container">
+            <h2 class="section-title">Tech Stack</h2>
+            <div class="tech-stack">
+                <div class="tech-item">
+                    <h3>HTML5</h3>
+                    <p>Semantic structure of the visualization with CSS3 to create a responsive design that adapts to different devices.</p>
+                </div>
+                <div class="tech-item">
+                    <h3>JavaScript</h3>
+                    <p>Engine for all interactivity: loads the GeoJSON dataset, manages events, calculates distances with mathematical algorithms, and coordinates all map functionalities.</p>
+                </div>
+                <div class="tech-item">
+                    <h3>Leaflet.js</h3>
+                    <p>Open source library for interactive maps. Enables precise geolocation of individual points using OpenStreetMap, maintaining optimal performance with 10,000 data points.</p>
+                </div>
+                <div class="tech-item">
+                    <h3>GeoJson</h3>
+                    <p>JSON-based format designed for geospatial data. Allows storing coordinates (latitude, longitude) that Leaflet.js can process and render with precision on the map.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section project-section demo-section">
+        <div class="container-wide">
+            <div class="demo-container">
+                <iframe 
+                    src="https://regal-heliotrope-7c072b.netlify.app/" 
+                    class="project-iframe"
+                    title="Interactive map of electric vehicle charging stations"
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="demo-actions">
+                <a href="https://chemarodrigo.github.io/mapaEV/" target="_blank" class="btn btn-primary">
+                    View fullscreen ↗
+                </a>
+                <a href="https://github.com/chemarodrigo/mapaEV" target="_blank" class="btn btn-primary">
+                    View code on GitHub ↗
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2026 José María Rodrigo Cruz</p>
+    </footer>
+
+    <script src="sketch.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
