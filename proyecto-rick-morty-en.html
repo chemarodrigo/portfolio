@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick & Morty Character Dashboard | José María Rodrigo Cruz</title>
+    <meta name="description" content="">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js"></script>
+</head>
+<body>
+    <div id="p5-background"></div>
+    <nav class="navbar">
+        <div class="nav-container">
+            <ul class="nav-menu">
+                <li><a href="index-en.html" class="nav-link">← Back to portfolio</a></li>
+                <li><a href="proyecto-rick-morty.html" class="lang-switch">ES</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero project-hero">
+        <div class="hero-content">
+            <h1 class="project-title">Rick & Morty Character Dashboard</h1>
+            <p class="project-subtitle">
+                Personal experimentation project with Vue.js, Nuxt and Pinia: an interactive dashboard that consumes the public Rick and Morty API to browse, filter and save characters from the show's universe
+            </p>
+            <div class="project-tags-hero">
+                <span class="tag">Vue.js</span>
+                <span class="tag">Nuxt</span>
+                <span class="tag">Pinia</span>
+                <span class="tag">Tailwind CSS</span>
+                <span class="tag">API</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="section project-section">
+        <div class="container">
+            <h2 class="section-title">Personal project</h2>
+            <div class="project-content">
+                <p>This project was born as a personal learning and experimentation exercise with Vue.js ecosystem technologies. I wanted to step out of my comfort zone and get hands-on experience with frameworks and tools widely used in professional frontend development. The public Rick and Morty API was the perfect excuse: a rich, well-documented dataset that was fun enough to keep me motivated throughout the entire development process.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section project-section">
+        <div class="container">
+            <h2 class="section-title">Context</h2>
+            <div class="project-content">
+                <h3>The problem</h3>
+                <p>My frontend development knowledge was centered around vanilla JavaScript, HTML and CSS. While this foundation has allowed me to build functional projects like data visualizations and web applications, I wanted to make the leap to modern frameworks like Vue.js to understand how a real frontend application is structured: state management, reactive components, routing, authentication middleware and REST API consumption. The best way to learn a technology is to build something with it.</p>
+                
+                <h3>The objectives</h3>
+                <p>Build a complete web application with Vue.js, Nuxt and Pinia that includes real digital product features: user authentication, view navigation, external API consumption, filtering and search system, favorites management and responsive design. All deployed to production to share and demonstrate that it works in a real environment.</p>
+                
+                <h3>The audience</h3>
+                <p>The project is intended as a portfolio piece and learning exercise. It serves as a functional demonstration of technical capabilities with modern frameworks, aimed at showing that I can work with the tools used in current frontend development teams.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section project-section">
+        <div class="container">
+            <h2 class="section-title">Approach</h2>
+            <div class="project-content">
+                <h3>Research conducted</h3>
+                <p>Before writing a single line of code, I spent time studying the official documentation of Vue.js, Nuxt and Pinia to understand each tool's philosophy and how they fit together. I analyzed the public Rick and Morty API to understand its endpoints, paginated response structure and available filtering options (by name, status, species and gender). I also researched common patterns in dashboards and data browsing applications to define a clear and functional interface.</p>
+                <img src="rick-morty-api.jpg" alt="Rick and Morty public API" style="width: 100%; margin: 32px 0; border-radius: 8px;">
+                
+                <h3>Design decisions</h3>
+                <p>The interface was designed with a dark aesthetic that matches the show's theme, using Tailwind CSS to maintain agile and consistent development. A card system was implemented to display characters with their image, name, status (alive, dead, unknown) and last known location. Navigation was split into two main views: the general character catalog with search and filters, and a favorites section where users can save their preferred characters. A simulated authentication system was added to practice managing protected routes and middleware in Nuxt.</p>
+                
+                <h3>Technical challenges</h3>
+                <p>The main challenge was learning and applying three new technologies simultaneously (Vue.js, Nuxt and Pinia) with no prior experience in any of them. Managing global application state with Pinia, especially keeping the favorites list synchronized across views, required deep understanding of the reactive stores pattern. Implementing infinite pagination of the character catalog while consuming the API efficiently, without overloading requests, was another significant challenge. Setting up authentication middleware to protect routes and deploying to Vercel completed the learning of a professional frontend workflow from start to finish.</p>
+                <img src="rick-morty-estructura.jpg" alt="Project structure and features" style="width: 100%; margin: 32px 0; border-radius: 8px;">
+            </div>
+        </div>
+    </section>
+
+    <section class="section project-section">
+        <div class="container">
+            <h2 class="section-title">Tech Stack</h2>
+            <div class="tech-stack">
+                <div class="tech-item">
+                    <h3>Vue.js / Nuxt</h3>
+                    <p>Progressive JavaScript framework for building user interfaces, powered by Nuxt to manage routing, rendering and project structure in an organized and scalable way.</p>
+                </div>
+                <div class="tech-item">
+                    <h3>Pinia</h3>
+                    <p>Vue.js official state manager, used to centralize application data: characters loaded from the API, active filters, favorites list and user authentication state.</p>
+                </div>
+                <div class="tech-item">
+                    <h3>Tailwind CSS</h3>
+                    <p>CSS utility framework that enabled building a responsive and visually consistent interface quickly, with a dark aesthetic adapted to the show's theme.</p>
+                </div>
+                <div class="tech-item">
+                    <h3>Rick and Morty API</h3>
+                    <p>Free public REST API with data on over 800 characters. Consumed to retrieve paginated information, apply filters by name, status and species, and display each character's details.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section project-section demo-section">
+        <div class="container-wide">
+            <div class="demo-container">
+                <img src="rick-morty-demo.gif" alt="Rick & Morty Dashboard demonstration" style="width: 100%; border-radius: 12px;">
+            </div>
+            <div class="demo-actions">
+                <a href="https://rick-morty-dashboard-opal.vercel.app/login" target="_blank" class="btn btn-primary">
+                    Open dashboard ↗
+                </a>
+                <a href="https://github.com/chemarodrigo/rick-morty_dashboard" target="_blank" class="btn btn-primary">
+                    View code on GitHub ↗
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2026 José María Rodrigo Cruz</p>
+    </footer>
+
+    <script src="sketch.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
