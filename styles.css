@@ -1,0 +1,62 @@
+/* ==========================================================================
+   Portfolio — José María Rodrigo Cruz
+   Hoja común a todas las páginas: variables, reset, keyframes y estados
+   :hover. El maquetado de cada página vive en sus atributos style.
+   ========================================================================== */
+
+:root{--bg:#08080a;--ink:#edecea;--dim:#8a8a8f;--acc:#ff4d1f;--surf:#eae7e0;--surf-ink:#08080a;--line:rgba(237,236,234,.14);--nav-ink:#edecea}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Syne',system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:var(--ink);text-decoration:none}
+a:hover{color:var(--acc)}
+@keyframes rise{from{transform:translateY(105%)}to{transform:translateY(0)}}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+@keyframes slide{from{transform:translate3d(0,0,0)}to{transform:translate3d(-50%,0,0)}}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.15}}
+@media (prefers-reduced-motion:reduce){*{animation-duration:.01ms !important;animation-iteration-count:1 !important}}
+:root{--bg:#08080a;--ink:#edecea;--dim:#8a8a8f;--acc:#ff4d1f;--surf:#eae7e0;--surf-ink:#08080a;--line:rgba(237,236,234,.14)}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes draw-frame{
+  0%{background-size:0 1px,1px 0,1px 0,0 1px}
+  52%{background-size:100% 1px,1px 100%,1px 0,0 1px}
+  100%{background-size:100% 1px,1px 100%,1px 100%,100% 1px}
+}
+@keyframes jelly-pop{
+  0%{transform:scale(1,1) rotate(0deg)}
+  14%{transform:scale(.74,1.24) rotate(-4deg);box-shadow:0 4px 12px rgba(8,8,10,.1)}
+  30%{transform:scale(1.26,.78) rotate(5deg)}
+  46%{transform:scale(.9,1.12) rotate(-3deg)}
+  62%{transform:scale(1.08,.94) rotate(2deg)}
+  78%{transform:scale(.97,1.03) rotate(-1deg)}
+  90%{transform:scale(1.02,.99) rotate(.4deg)}
+  100%{transform:scale(1,1) rotate(0deg);box-shadow:0 26px 60px rgba(8,8,10,.26)}
+}
+@keyframes jelly-drop{
+  0%{transform:scale(1,1) rotate(0deg)}
+  40%{transform:scale(1.14,.86) rotate(3deg)}
+  70%{transform:scale(.95,1.05) rotate(-1.5deg)}
+  100%{transform:scale(1,1) rotate(0deg)}
+}
+
+/* Estados hover */
+[data-hv1]:hover{color:var(--acc)}
+[data-hv2]:hover{color:var(--acc)}
+[data-hv3]:hover{color:var(--acc)}
+[data-hv4]:hover{color:var(--acc)}
+[data-hv5]:hover{color:var(--acc)}
+[data-hv6]:hover{color:var(--acc)}
+[data-hv7]:hover{color:var(--acc)}
+[data-hv8]:hover{color:var(--acc)}
+[data-hv9]:hover{color:var(--acc)}
+[data-hv10]:hover{color:var(--acc)}
+[data-hv11]:hover{color:var(--acc)}
+[data-hv12]:hover{color:var(--acc)}
+[data-hv13]:hover{color:var(--acc)}
+[data-hv14]:hover{color:var(--acc)}
+[data-hv15]:hover{color:var(--acc)}
+[data-hv16]:hover{color:var(--acc)}
+[data-hv17]:hover{color:var(--acc)}
+[data-hv18]:hover{color:var(--acc)}
+[data-hv19]:hover{color:var(--acc)}
+[data-hv20]:hover{color:var(--acc)}

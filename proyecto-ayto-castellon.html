@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rediseño Web y App del Ayto de Castellón | José María Rodrigo Cruz</title>
+<meta name="description" content="Rediseño mobile-first de la web y la app del Ayuntamiento de Castellón.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div data-root style="position:relative;width:100%;overflow:clip">
+
+<div data-cursor style="position:fixed;top:0;left:0;width:14px;height:14px;border-radius:50%;background:var(--acc);pointer-events:none;z-index:9999;mix-blend-mode:difference;transform:translate3d(-100px,-100px,0);transition:width .25s ease,height .25s ease;opacity:0"></div>
+
+<nav style="position:fixed;top:0;left:0;right:0;z-index:900;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px clamp(16px,4vw,48px);mix-blend-mode:difference">
+  <a href="index.html" style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#fff;transition:color .3s ease" data-hv17>← Volver al portfolio</a>
+  <a href="proyecto-ayto-castellon-en.html" style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#fff;border:1px solid rgba(255,255,255,.45);border-radius:999px;padding:4px 10px;transition:color .3s ease" data-hv18>EN</a>
+</nav>
+
+<div style="position:fixed;top:0;left:0;height:2px;background:var(--acc);z-index:950;width:0" data-bar></div>
+
+<header style="position:relative;padding:clamp(88px,13vh,140px) clamp(16px,4vw,48px) clamp(28px,5vh,56px)">
+  <div data-halo style="position:absolute;top:0;left:0;width:min(46vw,520px);aspect-ratio:1;translate:-50% -50%;border-radius:50%;background:radial-gradient(circle at 50% 50%,color-mix(in oklab,var(--acc),transparent 55%),transparent 68%);filter:blur(40px);pointer-events:none"></div>
+
+  <p style="position:relative;margin:0 0 clamp(14px,2.4vh,24px);font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--acc);animation:fade .8s .1s both">Proyecto 06 · Diseño UX/UI</p>
+
+  <div style="position:relative;container-type:inline-size">
+    <h1 data-title style="margin:0;font-weight:800;font-size:clamp(20px,3.9cqw,88px);line-height:.88;letter-spacing:-.035em;text-transform:uppercase">
+      <span style="display:block;overflow:hidden"><span style="display:block;white-space:nowrap;animation:rise 1.1s .16s cubic-bezier(.16,1,.3,1) both">Rediseño Web y App</span></span>
+      <span style="display:block;overflow:hidden"><span style="display:block;white-space:nowrap;animation:rise 1.1s .28s cubic-bezier(.16,1,.3,1) both">del Ayto de <span style="color:var(--acc)">Castellón</span></span></span>
+    </h1>
+  </div>
+
+  <div style="position:relative;display:flex;flex-wrap:wrap;gap:clamp(20px,4vw,64px);align-items:flex-start;margin-top:clamp(24px,4vh,48px);padding-top:22px;border-top:1px solid var(--line);animation:fade 1s .7s both">
+    <p style="flex:1 1 420px;margin:0;max-width:62ch;font-size:clamp(15px,1.2vw,19px);line-height:1.55;color:var(--dim);text-wrap:pretty">Transformación digital de la plataforma institucional del Ayuntamiento de Castellón mediante un diseño Mobile-First que prioriza la accesibilidad y la experiencia ciudadana</p>
+    <div style="flex:0 1 320px;display:flex;flex-wrap:wrap;gap:8px;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.08em;text-transform:uppercase">
+      <span style="border:1px solid var(--line);border-radius:999px;padding:5px 13px">Figma</span>
+      <span style="border:1px solid var(--line);border-radius:999px;padding:5px 13px">UX research</span>
+      <span style="border:1px solid var(--line);border-radius:999px;padding:5px 13px">User experience</span>
+      <span style="border:1px solid var(--line);border-radius:999px;padding:5px 13px">User interface</span>
+      <span style="border:1px solid var(--line);border-radius:999px;padding:5px 13px">Wireframing</span>
+      <span style="border:1px solid var(--line);border-radius:999px;padding:5px 13px">Prototiping</span>
+      <span style="border:1px solid var(--line);border-radius:999px;padding:5px 13px">Mobile-First</span>
+    </div>
+  </div>
+</header>
+
+<section style="padding:clamp(56px,10vh,120px) clamp(16px,4vw,48px);border-top:1px solid var(--line)">
+ <div data-wrap style="display:flex;flex-wrap:wrap;gap:clamp(24px,4vw,48px);align-items:flex-start">
+  <div data-group style="flex:1 1 100%;min-width:0;display:flex;flex-direction:column;gap:clamp(16px,2.6vh,30px)">
+  <h2 data-stage-label style="margin:0;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--acc);text-align:center">Contexto</h2>
+  <div data-stage style="position:relative;width:100%;max-width:820px;margin:0 auto;display:flex;flex-direction:column">
+
+    <div data-ring style="display:none;position:absolute;left:50%;top:50%;border-radius:50%;border:1px dashed var(--line);pointer-events:none;transition:border-color .6s ease,opacity .6s ease"></div>
+    <div data-spoke style="display:none;position:absolute;left:50%;top:50%;height:1px;background:linear-gradient(to right,color-mix(in oklab,var(--acc),transparent 20%),transparent);transform-origin:0 50%;opacity:0;pointer-events:none;transition:opacity .5s ease"></div>
+    <div data-hub style="display:none;position:absolute;left:50%;top:50%;width:9px;height:9px;margin:-4.5px 0 0 -4.5px;border-radius:50%;background:var(--acc);pointer-events:none"></div>
+
+    <div data-reveal data-orb-row tabindex="0" style="transition:opacity 1s cubic-bezier(.16,1,.3,1),transform 1s cubic-bezier(.16,1,.3,1);padding:clamp(20px,3.4vh,36px) 0;border-top:1px solid var(--line);outline:none">
+      <h3 data-orb-title style="margin:0 0 14px;font-weight:700;font-size:clamp(22px,3vw,40px);line-height:1.05;letter-spacing:-.025em;text-wrap:balance;transition:color .45s ease,transform .8s cubic-bezier(.16,1,.3,1)">El problema</h3>
+      <p data-orb-text data-orb-idx="0" style="margin:0;max-width:66ch;font-size:clamp(14px,1.15vw,17px);line-height:1.65;color:var(--dim);text-wrap:pretty;transition:opacity .6s ease,transform .8s cubic-bezier(.16,1,.3,1),filter .6s ease,clip-path .85s cubic-bezier(.16,1,.3,1)">La web del Ayuntamiento de Castellón requería una actualización integral para adaptarse a los estándares actuales de diseño y usabilidad. Como institución pública, necesitaba ofrecer numerosas funciones a todos los habitantes del municipio de forma intuitiva y accesible. El desafío consistía en equilibrar la densidad informativa propia de una web institucional con la simplicidad necesaria para que todo tipo de usuarios pudieran realizar sus trámites cómodamente.</p>
+    </div>
+
+    <div data-reveal data-orb-row tabindex="0" style="transition:opacity 1s cubic-bezier(.16,1,.3,1),transform 1s cubic-bezier(.16,1,.3,1);padding:clamp(20px,3.4vh,36px) 0;border-top:1px solid var(--line);outline:none">
+      <h3 data-orb-title style="margin:0 0 14px;font-weight:700;font-size:clamp(22px,3vw,40px);line-height:1.05;letter-spacing:-.025em;text-wrap:balance;transition:color .45s ease,transform .8s cubic-bezier(.16,1,.3,1)">Los objetivos</h3>
+      <p data-orb-text data-orb-idx="1" style="margin:0;max-width:66ch;font-size:clamp(14px,1.15vw,17px);line-height:1.65;color:var(--dim);text-wrap:pretty;transition:opacity .6s ease,transform .8s cubic-bezier(.16,1,.3,1),filter .6s ease,clip-path .85s cubic-bezier(.16,1,.3,1)">Crear un diseño sencillo, intuitivo y atractivo que permita a todos los ciudadanos, independientemente de su nivel tecnológico, acceder fácilmente a los servicios municipales. El objetivo principal era transmitir un tono accesible mediante una paleta simple de 4 colores principales y una iconografía clara que mejore la navegación. Se buscaba aplicar un enfoque Mobile-First que priorice la experiencia en dispositivos móviles, garantizando accesibilidad y facilitando la gestión de trámites administrativos.</p>
+    </div>
+
+    <div data-reveal data-orb-row tabindex="0" style="transition:opacity 1s cubic-bezier(.16,1,.3,1),transform 1s cubic-bezier(.16,1,.3,1);padding:clamp(20px,3.4vh,36px) 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);outline:none">
+      <h3 data-orb-title style="margin:0 0 14px;font-weight:700;font-size:clamp(22px,3vw,40px);line-height:1.05;letter-spacing:-.025em;text-wrap:balance;transition:color .45s ease,transform .8s cubic-bezier(.16,1,.3,1)">La audiencia</h3>
+      <p data-orb-text data-orb-idx="2" style="margin:0;max-width:66ch;font-size:clamp(14px,1.15vw,17px);line-height:1.65;color:var(--dim);text-wrap:pretty;transition:opacity .6s ease,transform .8s cubic-bezier(.16,1,.3,1),filter .6s ease,clip-path .85s cubic-bezier(.16,1,.3,1)">Ciudadanos de Castellón con perfiles muy diversos: desde personas mayores con manejo limitado de tecnología hasta usuarios con discapacidad visual, pasando por ciudadanos que buscan realizar trámites cotidianos. La diversidad del público objetivo demanda un diseño inclusivo que cumpla con estándares de accesibilidad y ofrezca una experiencia consistente entre plataformas web y móvil.</p>
+    </div>
+
+  </div>
+  </div>
+
+  <div data-group style="flex:1 1 100%;min-width:0;display:flex;flex-direction:column;gap:clamp(16px,2.6vh,30px)">
+  <h2 data-stage-label style="margin:0;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--acc);text-align:center">Enfoque</h2>
+  <div data-stage style="position:relative;width:100%;max-width:820px;margin:0 auto;display:flex;flex-direction:column">
+
+    <div data-ring style="display:none;position:absolute;left:50%;top:50%;border-radius:50%;border:1px dashed var(--line);pointer-events:none;transition:border-color .6s ease,opacity .6s ease"></div>
+    <div data-spoke style="display:none;position:absolute;left:50%;top:50%;height:1px;background:linear-gradient(to right,color-mix(in oklab,var(--acc),transparent 20%),transparent);transform-origin:0 50%;opacity:0;pointer-events:none;transition:opacity .5s ease"></div>
+    <div data-hub style="display:none;position:absolute;left:50%;top:50%;width:9px;height:9px;margin:-4.5px 0 0 -4.5px;border-radius:50%;background:var(--acc);pointer-events:none"></div>
+
+    <div data-reveal data-orb-row tabindex="0" style="transition:opacity 1s cubic-bezier(.16,1,.3,1),transform 1s cubic-bezier(.16,1,.3,1);padding:clamp(20px,3.4vh,36px) 0;border-top:1px solid var(--line);outline:none">
+      <h3 data-orb-title style="margin:0 0 14px;font-weight:700;font-size:clamp(22px,3vw,40px);line-height:1.05;letter-spacing:-.025em;text-wrap:balance;transition:color .45s ease,transform .8s cubic-bezier(.16,1,.3,1)">Investigación realizada</h3>
+      <p data-orb-text data-orb-idx="3" style="margin:0;max-width:66ch;font-size:clamp(14px,1.15vw,17px);line-height:1.65;color:var(--dim);text-wrap:pretty;transition:opacity .6s ease,transform .8s cubic-bezier(.16,1,.3,1),filter .6s ease,clip-path .85s cubic-bezier(.16,1,.3,1)">El proceso comenzó con un benchmarking exhaustivo de 5 sitios web gubernamentales de referencia: Ayuntamiento de Cádiz (España), GSA - General Services Administration (Estados Unidos), Norwich City Council (Reino Unido), Norway Gateway to Digital Public Services (Noruega), y Dubai Municipality (Emiratos Árabes Unidos). Los criterios de análisis incluyeron estructura de la información, diseño mobile-first, atractivo visual y nivel de accesibilidad. Esta investigación permitió identificar patrones efectivos como menús en cascada, uso del color para delimitar funciones, iconografía intuitiva y cabeceras atractivas con elementos institucionales.</p>
+    </div>
+
+    <div data-reveal data-orb-row tabindex="0" style="transition:opacity 1s cubic-bezier(.16,1,.3,1),transform 1s cubic-bezier(.16,1,.3,1);padding:clamp(20px,3.4vh,36px) 0;border-top:1px solid var(--line);outline:none">
+      <h3 data-orb-title style="margin:0 0 14px;font-weight:700;font-size:clamp(22px,3vw,40px);line-height:1.05;letter-spacing:-.025em;text-wrap:balance;transition:color .45s ease,transform .8s cubic-bezier(.16,1,.3,1)">Decisiones de diseño</h3>
+      <p data-orb-text data-orb-idx="4" style="margin:0;max-width:66ch;font-size:clamp(14px,1.15vw,17px);line-height:1.65;color:var(--dim);text-wrap:pretty;transition:opacity .6s ease,transform .8s cubic-bezier(.16,1,.3,1),filter .6s ease,clip-path .85s cubic-bezier(.16,1,.3,1)">La paleta de color se simplificó a 4 colores principales, cada uno asignado a una sección del sitio web para facilitar la navegación. Se incorporaron menús en cascada que distribuyen la información eficazmente con un funcionamiento intuitivo. Los iconos son grandes y representan claramente la acción que llevan a cabo, mejorando la cohesión del contenido. Se diseñó una cabecera con el escudo y nombre del ayuntamiento junto con fotografía de la ciudad, comunicando claramente el propósito institucional. Se implementaron enlaces rápidos mediante botones iconográficos, banner de avisos con delay, modal de cookies configurable, y retículas de 4 y 12 columnas con espaciado de 20px. Los estilos de tipografía se redujeron a 4: 2 para cabeceras y 2 para cuerpos de texto e iconos.</p>
+    </div>
+
+    <div data-reveal data-orb-row tabindex="0" style="transition:opacity 1s cubic-bezier(.16,1,.3,1),transform 1s cubic-bezier(.16,1,.3,1);padding:clamp(20px,3.4vh,36px) 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);outline:none">
+      <h3 data-orb-title style="margin:0 0 14px;font-weight:700;font-size:clamp(22px,3vw,40px);line-height:1.05;letter-spacing:-.025em;text-wrap:balance;transition:color .45s ease,transform .8s cubic-bezier(.16,1,.3,1)">Desafíos técnicos</h3>
+      <p data-orb-text data-orb-idx="5" style="margin:0;max-width:66ch;font-size:clamp(14px,1.15vw,17px);line-height:1.65;color:var(--dim);text-wrap:pretty;transition:opacity .6s ease,transform .8s cubic-bezier(.16,1,.3,1),filter .6s ease,clip-path .85s cubic-bezier(.16,1,.3,1)">El mayor desafío fue encontrar el equilibrio entre estética moderna y accesibilidad para un público muy diverso. Adaptar el diseño para que ambas versiones (móvil y escritorio) muestren un enfoque mobile-first requirió múltiples iteraciones. La selección de una paleta de color válida para delimitar secciones manteniendo un estilo actual demandó varias pruebas hasta lograr un resultado satisfactorio. Garantizar que la iconografía sea precisa y comprensible para la mayoría del público, manteniendo cohesión con el estilo general, requirió especial atención. Finalmente, priorizar la experiencia del usuario en todas las decisiones de diseño cuando se trabaja con instituciones públicas supuso un reto de gestión de requisitos institucionales vs. necesidades ciudadanas.</p>
+    </div>
+
+  </div>
+  </div>
+ </div>
+</section>
+
+<section style="display:flex;flex-wrap:wrap;gap:clamp(24px,5vw,80px);padding:clamp(48px,8vh,96px) clamp(16px,4vw,48px) clamp(56px,10vh,120px);border-top:1px solid var(--line)">
+  <h2 style="flex:0 0 auto;margin:0;position:sticky;top:90px;height:fit-content;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--acc)">Stack técnico</h2>
+  <div style="flex:1 1 460px;min-width:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:1px;background:var(--line)">
+    <div data-reveal style="transition:opacity .9s cubic-bezier(.16,1,.3,1),transform .9s cubic-bezier(.16,1,.3,1);background:var(--bg);padding:clamp(20px,3vh,32px) clamp(18px,2.4vw,30px)">
+      <span style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.2em;color:var(--acc)">01</span>
+      <h3 style="margin:12px 0 10px;font-weight:700;font-size:clamp(19px,1.8vw,26px);line-height:1.1;letter-spacing:-.02em">Figma</h3>
+      <p style="margin:0;font-size:14px;line-height:1.6;color:var(--dim);text-wrap:pretty">Herramienta principal para el diseño completo: prototipo móvil interactivo, prototipo escritorio interactivo, guía de estilo y mockups. Permitió visualizar y testear rápidamente diferentes versiones del diseño.</p>
+    </div>
+    <div data-reveal style="transition:opacity .9s cubic-bezier(.16,1,.3,1),transform .9s cubic-bezier(.16,1,.3,1);background:var(--bg);padding:clamp(20px,3vh,32px) clamp(18px,2.4vw,30px)">
+      <span style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.2em;color:var(--acc)">02</span>
+      <h3 style="margin:12px 0 10px;font-weight:700;font-size:clamp(19px,1.8vw,26px);line-height:1.1;letter-spacing:-.02em">Mobile-First Design</h3>
+      <p style="margin:0;font-size:14px;line-height:1.6;color:var(--dim);text-wrap:pretty">Metodología aplicada desde el inicio para garantizar que la experiencia en dispositivos móviles sea prioritaria y óptima, adaptándose progresivamente a versiones de escritorio.</p>
+    </div>
+    <div data-reveal style="transition:opacity .9s cubic-bezier(.16,1,.3,1),transform .9s cubic-bezier(.16,1,.3,1);background:var(--bg);padding:clamp(20px,3vh,32px) clamp(18px,2.4vw,30px)">
+      <span style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.2em;color:var(--acc)">03</span>
+      <h3 style="margin:12px 0 10px;font-weight:700;font-size:clamp(19px,1.8vw,26px);line-height:1.1;letter-spacing:-.02em">Benchmarking</h3>
+      <p style="margin:0;font-size:14px;line-height:1.6;color:var(--dim);text-wrap:pretty">Análisis comparativo de 5 webs gubernamentales internacionales evaluando estructura de información, diseño mobile-first, atractivo visual y accesibilidad para identificar mejores prácticas.</p>
+    </div>
+    <div data-reveal style="transition:opacity .9s cubic-bezier(.16,1,.3,1),transform .9s cubic-bezier(.16,1,.3,1);background:var(--bg);padding:clamp(20px,3vh,32px) clamp(18px,2.4vw,30px)">
+      <span style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.2em;color:var(--acc)">04</span>
+      <h3 style="margin:12px 0 10px;font-weight:700;font-size:clamp(19px,1.8vw,26px);line-height:1.1;letter-spacing:-.02em">Design System</h3>
+      <p style="margin:0;font-size:14px;line-height:1.6;color:var(--dim);text-wrap:pretty">Creación de sistema de diseño con paleta de 4 colores, 4 estilos tipográficos, retículas de 4 y 12 columnas, iconografía cohesiva y componentes reutilizables (menús, modales, banners, formularios).</p>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--surf);color:var(--surf-ink);padding:clamp(48px,9vh,110px) clamp(16px,4vw,48px) clamp(56px,10vh,120px)">
+  <div style="width:min(100%,1100px);margin:0 auto clamp(24px,4vh,44px)">
+    <h2 style="margin:0;font-weight:800;font-size:clamp(34px,7vw,110px);line-height:.9;letter-spacing:-.035em;text-transform:uppercase;text-align:center">Proceso</h2>
+  </div>
+  <div data-float-box style="position:relative;width:min(100%,1100px);height:clamp(420px,58vh,620px);margin:0 auto;border:1px solid rgba(8,8,10,.18);border-radius:4px;overflow:hidden">
+    <figure data-float tabindex="0" style="position:absolute;left:0;top:0;margin:0;width:200px;will-change:transform;outline:none;perspective:900px">
+      <div data-float-fold style="overflow:hidden;border-radius:3px;background:#d8d4cc;box-shadow:0 10px 30px rgba(8,8,10,.12);transform-style:preserve-3d;backface-visibility:hidden">
+        <img src="assets/ayto-benchmarking.jpg" alt="Benchmarking de sitios web gubernamentales internacionales" style="display:block;width:100%;height:auto;filter:grayscale(.45);transition:filter .6s ease" draggable="false">
+      </div>
+      <figcaption data-float-cap style="margin-top:10px;font-family:'Space Mono',monospace;font-size:11px;line-height:1.5;letter-spacing:.08em;text-transform:uppercase;color:var(--surf-ink);opacity:0;transform:translateY(-6px);transition:opacity .45s ease,transform .5s cubic-bezier(.16,1,.3,1)">Benchmarking de sitios web gubernamentales internacionales</figcaption>
+    </figure>
+    <figure data-float tabindex="0" style="position:absolute;left:0;top:0;margin:0;width:200px;will-change:transform;outline:none;perspective:900px">
+      <div data-float-fold style="overflow:hidden;border-radius:3px;background:#d8d4cc;box-shadow:0 10px 30px rgba(8,8,10,.12);transform-style:preserve-3d;backface-visibility:hidden">
+        <img src="assets/ayto-decisiones-diseno.jpg" alt="Paleta de color, tipografía, retículas y elementos de interacción del diseño" style="display:block;width:100%;height:auto;filter:grayscale(.45);transition:filter .6s ease" draggable="false">
+      </div>
+      <figcaption data-float-cap style="margin-top:10px;font-family:'Space Mono',monospace;font-size:11px;line-height:1.5;letter-spacing:.08em;text-transform:uppercase;color:var(--surf-ink);opacity:0;transform:translateY(-6px);transition:opacity .45s ease,transform .5s cubic-bezier(.16,1,.3,1)">Paleta de color, tipografía, retículas y elementos de interacción del diseño</figcaption>
+    </figure>
+    <figure data-float tabindex="0" style="position:absolute;left:0;top:0;margin:0;width:200px;will-change:transform;outline:none;perspective:900px">
+      <div data-float-fold style="overflow:hidden;border-radius:3px;background:#d8d4cc;box-shadow:0 10px 30px rgba(8,8,10,.12);transform-style:preserve-3d;backface-visibility:hidden">
+        <img src="assets/ayto-interaccion-mockups.jpg" alt="Elementos de interacción y mockups en versión móvil y escritorio" style="display:block;width:100%;height:auto;filter:grayscale(.45);transition:filter .6s ease" draggable="false">
+      </div>
+      <figcaption data-float-cap style="margin-top:10px;font-family:'Space Mono',monospace;font-size:11px;line-height:1.5;letter-spacing:.08em;text-transform:uppercase;color:var(--surf-ink);opacity:0;transform:translateY(-6px);transition:opacity .45s ease,transform .5s cubic-bezier(.16,1,.3,1)">Elementos de interacción y mockups en versión móvil y escritorio</figcaption>
+    </figure>
+  </div>
+
+  <div style="display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:clamp(28px,5vh,56px)">
+    <a href="https://www.figma.com/proto/T0guSWRX2R0iCWY7fTW9i5/Prototipo-interactivo--m%C3%B3vil-?node-id=0-1&amp;t=3Fp0ERq4xOLjG94v-1" target="_blank" rel="noopener" data-btn style="display:inline-flex;align-items:center;gap:10px;font-family:'Space Mono',monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--surf);background:var(--surf-ink);border:1px solid var(--surf-ink);border-radius:999px;padding:14px 26px;transition:background .35s ease,color .35s ease">Ver prototipo móvil ↗</a>
+    <a href="https://www.figma.com/proto/hvFYlM7bibes4zSMhX2j7j/Prototipo-interactivo--escritorio-?node-id=0-1&amp;t=is24MIJx8VCA4HKz-1" target="_blank" rel="noopener" data-btn style="display:inline-flex;align-items:center;gap:10px;font-family:'Space Mono',monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--surf-ink);background:transparent;border:1px solid rgba(8,8,10,.35);border-radius:999px;padding:14px 26px;transition:background .35s ease,color .35s ease">Ver prototipo escritorio ↗</a>
+  </div>
+</section>
+
+<section style="position:relative;padding:clamp(56px,11vh,140px) clamp(16px,4vw,48px) clamp(40px,7vh,80px)">
+  <div data-halo-end style="position:absolute;bottom:0;right:0;width:min(46vw,520px);aspect-ratio:1;translate:50% 50%;border-radius:50%;background:radial-gradient(circle at 50% 50%,color-mix(in oklab,var(--acc),transparent 55%),transparent 68%);filter:blur(40px);pointer-events:none"></div>
+
+  <p style="position:relative;margin:0 0 clamp(14px,2.4vh,22px);font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--acc)">Siguiente proyecto</p>
+  <a href="proyecto-honda-esm.html" data-next style="position:relative;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:16px;padding:clamp(16px,2.6vh,28px) 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);font-weight:800;font-size:clamp(26px,5vw,72px);line-height:.95;letter-spacing:-.03em;text-transform:uppercase;text-wrap:balance;transition:padding-left .5s cubic-bezier(.16,1,.3,1),color .3s ease">
+    <span>Manual de Taller Honda Digital</span>
+  </a>
+
+  <div style="position:relative;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;margin-top:clamp(40px,8vh,90px);font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim)">
+    <span>© 2026 José María Rodrigo Cruz</span>
+    <a href="index.html">Volver al portfolio ↗</a>
+  </div>
+</section>
+
+</div>
+<script src="js/ayto-castellon.js"></script>
+</body>
+</html>

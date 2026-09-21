@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>José María Rodrigo Cruz | Portfolio</title>
+<meta name="description" content="Portfolio de José María Rodrigo Cruz. Diseño UX/UI y desarrollo creativo.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div data-root style="position:relative;width:100%;overflow:clip">
+
+<div data-cursor style="position:fixed;top:0;left:0;width:14px;height:14px;border-radius:50%;background:var(--acc);pointer-events:none;z-index:9999;mix-blend-mode:difference;transform:translate3d(-100px,-100px,0);transition:width .25s ease,height .25s ease;opacity:0"></div>
+
+<nav data-nav style="position:fixed;top:0;left:0;right:0;z-index:900;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px clamp(16px,4vw,48px);mix-blend-mode:difference">
+  <a href="#top" style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#fff;transition:color .3s ease" data-hv1>JMRC<span style="color:var(--acc);animation:blink 1.8s infinite">●</span></a>
+  <div style="display:flex;align-items:center;gap:clamp(12px,2.2vw,28px);font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase">
+    <a href="#about" style="color:#fff;transition:color .3s ease" data-hv2>Formación</a>
+    <a href="#skills" style="color:#fff;transition:color .3s ease" data-hv3>Habilidades</a>
+    <a href="#projects" style="color:#fff;transition:color .3s ease" data-hv4>Proyectos</a>
+    <a href="#contact" style="color:#fff;transition:color .3s ease" data-hv5>Contacto</a>
+    <a href="index-en.html" style="color:#fff;border:1px solid rgba(255,255,255,.45);border-radius:999px;padding:4px 10px;transition:color .3s ease" data-hv6>EN</a>
+  </div>
+</nav>
+
+<div style="position:fixed;top:0;left:0;height:2px;background:var(--acc);z-index:950;width:0" data-bar></div>
+
+<section id="top" data-hero style="position:relative;min-height:0;display:flex;flex-direction:column;justify-content:flex-end;padding:clamp(72px,9vh,96px) clamp(16px,4vw,48px) clamp(16px,2.4vh,28px)">
+  <div data-halo style="position:absolute;top:0;left:0;width:min(46vw,520px);aspect-ratio:1;translate:-50% -50%;border-radius:50%;background:radial-gradient(circle at 50% 50%,color-mix(in oklab,var(--acc),transparent 55%),transparent 68%);filter:blur(40px);pointer-events:none"></div>
+
+  <div style="position:relative;display:flex;flex-wrap:wrap;align-items:flex-end;gap:clamp(20px,4vw,56px);justify-content:space-between">
+    <div style="flex:1 1 100%;min-width:0;container-type:inline-size">
+      <h1 data-title style="margin:0;font-weight:800;font-size:clamp(24px,6.1cqw,124px);line-height:.88;letter-spacing:-.035em;text-transform:uppercase">
+        <span style="display:block;overflow:hidden"><span style="display:block;white-space:nowrap;animation:rise 1.1s .18s cubic-bezier(.16,1,.3,1) both">José María</span></span>
+        <span style="display:block;overflow:hidden"><span style="display:block;white-space:nowrap;animation:rise 1.1s .3s cubic-bezier(.16,1,.3,1) both">Rodrigo <span data-portrait style="display:inline-block;vertical-align:-.1em;width:.62em;height:.82em;overflow:hidden;border-radius:999px;margin:0 .06em 0 .02em;background:#17171a;transition:width .8s cubic-bezier(.16,1,.3,1),border-radius .8s cubic-bezier(.16,1,.3,1)"><img src="assets/foto_profile.jpg" alt="José María Rodrigo Cruz" style="width:100%;height:100%;object-fit:cover;object-position:50% 28%;filter:grayscale(1) contrast(1.06)"></span> <span style="color:var(--acc)">Cruz</span></span></span>
+      </h1>
+    </div>
+  </div>
+
+  <div style="margin-top:clamp(16px,2.6vh,28px)"></div>
+</section>
+
+<div style="border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:clamp(10px,1.6vh,18px) 0;overflow:hidden;white-space:nowrap">
+  <div style="display:inline-flex;gap:48px;padding-right:48px;animation:slide 26s linear infinite;font-weight:700;font-size:clamp(22px,3.6vw,52px);letter-spacing:-.02em;text-transform:uppercase">
+    <span style="display:inline-flex;gap:48px"><span>UX Research</span><span style="color:var(--acc)">✳</span><span>Interfaces</span><span style="color:var(--acc)">✳</span><span>Front-end</span><span style="color:var(--acc)">✳</span><span>Data Viz</span><span style="color:var(--acc)">✳</span><span>Prototipado</span><span style="color:var(--acc)">✳</span><span>Diseño web</span><span style="color:var(--acc)">✳</span></span>
+    <span style="display:inline-flex;gap:48px" aria-hidden="true"><span>UX Research</span><span style="color:var(--acc)">✳</span><span>Interfaces</span><span style="color:var(--acc)">✳</span><span>Front-end</span><span style="color:var(--acc)">✳</span><span>Data Viz</span><span style="color:var(--acc)">✳</span><span>Prototipado</span><span style="color:var(--acc)">✳</span><span>Diseño web</span><span style="color:var(--acc)">✳</span></span>
+  </div>
+</div>
+
+<section id="about" style="padding:clamp(72px,14vh,180px) clamp(16px,4vw,48px);display:flex;flex-wrap:wrap;gap:clamp(24px,5vw,80px)">
+  <h2 style="flex:0 0 auto;margin:0;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--acc);position:sticky;top:90px;height:fit-content">Formación</h2>
+  <div style="flex:1 1 460px;min-width:0">
+    <div data-reveal data-open-row tabindex="0" style="transition:opacity 1s cubic-bezier(.16,1,.3,1),transform 1s cubic-bezier(.16,1,.3,1);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:clamp(18px,3vh,30px) 0;outline:none">
+      <div style="display:flex;align-items:flex-start;gap:20px;justify-content:space-between">
+        <h3 data-head style="margin:0;font-weight:700;font-size:clamp(24px,3.4vw,48px);line-height:1.02;letter-spacing:-.025em;text-wrap:balance;transition:color .4s ease,transform .6s cubic-bezier(.16,1,.3,1)">Grado en Diseño y Creaciones Digitales</h3>
+        <span data-plus style="flex:0 0 auto;font-family:'Space Mono',monospace;font-size:20px;line-height:1;color:var(--acc);transition:transform .6s cubic-bezier(.16,1,.3,1)">+</span>
+      </div>
+      <div data-panel style="display:grid;grid-template-rows:1fr;transition:grid-template-rows .75s cubic-bezier(.16,1,.3,1)">
+        <div style="overflow:hidden">
+          <div style="display:flex;flex-wrap:wrap;align-items:center;gap:clamp(14px,2.5vw,28px);padding-top:clamp(16px,2.4vh,26px)">
+            <img data-stag src="assets/logo_uoc.jpg" alt="Logo UOC" style="flex:0 0 auto;width:60px;height:60px;object-fit:contain;background:#fff;border-radius:3px;padding:6px;transition:opacity .6s ease,transform .7s cubic-bezier(.16,1,.3,1)">
+            <p data-stag style="flex:1 1 240px;margin:0;font-size:clamp(14px,1.1vw,17px);color:var(--dim);transition:opacity .6s ease,transform .7s cubic-bezier(.16,1,.3,1)">Universidad Oberta de Catalunya (UOC)</p>
+            <p data-stag style="flex:0 0 auto;margin:0;font-family:'Space Mono',monospace;font-size:12px;letter-spacing:.12em;color:var(--acc);transition:opacity .6s ease,transform .7s cubic-bezier(.16,1,.3,1)">2026</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills" style="padding:clamp(48px,9vh,120px) clamp(16px,4vw,48px) clamp(72px,14vh,180px);display:flex;flex-wrap:wrap;gap:clamp(24px,5vw,80px)">
+  <h2 style="flex:0 0 auto;margin:0;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--acc);position:sticky;top:90px;height:fit-content">Habilidades</h2>
+  <div style="flex:1 1 460px;min-width:0;display:flex;flex-direction:column">
+    <div data-reveal data-open-row tabindex="0" style="transition:opacity .9s cubic-bezier(.16,1,.3,1),transform .9s cubic-bezier(.16,1,.3,1);padding:clamp(16px,2.6vh,28px) 0;border-top:1px solid var(--line);outline:none">
+      <div style="display:flex;align-items:center;gap:16px;justify-content:space-between">
+        <h3 data-head style="margin:0;font-weight:700;font-size:clamp(28px,4.6vw,64px);line-height:1;letter-spacing:-.03em;transition:color .4s ease,transform .6s cubic-bezier(.16,1,.3,1)">Diseño UX/UI</h3>
+        <span data-plus style="flex:0 0 auto;font-family:'Space Mono',monospace;font-size:20px;line-height:1;color:var(--acc);transition:transform .6s cubic-bezier(.16,1,.3,1)">+</span>
+      </div>
+      <div data-panel style="display:grid;grid-template-rows:1fr;transition:grid-template-rows .75s cubic-bezier(.16,1,.3,1)">
+        <div style="overflow:hidden">
+          <ul style="margin:0;padding:clamp(14px,2vh,22px) 0 0;list-style:none;display:flex;flex-wrap:wrap;gap:8px;font-family:'Space Mono',monospace;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink)">
+            <li data-stag style="border:1px solid var(--line);border-radius:999px;padding:6px 14px;transition:opacity .6s ease,transform .7s cubic-bezier(.16,1,.3,1)">Investigación de usuarios</li>
+            <li data-stag style="border:1px solid var(--line);border-radius:999px;padding:6px 14px;transition:opacity .6s ease,transform .7s cubic-bezier(.16,1,.3,1)">Wireframing &amp; Prototyping</li>
+            <li data-stag style="border:1px solid var(--line);border-radius:999px;padding:6px 14px;transition:opacity .6s ease,transform .7s cubic-bezier(.16,1,.3,1)">Design Systems</li>
+            <li data-stag style="border:1px solid var(--line);border-radius:999px;padding:6px 14px;transition:opacity .6s ease,transform .7s cubic-bezier(.16,1,.3,1)">User Testing</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div data-reveal data-open-row tabindex="0" style="transition:opacity .9s cubic-bezier(.16,1,.3,1),transform .9s cubic-bezier(.16,1,.3,1);padding:clamp(16px,2.6vh,28px) 0;border-top:1px solid var(--line);outline:none">
+      <div style="display:flex;align-items:center;gap:16px;justify-content:space-between">
+        <h3 data-head style="margin:0;font-weight:700;font-size:clamp(28px,4.6vw,64px);line-height:1;letter-spacing:-.03em;transition:color .4s ease,transform .6s cubic-bezier(.16,1,.3,1)">Desarrollo</h3>
+        <span data-plus style="flex:0 0 auto;font-family:'Space Mono',monospace;font-size:20px;line-height:1;color:var(--acc);transition:transform .6s cubic-bezier(.16,1,.3,1)">+</span>
+      </div>
+      <div data-panel style="display:grid;grid-template-rows:1fr;transition:grid-template-rows .75s cubic-bezier(.16,1,.3,1)">
+        <div style="overflow:hidden">
+          <ul style="margin:0;padding:clamp(14px,2vh,22px) 0 0;list-style:none;display:flex;flex-wrap:wrap;gap:8px;font-family:'Space Mono',monospace;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink)">
+            <li data-stag style="border:1px solid var(--line);border-radius:999px;padding:6px 14px;transition:opacity .6s ease,transform .7s cubic-bezier(.16,1,.3,1)">Nuxt (Vue)</li>
+            <li data-stag style="border:1px solid var(--line);border-radius:999px;padding:6px 14px;transition:opacity .6s ease,transform .7s cubic-bezier(.16,1,.3,1)">React</li>
+            <li data-stag style="border:1px solid var(--line);border-radius:999px;padding:6px 14px;transition:opacity .6s ease,transform .7s cubic-bezier(.16,1,.3,1)">HTML5/CSS3</li>
+            <li data-stag style="border:1px solid var(--line);border-radius:999px;padding:6px 14px;transition:opacity .6s ease,transform .7s cubic-bezier(.16,1,.3,1)">JavaScript</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div data-reveal data-open-row tabindex="0" style="transition:opacity .9s cubic-bezier(.16,1,.3,1),transform .9s cubic-bezier(.16,1,.3,1);padding:clamp(16px,2.6vh,28px) 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);outline:none">
+      <div style="display:flex;align-items:center;gap:16px;justify-content:space-between">
+        <h3 data-head style="margin:0;font-weight:700;font-size:clamp(28px,4.6vw,64px);line-height:1;letter-spacing:-.03em;transition:color .4s ease,transform .6s cubic-bezier(.16,1,.3,1)">Herramientas</h3>
+        <span data-plus style="flex:0 0 auto;font-family:'Space Mono',monospace;font-size:20px;line-height:1;color:var(--acc);transition:transform .6s cubic-bezier(.16,1,.3,1)">+</span>
+      </div>
+      <div data-panel style="display:grid;grid-template-rows:1fr;transition:grid-template-rows .75s cubic-bezier(.16,1,.3,1)">
+        <div style="overflow:hidden">
+          <ul style="margin:0;padding:clamp(14px,2vh,22px) 0 0;list-style:none;display:flex;flex-wrap:wrap;gap:8px;font-family:'Space Mono',monospace;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink)">
+            <li data-stag style="border:1px solid var(--line);border-radius:999px;padding:6px 14px;transition:opacity .6s ease,transform .7s cubic-bezier(.16,1,.3,1)">Adobe Creative Cloud</li>
+            <li data-stag style="border:1px solid var(--line);border-radius:999px;padding:6px 14px;transition:opacity .6s ease,transform .7s cubic-bezier(.16,1,.3,1)">Figma</li>
+            <li data-stag style="border:1px solid var(--line);border-radius:999px;padding:6px 14px;transition:opacity .6s ease,transform .7s cubic-bezier(.16,1,.3,1)">Framer</li>
+            <li data-stag style="border:1px solid var(--line);border-radius:999px;padding:6px 14px;transition:opacity .6s ease,transform .7s cubic-bezier(.16,1,.3,1)">Git / GitHub</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects" style="background:var(--surf);color:var(--surf-ink)">
+  <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:16px;padding:clamp(48px,9vh,110px) clamp(16px,4vw,48px) clamp(20px,4vh,44px)">
+    <h2 style="margin:0;font-weight:800;font-size:clamp(34px,7vw,110px);line-height:.9;letter-spacing:-.035em;text-transform:uppercase">Proyectos</h2>
+  </div>
+
+  <div data-stack style="padding:0 clamp(16px,4vw,48px) clamp(60px,10vh,120px)">
+
+    <article data-card style="position:sticky;top:clamp(70px,9vh,104px);transform-origin:50% 0;will-change:transform;background:var(--surf);border-top:1px solid rgba(8,8,10,.18);padding-top:clamp(16px,2.4vh,28px);margin-bottom:clamp(22px,4vh,54px)">
+      <div style="display:flex;flex-wrap:wrap;gap:clamp(18px,3vw,48px);align-items:stretch">
+        <div style="flex:1 1 300px;min-width:0;display:flex;flex-direction:column;justify-content:space-between;gap:20px;padding-bottom:clamp(14px,2vh,24px)">
+          <div>
+            <span style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.2em;opacity:.45">01 / 07</span>
+            <h3 style="margin:10px 0 0;font-weight:700;font-size:clamp(26px,3.8vw,56px);line-height:1;letter-spacing:-.03em;text-wrap:balance">Nexus Digital Agency</h3>
+          </div>
+          <div style="display:flex;flex-wrap:wrap;gap:7px;font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase">
+            <span style="border:1px solid rgba(8,8,10,.25);border-radius:999px;padding:4px 10px">HTML5</span>
+            <span style="border:1px solid rgba(8,8,10,.25);border-radius:999px;padding:4px 10px">CSS Grid</span>
+            <span style="border:1px solid rgba(8,8,10,.25);border-radius:999px;padding:4px 10px">Multipágina</span>
+            <span style="border:1px solid rgba(8,8,10,.25);border-radius:999px;padding:4px 10px">Formularios</span>
+            <span style="border:1px solid rgba(8,8,10,.25);border-radius:999px;padding:4px 10px">Accesibilidad</span>
+          </div>
+          <a href="proyecto-nexus.html" data-cta style="display:inline-flex;align-items:center;gap:10px;align-self:flex-start;font-family:'Space Mono',monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--surf-ink);border-bottom:1px solid currentColor;padding-bottom:3px">Ver proyecto <span>→</span></a>
+        </div>
+        <a href="proyecto-nexus.html" data-media style="flex:1 1 380px;min-width:0;aspect-ratio:16/10;overflow:hidden;border-radius:3px;background:#d8d4cc;display:block">
+          <img src="assets/nexus-preview.png" alt="Sitio web de Nexus Digital Agency" style="width:100%;height:100%;object-fit:cover;transition:transform 1.1s cubic-bezier(.16,1,.3,1),filter .6s ease;filter:grayscale(.55)">
+        </a>
+      </div>
+    </article>
+
+    <article data-card style="position:sticky;top:clamp(70px,9vh,104px);transform-origin:50% 0;will-change:transform;background:var(--surf);border-top:1px solid rgba(8,8,10,.18);padding-top:clamp(16px,2.4vh,28px);margin-bottom:clamp(22px,4vh,54px)">
+      <div style="display:flex;flex-wrap:wrap;gap:clamp(18px,3vw,48px);align-items:stretch">
+        <div style="flex:1 1 300px;min-width:0;display:flex;flex-direction:column;justify-content:space-between;gap:20px;padding-bottom:clamp(14px,2vh,24px)">
+          <div>
+            <span style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.2em;opacity:.45">02 / 07</span>
+            <h3 style="margin:10px 0 0;font-weight:700;font-size:clamp(26px,3.8vw,56px);line-height:1;letter-spacing:-.03em;text-wrap:balance">Luminary Records</h3>
+          </div>
+          <div style="display:flex;flex-wrap:wrap;gap:7px;font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase">
+            <span style="border:1px solid rgba(8,8,10,.25);border-radius:999px;padding:4px 10px">HTML5</span>
+            <span style="border:1px solid rgba(8,8,10,.25);border-radius:999px;padding:4px 10px">CSS Grid</span>
+            <span style="border:1px solid rgba(8,8,10,.25);border-radius:999px;padding:4px 10px">Diseño web</span>
+            <span style="border:1px solid rgba(8,8,10,.25);border-radius:999px;padding:4px 10px">Tipografía</span>
+            <span style="border:1px solid rgba(8,8,10,.25);border-radius:999px;padding:4px 10px">Accesibilidad</span>
+          </div>
+          <a href="proyecto-luminary-records.html" data-cta style="display:inline-flex;align-items:center;gap:10px;align-self:flex-start;font-family:'Space Mono',monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--surf-ink);border-bottom:1px solid currentColor;padding-bottom:3px">Ver proyecto <span>→</span></a>
+        </div>
+        <a href="proyecto-luminary-records.html" data-media style="flex:1 1 380px;min-width:0;aspect-ratio:16/10;overflow:hidden;border-radius:3px;background:#d8d4cc;display:block">
+          <img src="assets/luminary-preview.png" alt="Sitio web de Luminary Records" style="width:100%;height:100%;object-fit:cover;transition:transform 1.1s cubic-bezier(.16,1,.3,1),filter .6s ease;filter:grayscale(.55)">
+        </a>
+      </div>
+    </article>
+
+    <article data-card style="position:sticky;top:clamp(70px,9vh,104px);transform-origin:50% 0;will-change:transform;background:var(--surf);border-top:1px solid rgba(8,8,10,.18);padding-top:clamp(16px,2.4vh,28px);margin-bottom:clamp(22px,4vh,54px)">
+      <div style="display:flex;flex-wrap:wrap;gap:clamp(18px,3vw,48px);align-items:stretch">
+        <div style="flex:1 1 300px;min-width:0;display:flex;flex-direction:column;justify-content:space-between;gap:20px;padding-bottom:clamp(14px,2vh,24px)">
+          <div>
+            <span style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.2em;opacity:.45">03 / 07</span>
+            <h3 style="margin:10px 0 0;font-weight:700;font-size:clamp(26px,3.8vw,56px);line-height:1;letter-spacing:-.03em;text-wrap:balance">Rick &amp; Morty Dashboard de Personajes</h3>
+          </div>
+          <div style="display:flex;flex-wrap:wrap;gap:7px;font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase">
+            <span style="border:1px solid rgba(8,8,10,.25);border-radius:999px;padding:4px 10px">Vue.js</span>
+            <span style="border:1px solid rgba(8,8,10,.25);border-radius:999px;padding:4px 10px">Nuxt</span>
+            <span style="border:1px solid rgba(8,8,10,.25);border-radius:999px;padding:4px 10px">Pinia</span>
+            <span style="border:1px solid rgba(8,8,10,.25);border-radius:999px;padding:4px 10px">Tailwind CSS</span>
+            <span style="border:1px solid rgba(8,8,10,.25);border-radius:999px;padding:4px 10px">API</span>
+          </div>
+          <a href="proyecto-rick-morty.html" data-cta style="display:inline-flex;align-items:center;gap:10px;align-self:flex-start;font-family:'Space Mono',monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--surf-ink);border-bottom:1px solid currentColor;padding-bottom:3px">Ver proyecto <span>→</span></a>
+        </div>
+        <a href="proyecto-rick-morty.html" data-media style="flex:1 1 380px;min-width:0;aspect-ratio:16/10;overflow:hidden;border-radius:3px;background:#d8d4cc;display:block">
+          <img src="assets/rick-morty-preview.png" alt="Rick &amp; Morty Character Dashboard" style="width:100%;height:100%;object-fit:cover;transition:transform 1.1s cubic-bezier(.16,1,.3,1),filter .6s ease;filter:grayscale(.55)">
+        </a>
+      </div>
+    </article>
+
+    <article data-card style="position:sticky;top:clamp(70px,9vh,104px);transform-origin:50% 0;will-change:transform;background:var(--surf);border-top:1px solid rgba(8,8,10,.18);padding-top:clamp(16px,2.4vh,28px);margin-bottom:clamp(22px,4vh,54px)">
+      <div style="display:flex;flex-wrap:wrap;gap:clamp(18px,3vw,48px);align-items:stretch">
+        <div style="flex:1 1 300px;min-width:0;display:flex;flex-direction:column;justify-content:space-between;gap:20px;padding-bottom:clamp(14px,2vh,24px)">
+          <div>
+            <span style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.2em;opacity:.45">04 / 07</span>
+            <h3 style="margin:10px 0 0;font-weight:700;font-size:clamp(26px,3.8vw,56px);line-height:1;letter-spacing:-.03em;text-wrap:balance">Mapa Global de estaciones de carga para EV</h3>
+          </div>
+          <div style="display:flex;flex-wrap:wrap;gap:7px;font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase">
+            <span style="border:1px solid rgba(8,8,10,.25);border-radius:999px;padding:4px 10px">HTML5</span>
+            <span style="border:1px solid rgba(8,8,10,.25);border-radius:999px;padding:4px 10px">JavaScript</span>
+            <span style="border:1px solid rgba(8,8,10,.25);border-radius:999px;padding:4px 10px">Data Viz</span>
+            <span style="border:1px solid rgba(8,8,10,.25);border-radius:999px;padding:4px 10px">GeoJson</span>
+            <span style="border:1px solid rgba(8,8,10,.25);border-radius:999px;padding:4px 10px">Leaflet.js</span>
+          </div>
+          <a href="proyecto-ev-map.html" data-cta style="display:inline-flex;align-items:center;gap:10px;align-self:flex-start;font-family:'Space Mono',monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--surf-ink);border-bottom:1px solid currentColor;padding-bottom:3px">Ver proyecto <span>→</span></a>
+        </div>
+        <a href="proyecto-ev-map.html" data-media style="flex:1 1 380px;min-width:0;aspect-ratio:16/10;overflow:hidden;border-radius:3px;background:#d8d4cc;display:block">
+          <img src="assets/ev-map-preview.png" alt="Mapa Global de estaciones de carga para EV" style="width:100%;height:100%;object-fit:cover;transition:transform 1.1s cubic-bezier(.16,1,.3,1),filter .6s ease;filter:grayscale(.55)">
+        </a>
+      </div>
+    </article>
+
+    <article data-card style="position:sticky;top:clamp(70px,9vh,104px);transform-origin:50% 0;will-change:transform;background:var(--surf);border-top:1px solid rgba(8,8,10,.18);padding-top:clamp(16px,2.4vh,28px);margin-bottom:clamp(22px,4vh,54px)">
+      <div style="display:flex;flex-wrap:wrap;gap:clamp(18px,3vw,48px);align-items:stretch">
+        <div style="flex:1 1 300px;min-width:0;display:flex;flex-direction:column;justify-content:space-between;gap:20px;padding-bottom:clamp(14px,2vh,24px)">
+          <div>
+            <span style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.2em;opacity:.45">05 / 07</span>
+            <h3 style="margin:10px 0 0;font-weight:700;font-size:clamp(26px,3.8vw,56px);line-height:1;letter-spacing:-.03em;text-wrap:balance">Rediseño de la App de Renfe</h3>
+          </div>
+          <div style="display:flex;flex-wrap:wrap;gap:7px;font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase">
+            <span style="border:1px solid rgba(8,8,10,.25);border-radius:999px;padding:4px 10px">Figma</span>
+            <span style="border:1px solid rgba(8,8,10,.25);border-radius:999px;padding:4px 10px">UX research</span>
+            <span style="border:1px solid rgba(8,8,10,.25);border-radius:999px;padding:4px 10px">User experience</span>
+            <span style="border:1px solid rgba(8,8,10,.25);border-radius:999px;padding:4px 10px">User interface</span>
+            <span style="border:1px solid rgba(8,8,10,.25);border-radius:999px;padding:4px 10px">Wireframing</span>
+            <span style="border:1px solid rgba(8,8,10,.25);border-radius:999px;padding:4px 10px">Prototiping</span>
+            <span style="border:1px solid rgba(8,8,10,.25);border-radius:999px;padding:4px 10px">User testing</span>
+          </div>
+          <a href="proyecto-renfe-app.html" data-cta style="display:inline-flex;align-items:center;gap:10px;align-self:flex-start;font-family:'Space Mono',monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--surf-ink);border-bottom:1px solid currentColor;padding-bottom:3px">Ver proyecto <span>→</span></a>
+        </div>
+        <a href="proyecto-renfe-app.html" data-media style="flex:1 1 380px;min-width:0;aspect-ratio:16/10;overflow:hidden;border-radius:3px;background:#d8d4cc;display:block">
+          <img src="assets/renfe-app-preview.png" alt="Rediseño de la App de Renfe" style="width:100%;height:100%;object-fit:cover;transition:transform 1.1s cubic-bezier(.16,1,.3,1),filter .6s ease;filter:grayscale(.55)">
+        </a>
+      </div>
+    </article>
+
+    <article data-card style="position:sticky;top:clamp(70px,9vh,104px);transform-origin:50% 0;will-change:transform;background:var(--surf);border-top:1px solid rgba(8,8,10,.18);padding-top:clamp(16px,2.4vh,28px);margin-bottom:clamp(22px,4vh,54px)">
+      <div style="display:flex;flex-wrap:wrap;gap:clamp(18px,3vw,48px);align-items:stretch">
+        <div style="flex:1 1 300px;min-width:0;display:flex;flex-direction:column;justify-content:space-between;gap:20px;padding-bottom:clamp(14px,2vh,24px)">
+          <div>
+            <span style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.2em;opacity:.45">06 / 07</span>
+            <h3 style="margin:10px 0 0;font-weight:700;font-size:clamp(26px,3.8vw,56px);line-height:1;letter-spacing:-.03em;text-wrap:balance">Rediseño Web y App del Ayto de Castellón</h3>
+          </div>
+          <div style="display:flex;flex-wrap:wrap;gap:7px;font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase">
+            <span style="border:1px solid rgba(8,8,10,.25);border-radius:999px;padding:4px 10px">Figma</span>
+            <span style="border:1px solid rgba(8,8,10,.25);border-radius:999px;padding:4px 10px">UX research</span>
+            <span style="border:1px solid rgba(8,8,10,.25);border-radius:999px;padding:4px 10px">User experience</span>
+            <span style="border:1px solid rgba(8,8,10,.25);border-radius:999px;padding:4px 10px">User interface</span>
+            <span style="border:1px solid rgba(8,8,10,.25);border-radius:999px;padding:4px 10px">Wireframing</span>
+            <span style="border:1px solid rgba(8,8,10,.25);border-radius:999px;padding:4px 10px">Prototiping</span>
+            <span style="border:1px solid rgba(8,8,10,.25);border-radius:999px;padding:4px 10px">Mobile-First</span>
+          </div>
+          <a href="proyecto-ayto-castellon.html" data-cta style="display:inline-flex;align-items:center;gap:10px;align-self:flex-start;font-family:'Space Mono',monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--surf-ink);border-bottom:1px solid currentColor;padding-bottom:3px">Ver proyecto <span>→</span></a>
+        </div>
+        <a href="proyecto-ayto-castellon.html" data-media style="flex:1 1 380px;min-width:0;aspect-ratio:16/10;overflow:hidden;border-radius:3px;background:#d8d4cc;display:block">
+          <img src="assets/ayto-castellon-preview.png" alt="Rediseño Web y App del Ayto de Castellón" style="width:100%;height:100%;object-fit:cover;transition:transform 1.1s cubic-bezier(.16,1,.3,1),filter .6s ease;filter:grayscale(.55)">
+        </a>
+      </div>
+    </article>
+
+    <article data-card style="position:sticky;top:clamp(70px,9vh,104px);transform-origin:50% 0;will-change:transform;background:var(--surf);border-top:1px solid rgba(8,8,10,.18);padding-top:clamp(16px,2.4vh,28px)">
+      <div style="display:flex;flex-wrap:wrap;gap:clamp(18px,3vw,48px);align-items:stretch">
+        <div style="flex:1 1 300px;min-width:0;display:flex;flex-direction:column;justify-content:space-between;gap:20px;padding-bottom:clamp(14px,2vh,24px)">
+          <div>
+            <span style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.2em;opacity:.45">07 / 07</span>
+            <h3 style="margin:10px 0 0;font-weight:700;font-size:clamp(26px,3.8vw,56px);line-height:1;letter-spacing:-.03em;text-wrap:balance">Manual de Taller Honda Digital</h3>
+          </div>
+          <div style="display:flex;flex-wrap:wrap;gap:7px;font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase">
+            <span style="border:1px solid rgba(8,8,10,.25);border-radius:999px;padding:4px 10px">HTML5</span>
+            <span style="border:1px solid rgba(8,8,10,.25);border-radius:999px;padding:4px 10px">CSS3</span>
+            <span style="border:1px solid rgba(8,8,10,.25);border-radius:999px;padding:4px 10px">JavaScript</span>
+            <span style="border:1px solid rgba(8,8,10,.25);border-radius:999px;padding:4px 10px">Adobe Creative Cloud</span>
+            <span style="border:1px solid rgba(8,8,10,.25);border-radius:999px;padding:4px 10px">Responsive</span>
+            <span style="border:1px solid rgba(8,8,10,.25);border-radius:999px;padding:4px 10px">Mobile-First</span>
+          </div>
+          <a href="proyecto-honda-esm.html" data-cta style="display:inline-flex;align-items:center;gap:10px;align-self:flex-start;font-family:'Space Mono',monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--surf-ink);border-bottom:1px solid currentColor;padding-bottom:3px">Ver proyecto <span>→</span></a>
+        </div>
+        <a href="proyecto-honda-esm.html" data-media style="flex:1 1 380px;min-width:0;aspect-ratio:16/10;overflow:hidden;border-radius:3px;background:#d8d4cc;display:block">
+          <img src="assets/honda-esm-thumb.png" alt="Manual de Taller Honda Digital" style="width:100%;height:100%;object-fit:cover;transition:transform 1.1s cubic-bezier(.16,1,.3,1),filter .6s ease;filter:grayscale(.55)">
+        </a>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<section id="contact" style="position:relative;overflow:visible;padding:clamp(72px,16vh,200px) clamp(16px,4vw,48px) clamp(40px,7vh,80px)">
+  <div data-halo-end style="position:absolute;bottom:0;right:0;width:min(46vw,520px);aspect-ratio:1;translate:50% 50%;border-radius:50%;background:radial-gradient(circle at 50% 50%,color-mix(in oklab,var(--acc),transparent 55%),transparent 68%);filter:blur(40px);pointer-events:none"></div>
+  <p data-reveal style="position:relative;transition:opacity 1s cubic-bezier(.16,1,.3,1),transform 1s cubic-bezier(.16,1,.3,1);margin:0;max-width:20ch;font-weight:800;font-size:clamp(34px,7vw,110px);line-height:.9;letter-spacing:-.035em;text-transform:uppercase;text-wrap:balance">Contacto</p>
+
+  <div style="display:flex;flex-direction:column;margin-top:clamp(32px,6vh,72px);border-top:1px solid var(--line)">
+    <a href="mailto:jomarodri91@gmail.com" data-row style="display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:clamp(14px,2.4vh,26px) 0;border-bottom:1px solid var(--line);font-weight:700;font-size:clamp(22px,4vw,52px);letter-spacing:-.025em;transition:padding-left .5s cubic-bezier(.16,1,.3,1),color .3s ease">
+      <span>Email</span><span data-meta style="display:inline-block;font-family:'Space Mono',monospace;font-size:clamp(11px,1vw,13px);letter-spacing:.1em;color:var(--acc);transition:opacity .5s ease,transform .7s cubic-bezier(.16,1,.3,1),clip-path .7s cubic-bezier(.16,1,.3,1)">jomarodri91@gmail.com ↗</span>
+    </a>
+    <a href="https://www.linkedin.com/in/chema-rodrigo" target="_blank" rel="noopener" data-row style="display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:clamp(14px,2.4vh,26px) 0;border-bottom:1px solid var(--line);font-weight:700;font-size:clamp(22px,4vw,52px);letter-spacing:-.025em;transition:padding-left .5s cubic-bezier(.16,1,.3,1),color .3s ease">
+      <span>LinkedIn</span><span data-meta style="display:inline-block;font-family:'Space Mono',monospace;font-size:clamp(11px,1vw,13px);letter-spacing:.1em;color:var(--acc);transition:opacity .5s ease,transform .7s cubic-bezier(.16,1,.3,1),clip-path .7s cubic-bezier(.16,1,.3,1)">/in/chema-rodrigo ↗</span>
+    </a>
+    <a href="https://github.com/chemarodrigo" target="_blank" rel="noopener" data-row style="display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:clamp(14px,2.4vh,26px) 0;border-bottom:1px solid var(--line);font-weight:700;font-size:clamp(22px,4vw,52px);letter-spacing:-.025em;transition:padding-left .5s cubic-bezier(.16,1,.3,1),color .3s ease">
+      <span>GitHub</span><span data-meta style="display:inline-block;font-family:'Space Mono',monospace;font-size:clamp(11px,1vw,13px);letter-spacing:.1em;color:var(--acc);transition:opacity .5s ease,transform .7s cubic-bezier(.16,1,.3,1),clip-path .7s cubic-bezier(.16,1,.3,1)">@chemarodrigo ↗</span>
+    </a>
+  </div>
+
+  <div style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;margin-top:clamp(40px,8vh,90px);font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim)">
+    <span>© 2026 José María Rodrigo Cruz</span>
+    <a href="index-en.html">English version ↗</a>
+  </div>
+</section>
+
+</div>
+<script src="js/home.js"></script>
+</body>
+</html>

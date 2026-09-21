@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manual de Taller Honda Digital | José María Rodrigo Cruz</title>
+<meta name="description" content="Manual de taller digital y responsive construido con HTML, CSS y JavaScript.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div data-root style="position:relative;width:100%;overflow:clip">
+
+<div data-cursor style="position:fixed;top:0;left:0;width:14px;height:14px;border-radius:50%;background:var(--acc);pointer-events:none;z-index:9999;mix-blend-mode:difference;transform:translate3d(-100px,-100px,0);transition:width .25s ease,height .25s ease;opacity:0"></div>
+
+<nav style="position:fixed;top:0;left:0;right:0;z-index:900;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px clamp(16px,4vw,48px);mix-blend-mode:difference">
+  <a href="index.html" style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#fff;transition:color .3s ease" data-hv19>← Volver al portfolio</a>
+  <a href="proyecto-honda-esm-en.html" style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#fff;border:1px solid rgba(255,255,255,.45);border-radius:999px;padding:4px 10px;transition:color .3s ease" data-hv20>EN</a>
+</nav>
+
+<div style="position:fixed;top:0;left:0;height:2px;background:var(--acc);z-index:950;width:0" data-bar></div>
+
+<header style="position:relative;padding:clamp(88px,13vh,140px) clamp(16px,4vw,48px) clamp(28px,5vh,56px)">
+  <div data-halo style="position:absolute;top:0;left:0;width:min(46vw,520px);aspect-ratio:1;translate:-50% -50%;border-radius:50%;background:radial-gradient(circle at 50% 50%,color-mix(in oklab,var(--acc),transparent 55%),transparent 68%);filter:blur(40px);pointer-events:none"></div>
+
+  <p style="position:relative;margin:0 0 clamp(14px,2.4vh,24px);font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--acc);animation:fade .8s .1s both">Proyecto 07 · Desarrollo frontend</p>
+
+  <div style="position:relative;container-type:inline-size">
+    <h1 data-title style="margin:0;font-weight:800;font-size:clamp(22px,5.4cqw,120px);line-height:.88;letter-spacing:-.035em;text-transform:uppercase">
+      <span style="display:block;overflow:hidden"><span style="display:block;white-space:nowrap;animation:rise 1.1s .16s cubic-bezier(.16,1,.3,1) both">Manual de Taller</span></span>
+      <span style="display:block;overflow:hidden"><span style="display:block;white-space:nowrap;animation:rise 1.1s .28s cubic-bezier(.16,1,.3,1) both">Honda <span style="color:var(--acc)">Digital</span></span></span>
+    </h1>
+  </div>
+
+  <div style="position:relative;display:flex;flex-wrap:wrap;gap:clamp(20px,4vw,64px);align-items:flex-start;margin-top:clamp(24px,4vh,48px);padding-top:22px;border-top:1px solid var(--line);animation:fade 1s .7s both">
+    <p style="flex:1 1 420px;margin:0;max-width:62ch;font-size:clamp(15px,1.2vw,19px);line-height:1.55;color:var(--dim);text-wrap:pretty">Digitalización del manual de servicio oficial Honda ESM (Accord 1998) transformando un software obsoleto exclusivo para Windows en una Progressive Web App moderna, responsive y accesible desde cualquier dispositivo</p>
+    <div style="flex:0 1 320px;display:flex;flex-wrap:wrap;gap:8px;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.08em;text-transform:uppercase">
+      <span style="border:1px solid var(--line);border-radius:999px;padding:5px 13px">HTML5</span>
+      <span style="border:1px solid var(--line);border-radius:999px;padding:5px 13px">CSS3</span>
+      <span style="border:1px solid var(--line);border-radius:999px;padding:5px 13px">JavaScript</span>
+      <span style="border:1px solid var(--line);border-radius:999px;padding:5px 13px">Adobe Creative Cloud</span>
+      <span style="border:1px solid var(--line);border-radius:999px;padding:5px 13px">Responsive</span>
+      <span style="border:1px solid var(--line);border-radius:999px;padding:5px 13px">Mobile-First</span>
+    </div>
+  </div>
+</header>
+
+<section style="padding:clamp(56px,10vh,120px) clamp(16px,4vw,48px);border-top:1px solid var(--line)">
+ <div data-wrap style="display:flex;flex-wrap:wrap;gap:clamp(24px,4vw,48px);align-items:flex-start">
+  <div data-group style="flex:1 1 100%;min-width:0;display:flex;flex-direction:column;gap:clamp(16px,2.6vh,30px)">
+  <h2 data-stage-label style="margin:0;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--acc);text-align:center">Contexto</h2>
+  <div data-stage style="position:relative;width:100%;max-width:820px;margin:0 auto;display:flex;flex-direction:column">
+
+    <div data-ring style="display:none;position:absolute;left:50%;top:50%;border-radius:50%;border:1px dashed var(--line);pointer-events:none;transition:border-color .6s ease,opacity .6s ease"></div>
+    <div data-spoke style="display:none;position:absolute;left:50%;top:50%;height:1px;background:linear-gradient(to right,color-mix(in oklab,var(--acc),transparent 20%),transparent);transform-origin:0 50%;opacity:0;pointer-events:none;transition:opacity .5s ease"></div>
+    <div data-hub style="display:none;position:absolute;left:50%;top:50%;width:9px;height:9px;margin:-4.5px 0 0 -4.5px;border-radius:50%;background:var(--acc);pointer-events:none"></div>
+
+    <div data-reveal data-orb-row tabindex="0" style="transition:opacity 1s cubic-bezier(.16,1,.3,1),transform 1s cubic-bezier(.16,1,.3,1);padding:clamp(20px,3.4vh,36px) 0;border-top:1px solid var(--line);outline:none">
+      <h3 data-orb-title style="margin:0 0 14px;font-weight:700;font-size:clamp(22px,3vw,40px);line-height:1.05;letter-spacing:-.025em;text-wrap:balance;transition:color .45s ease,transform .8s cubic-bezier(.16,1,.3,1)">El problema</h3>
+      <p data-orb-text data-orb-idx="0" style="margin:0;max-width:66ch;font-size:clamp(14px,1.15vw,17px);line-height:1.65;color:var(--dim);text-wrap:pretty;transition:opacity .6s ease,transform .8s cubic-bezier(.16,1,.3,1),filter .6s ease,clip-path .85s cubic-bezier(.16,1,.3,1)">El manual de servicio electrónico oficial de Honda (Honda ESM v1.4.0) fue distribuido en formato de software exclusivo para Windows, utilizando archivos propietarios .CAB que no son extraíbles con herramientas convencionales. Con el paso de los años, este software ha quedado obsoleto e incompatible con los sistemas operativos actuales, haciendo que un recurso técnico imprescindible para el mantenimiento del vehículo sea prácticamente inaccesible. No existe una versión digital alternativa que ofrezca este contenido de forma moderna y accesible.</p>
+    </div>
+
+    <div data-reveal data-orb-row tabindex="0" style="transition:opacity 1s cubic-bezier(.16,1,.3,1),transform 1s cubic-bezier(.16,1,.3,1);padding:clamp(20px,3.4vh,36px) 0;border-top:1px solid var(--line);outline:none">
+      <h3 data-orb-title style="margin:0 0 14px;font-weight:700;font-size:clamp(22px,3vw,40px);line-height:1.05;letter-spacing:-.025em;text-wrap:balance;transition:color .45s ease,transform .8s cubic-bezier(.16,1,.3,1)">Los objetivos</h3>
+      <p data-orb-text data-orb-idx="1" style="margin:0;max-width:66ch;font-size:clamp(14px,1.15vw,17px);line-height:1.65;color:var(--dim);text-wrap:pretty;transition:opacity .6s ease,transform .8s cubic-bezier(.16,1,.3,1),filter .6s ease,clip-path .85s cubic-bezier(.16,1,.3,1)">Rescatar todo el contenido técnico del Honda ESM original (más de 100 diagramas e imágenes técnicas que incluyen diagramas de motor, esquemas eléctricos y planos de carrocería) y convertirlo en una aplicación web progresiva (PWA) que sea instalable en cualquier dispositivo, funcione offline y ofrezca una experiencia de navegación moderna y responsive. El objetivo final es tener el manual de taller siempre accesible desde el móvil, incluso en el propio garaje sin conexión a internet.</p>
+    </div>
+
+    <div data-reveal data-orb-row tabindex="0" style="transition:opacity 1s cubic-bezier(.16,1,.3,1),transform 1s cubic-bezier(.16,1,.3,1);padding:clamp(20px,3.4vh,36px) 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);outline:none">
+      <h3 data-orb-title style="margin:0 0 14px;font-weight:700;font-size:clamp(22px,3vw,40px);line-height:1.05;letter-spacing:-.025em;text-wrap:balance;transition:color .45s ease,transform .8s cubic-bezier(.16,1,.3,1)">La audiencia</h3>
+      <p data-orb-text data-orb-idx="2" style="margin:0;max-width:66ch;font-size:clamp(14px,1.15vw,17px);line-height:1.65;color:var(--dim);text-wrap:pretty;transition:opacity .6s ease,transform .8s cubic-bezier(.16,1,.3,1),filter .6s ease,clip-path .85s cubic-bezier(.16,1,.3,1)">Principalmente uso personal para el mantenimiento de mi propio vehículo, pero también potencialmente útil para la comunidad de propietarios de Honda Accord Type R, un grupo reducido pero apasionado de entusiastas que valoran la originalidad y el mantenimiento correcto de estos vehículos cada vez más escasos.</p>
+    </div>
+
+  </div>
+  </div>
+
+  <div data-group style="flex:1 1 100%;min-width:0;display:flex;flex-direction:column;gap:clamp(16px,2.6vh,30px)">
+  <h2 data-stage-label style="margin:0;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--acc);text-align:center">Enfoque</h2>
+  <div data-stage style="position:relative;width:100%;max-width:820px;margin:0 auto;display:flex;flex-direction:column">
+
+    <div data-ring style="display:none;position:absolute;left:50%;top:50%;border-radius:50%;border:1px dashed var(--line);pointer-events:none;transition:border-color .6s ease,opacity .6s ease"></div>
+    <div data-spoke style="display:none;position:absolute;left:50%;top:50%;height:1px;background:linear-gradient(to right,color-mix(in oklab,var(--acc),transparent 20%),transparent);transform-origin:0 50%;opacity:0;pointer-events:none;transition:opacity .5s ease"></div>
+    <div data-hub style="display:none;position:absolute;left:50%;top:50%;width:9px;height:9px;margin:-4.5px 0 0 -4.5px;border-radius:50%;background:var(--acc);pointer-events:none"></div>
+
+    <div data-reveal data-orb-row tabindex="0" style="transition:opacity 1s cubic-bezier(.16,1,.3,1),transform 1s cubic-bezier(.16,1,.3,1);padding:clamp(20px,3.4vh,36px) 0;border-top:1px solid var(--line);outline:none">
+      <h3 data-orb-title style="margin:0 0 14px;font-weight:700;font-size:clamp(22px,3vw,40px);line-height:1.05;letter-spacing:-.025em;text-wrap:balance;transition:color .45s ease,transform .8s cubic-bezier(.16,1,.3,1)">Investigación realizada</h3>
+      <p data-orb-text data-orb-idx="3" style="margin:0;max-width:66ch;font-size:clamp(14px,1.15vw,17px);line-height:1.65;color:var(--dim);text-wrap:pretty;transition:opacity .6s ease,transform .8s cubic-bezier(.16,1,.3,1),filter .6s ease,clip-path .85s cubic-bezier(.16,1,.3,1)">El punto de partida fue el software original Honda ESM v1.4.0, un programa exclusivo para Windows que almacena todo su contenido en archivos propietarios imposibles de extraer con herramientas convencionales. Esto significó que la única vía para rescatar el contenido fue un proceso completamente manual: capturar una a una las pantallas del software original, catalogar cada imagen, documentar cada sección y mapear toda la estructura de navegación. Se analizaron las carpetas internas del programa, identificando y extrayendo hasta el momento más de 100 imágenes técnicas entre diagramas de motor, esquemas eléctricos y planos de carrocería, aunque el manual original contiene cientos más que se irán incorporando progresivamente.</p>
+    </div>
+
+    <div data-reveal data-orb-row tabindex="0" style="transition:opacity 1s cubic-bezier(.16,1,.3,1),transform 1s cubic-bezier(.16,1,.3,1);padding:clamp(20px,3.4vh,36px) 0;border-top:1px solid var(--line);outline:none">
+      <h3 data-orb-title style="margin:0 0 14px;font-weight:700;font-size:clamp(22px,3vw,40px);line-height:1.05;letter-spacing:-.025em;text-wrap:balance;transition:color .45s ease,transform .8s cubic-bezier(.16,1,.3,1)">Decisiones de diseño</h3>
+      <p data-orb-text data-orb-idx="4" style="margin:0;max-width:66ch;font-size:clamp(14px,1.15vw,17px);line-height:1.65;color:var(--dim);text-wrap:pretty;transition:opacity .6s ease,transform .8s cubic-bezier(.16,1,.3,1),filter .6s ease,clip-path .85s cubic-bezier(.16,1,.3,1)">El reto principal fue recrear de forma fiel una arquitectura de información muy compleja, construida íntegramente de forma manual. El manual original se estructura en 16 secciones principales (desde información general, especificaciones y mantenimiento hasta motor, frenos, suspensión, carrocería, sistema eléctrico y diagramas de cableado), que a su vez se desglosan en más de 200 subsecciones con sus respectivas páginas de detalle. Toda esta jerarquía se mapeó y organizó a mano para replicar la experiencia de navegación del software original. Visualmente, se adoptaron los colores corporativos de Honda (rojo y negro) para mantener la identidad de marca, y se diseñó una interfaz con tarjetas de navegación, breadcrumbs y un sistema de búsqueda que permite localizar rápidamente cualquier procedimiento dentro de esta estructura tan extensa.</p>
+    </div>
+
+    <div data-reveal data-orb-row tabindex="0" style="transition:opacity 1s cubic-bezier(.16,1,.3,1),transform 1s cubic-bezier(.16,1,.3,1);padding:clamp(20px,3.4vh,36px) 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);outline:none">
+      <h3 data-orb-title style="margin:0 0 14px;font-weight:700;font-size:clamp(22px,3vw,40px);line-height:1.05;letter-spacing:-.025em;text-wrap:balance;transition:color .45s ease,transform .8s cubic-bezier(.16,1,.3,1)">Desafíos técnicos</h3>
+      <p data-orb-text data-orb-idx="5" style="margin:0;max-width:66ch;font-size:clamp(14px,1.15vw,17px);line-height:1.65;color:var(--dim);text-wrap:pretty;transition:opacity .6s ease,transform .8s cubic-bezier(.16,1,.3,1),filter .6s ease,clip-path .85s cubic-bezier(.16,1,.3,1)">El mayor desafío fue la escala del trabajo manual: solo en la fase actual se han catalogado, capturado y organizado más de 100 imágenes técnicas vinculadas a más de 200 subsecciones, y el manual original alberga cientos de imágenes adicionales que aún quedan por digitalizar. Cualquier error en la asignación de una imagen a su sección correspondiente podría llevar a un mecánico a consultar un procedimiento incorrecto, por lo que el proceso de verificación fue exhaustivo. Además, conseguir que una aplicación con este volumen de contenido (que seguirá creciendo) funcione de forma fluida en un teléfono móvil, incluso sin conexión a internet dentro de un garaje, requirió optimizar cuidadosamente la carga de imágenes y la navegación entre secciones. Este proyecto sigue en desarrollo activo, ampliando progresivamente las secciones con contenido completo.</p>
+    </div>
+
+  </div>
+  </div>
+ </div>
+</section>
+
+<section style="display:flex;flex-wrap:wrap;gap:clamp(24px,5vw,80px);padding:clamp(48px,8vh,96px) clamp(16px,4vw,48px) clamp(56px,10vh,120px);border-top:1px solid var(--line)">
+  <h2 style="flex:0 0 auto;margin:0;position:sticky;top:90px;height:fit-content;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--acc)">Stack técnico</h2>
+  <div style="flex:1 1 460px;min-width:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:1px;background:var(--line)">
+    <div data-reveal style="transition:opacity .9s cubic-bezier(.16,1,.3,1),transform .9s cubic-bezier(.16,1,.3,1);background:var(--bg);padding:clamp(20px,3vh,32px) clamp(18px,2.4vw,30px)">
+      <span style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.2em;color:var(--acc)">01</span>
+      <h3 style="margin:12px 0 10px;font-weight:700;font-size:clamp(19px,1.8vw,26px);line-height:1.1;letter-spacing:-.02em">HTML5 / CSS3</h3>
+      <p style="margin:0;font-size:14px;line-height:1.6;color:var(--dim);text-wrap:pretty">Lenguajes base para construir la estructura y el aspecto visual de la aplicación, permitiendo que se adapte a cualquier tamaño de pantalla y que los diagramas técnicos se lean correctamente tanto en un móvil como en un ordenador.</p>
+    </div>
+    <div data-reveal style="transition:opacity .9s cubic-bezier(.16,1,.3,1),transform .9s cubic-bezier(.16,1,.3,1);background:var(--bg);padding:clamp(20px,3vh,32px) clamp(18px,2.4vw,30px)">
+      <span style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.2em;color:var(--acc)">02</span>
+      <h3 style="margin:12px 0 10px;font-weight:700;font-size:clamp(19px,1.8vw,26px);line-height:1.1;letter-spacing:-.02em">JavaScript</h3>
+      <p style="margin:0;font-size:14px;line-height:1.6;color:var(--dim);text-wrap:pretty">Responsable de toda la interactividad de la aplicación: la navegación entre secciones, el sistema de búsqueda, la carga progresiva de imágenes y la posibilidad de usar el manual sin conexión a internet.</p>
+    </div>
+    <div data-reveal style="transition:opacity .9s cubic-bezier(.16,1,.3,1),transform .9s cubic-bezier(.16,1,.3,1);background:var(--bg);padding:clamp(20px,3vh,32px) clamp(18px,2.4vw,30px)">
+      <span style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.2em;color:var(--acc)">03</span>
+      <h3 style="margin:12px 0 10px;font-weight:700;font-size:clamp(19px,1.8vw,26px);line-height:1.1;letter-spacing:-.02em">Adobe Creative Cloud</h3>
+      <p style="margin:0;font-size:14px;line-height:1.6;color:var(--dim);text-wrap:pretty">Herramientas como Photoshop se han utilizado para el tratamiento y optimización de las imágenes del manual, reduciendo su peso para que la aplicación cargue rápidamente en dispositivos móviles sin perder la calidad necesaria para leer correctamente los diagramas técnicos.</p>
+    </div>
+    <div data-reveal style="transition:opacity .9s cubic-bezier(.16,1,.3,1),transform .9s cubic-bezier(.16,1,.3,1);background:var(--bg);padding:clamp(20px,3vh,32px) clamp(18px,2.4vw,30px)">
+      <span style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.2em;color:var(--acc)">04</span>
+      <h3 style="margin:12px 0 10px;font-weight:700;font-size:clamp(19px,1.8vw,26px);line-height:1.1;letter-spacing:-.02em">Responsive Design</h3>
+      <p style="margin:0;font-size:14px;line-height:1.6;color:var(--dim);text-wrap:pretty">Diseño adaptable que permite consultar los diagramas de motor, esquemas eléctricos y planos de carrocería tanto desde el móvil en el propio garaje como en una pantalla grande para estudiar procedimientos más complejos con mayor detalle.</p>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--surf);color:var(--surf-ink);padding:clamp(48px,9vh,110px) clamp(16px,4vw,48px) clamp(56px,10vh,120px)">
+  <div style="width:min(100%,680px);margin:0 auto">
+    <h2 style="margin:0 0 clamp(24px,4vh,44px);font-weight:800;font-size:clamp(34px,7vw,110px);line-height:.9;letter-spacing:-.035em;text-transform:uppercase;text-align:center">Demo</h2>
+    <div data-demo tabindex="0" style="position:relative;outline:none">
+      <figure style="margin:0;overflow:hidden;border-radius:3px;background:#d8d4cc">
+        <img src="assets/honda-esm-demo.gif" alt="Demostración del Manual de Taller Honda Digital" style="display:block;width:100%;height:auto">
+      </figure>
+      <div data-demo-veil style="position:absolute;inset:0;border-radius:3px;background:rgba(234,231,224,.9);opacity:0;transition:opacity .5s ease;pointer-events:none"></div>
+      <div data-demo-actions style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;pointer-events:none">
+        <a href="https://chemarodrigo.github.io/Honda_manual/" target="_blank" rel="noopener" data-btn data-demo-btn style="display:inline-flex;align-items:center;gap:10px;font-family:'Space Mono',monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--surf);background:var(--surf-ink);border:1px solid var(--surf-ink);border-radius:999px;padding:13px 24px;opacity:0;transform:translateY(14px);transition:background .35s ease,color .35s ease,opacity .5s ease,transform .6s cubic-bezier(.16,1,.3,1)">Acceder a la app ↗</a>
+        <a href="https://github.com/chemarodrigo/Honda_manual" target="_blank" rel="noopener" data-btn data-demo-btn style="display:inline-flex;align-items:center;gap:10px;font-family:'Space Mono',monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--surf-ink);background:transparent;border:1px solid rgba(8,8,10,.35);border-radius:999px;padding:13px 24px;opacity:0;transform:translateY(14px);transition:background .35s ease,color .35s ease,opacity .5s ease,transform .6s cubic-bezier(.16,1,.3,1)">Ver código en GitHub ↗</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="position:relative;padding:clamp(56px,11vh,140px) clamp(16px,4vw,48px) clamp(40px,7vh,80px)">
+  <div data-halo-end style="position:absolute;bottom:0;right:0;width:min(46vw,520px);aspect-ratio:1;translate:50% 50%;border-radius:50%;background:radial-gradient(circle at 50% 50%,color-mix(in oklab,var(--acc),transparent 55%),transparent 68%);filter:blur(40px);pointer-events:none"></div>
+
+  <p style="position:relative;margin:0 0 clamp(14px,2.4vh,22px);font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--acc)">Fin del recorrido</p>
+  <a href="index.html" data-next style="position:relative;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:16px;padding:clamp(16px,2.6vh,28px) 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);font-weight:800;font-size:clamp(26px,5vw,72px);line-height:.95;letter-spacing:-.03em;text-transform:uppercase;text-wrap:balance;transition:padding-left .5s cubic-bezier(.16,1,.3,1),color .3s ease">
+    <span>Volver a todos los proyectos</span>
+  </a>
+
+  <div style="position:relative;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;margin-top:clamp(40px,8vh,90px);font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim)">
+    <span>© 2026 José María Rodrigo Cruz</span>
+    <a href="index.html">Volver al portfolio ↗</a>
+  </div>
+</section>
+
+</div>
+<script src="js/honda-esm.js"></script>
+</body>
+</html>
