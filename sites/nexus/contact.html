@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact — Nexus</title>
+    <meta name="description" content="Contact Nexus — get in touch to start your next digital project.">
+    <link rel="icon" href="images/nexus-favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header>
+        <!-- LOGO Y MENÚ DE NAVEGACIÓN -->
+        <div class="container">
+            <a href="index.html" class="logo" aria-label="Nexus Digital Agency home">
+                NEXUS<span>.</span>
+            </a>
+            <nav aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">Portfolio</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html" aria-current="page">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+
+        <!-- HERO -->
+        <section id="hero" class="hero-small">
+            <div class="container">
+                <p class="label">Get In Touch</p>
+                <h1>Contact Us</h1>
+                <p class="hero-description">Ready to start your next project? Fill out the form below and we'll get back to you within 24 hours.</p>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact">
+            <div class="container contact-grid">
+
+                <!-- INFORMACIÓN DE CONTACTO DE NEXUS -->
+                <div class="contact-info">
+                    <h2>Let's Talk</h2>
+                    <p class="contact-intro">Whether you need a new website, a brand refresh, or a full digital strategy — we're here to help. Drop us a line.</p>
+                    <div class="contact-details">
+                        <div class="contact-detail">
+                            <span class="contact-detail-label">Email</span>
+                            <span class="contact-detail-value">hello@nexus.agency</span>
+                        </div>
+                        <div class="contact-detail">
+                            <span class="contact-detail-label">Phone</span>
+                            <span class="contact-detail-value">+1 (212) 555-1234</span>
+                        </div>
+                        <div class="contact-detail">
+                            <span class="contact-detail-label">Address</span>
+                            <span class="contact-detail-value">123 Creative Street<br>New York, NY 10001<br>United States</span>
+                        </div>
+                        <div class="contact-detail">
+                            <span class="contact-detail-label">Hours</span>
+                            <span class="contact-detail-value">Monday – Friday: 9am – 6pm EST<br>Saturday & Sunday: Closed</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FORMULARIO -->
+                <div class="contact-form-card">
+                    <form class="contact-form" action="#" method="post">
+
+                        <!-- FIELDSET 1: YOUR INFORMATION -->
+                        <fieldset>
+                            <legend>Your Information</legend>
+                            <div class="form-row">
+                                <div class="form-field">
+                                    <label for="full-name">Full Name <span class="required">*</span></label>
+                                    <input type="text" id="full-name" name="full-name" placeholder="John Doe">
+                                </div>
+                                <div class="form-field">
+                                    <label for="email">Email Address <span class="required">*</span></label>
+                                    <input type="email" id="email" name="email" placeholder="john@company.com">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-field">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000">
+                                </div>
+                                <div class="form-field">
+                                    <label for="company">Company</label>
+                                    <input type="text" id="company" name="company" placeholder="Your company name">
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <!-- FIELDSET 2: PROJECT DETAILS -->
+                        <fieldset>
+                            <legend>Project Details</legend>
+                            <div class="form-row">
+                                <div class="form-field">
+                                    <label for="service">Service Interest <span class="required">*</span></label>
+                                    <select id="service" name="service">
+                                        <option value="" disabled selected>Select a service</option>
+                                        <option value="web-design">Web Design</option>
+                                        <option value="brand-identity">Brand Identity</option>
+                                        <option value="development">Web Development</option>
+                                        <option value="seo">SEO & Analytics</option>
+                                        <option value="marketing">Digital Marketing</option>
+                                        <option value="full-package">Full Package</option>
+                                    </select>
+                                </div>
+                                <div class="form-field">
+                                    <label for="budget">Budget Range</label>
+                                    <select id="budget" name="budget">
+                                        <option value="" disabled selected>Select range</option>
+                                        <option value="under-5k">Under $5,000</option>
+                                        <option value="5k-10k">$5,000 – $10,000</option>
+                                        <option value="10k-25k">$10,000 – $25,000</option>
+                                        <option value="25k-50k">$25,000 – $50,000</option>
+                                        <option value="50k+">$50,000+</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-field">
+                                <label for="timeline">Timeline <span class="required">*</span></label>
+                                <select id="timeline" name="timeline">
+                                    <option value="" disabled selected>When do you need to start?</option>
+                                    <option value="asap">ASAP (next 2 weeks)</option>
+                                    <option value="next-month">Next month</option>
+                                    <option value="next-quarter">Next quarter</option>
+                                    <option value="flexible">Flexible / Not sure</option>
+                                </select>
+                            </div>
+                            <div class="form-field">
+                                <label for="description">Project Description <span class="required">*</span></label>
+                                <textarea id="description" name="description" placeholder="Tell us about your project — goals, challenges, and what you're looking to achieve..."></textarea>
+                            </div>
+                        </fieldset>
+
+                        <!-- FIELDSET 3: HOW DID YOU FIND US? -->
+                        <fieldset>
+                            <legend>How Did You Find Us?</legend>
+                            <div class="form-radios">
+                                <label class="radio-label">
+                                    <input type="radio" name="source" value="google">
+                                    <span>Google Search</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="source" value="social">
+                                    <span>Social Media</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="source" value="referral">
+                                    <span>Referral</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="source" value="other">
+                                    <span>Other</span>
+                                </label>
+                            </div>
+                            <div class="form-checkboxes">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="newsletter">
+                                    <span>Subscribe to our newsletter for design insights and project updates</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="privacy">
+                                    <span>I agree to the privacy policy and terms of service <span class="required">*</span></span>
+                                </label>
+                            </div>
+                        </fieldset>
+
+                        <!-- BOTÓN Y NOTA INFORMATIVA -->
+                        <button type="button" class="btn-primary">Send Message</button>
+                        <p class="form-note">We'll review your message and get back to you within 24 hours.</p>
+
+                    </form>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <!-- PARTE SUPERIOR DEL FOOTER - DEGRADADO DE "NEXUS" -->
+        <div class="footer-bignexus" aria-hidden="true">
+            <div class="container">
+                <p>NEXUS</p>
+                <p>NEXUS</p>
+                <p>NEXUS</p>
+            </div>
+        </div>
+        <!-- PARTE INTERMEDIA DEL FOOTER - PANEL DE NAVEGACIÓN -->
+        <div class="footer-main">
+            <div class="container footer-grid">
+                <div>
+                    <p class="footer-brand-name">Nexus Digital</p>
+                    <p>Creative digital agency crafting bold brands and high-performance websites. Based in New York, working worldwide.</p>
+                </div>
+                <div>
+                    <p class="footer-pannel-names">Navigation</p>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html">Portfolio</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="footer-pannel-names">Services</p>
+                    <ul>
+                        <li><a href="services.html">Web Design</a></li>
+                        <li><a href="services.html">Brand Strategy</a></li>
+                        <li><a href="services.html">Development</a></li>
+                        <li><a href="services.html">SEO & Marketing</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="footer-pannel-names">Contact</p>
+                    <ul>
+                        <li>hello@nexus.agency</li>
+                        <li>+1 (212) 555-1234</li>
+                        <li>New York, NY 10001</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- PARTE INFERIOR DEL FOOTER -->
+        <div class="footer-bottom">
+            <div class="container">
+                <p>© 2026 Nexus Digital Agency. All rights reserved.</p>
+                <nav aria-label="Social media links">
+                    <a href="#">Twitter</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">LinkedIn</a>
+                    <a href="#">Dribbble</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
