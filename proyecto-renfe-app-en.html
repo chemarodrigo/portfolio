@@ -37,13 +37,11 @@
   <div style="position:relative;display:flex;flex-wrap:wrap;gap:clamp(20px,4vw,64px);align-items:flex-start;margin-top:clamp(24px,4vh,48px);padding-top:22px;border-top:1px solid var(--line);animation:fade 1s .7s both">
     <p style="flex:1 1 420px;margin:0;max-width:62ch;font-size:clamp(15px,1.2vw,19px);line-height:1.55;color:var(--dim);text-wrap:pretty">Improving the user experience of rail travel through user-centred research, wireframing and interactive prototyping</p>
     <div style="flex:0 1 320px;display:flex;flex-wrap:wrap;gap:8px;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.08em;text-transform:uppercase">
-      <span style="border:1px solid var(--line);border-radius:999px;padding:5px 13px">Figma</span>
-      <span style="border:1px solid var(--line);border-radius:999px;padding:5px 13px">UX research</span>
-      <span style="border:1px solid var(--line);border-radius:999px;padding:5px 13px">User experience</span>
-      <span style="border:1px solid var(--line);border-radius:999px;padding:5px 13px">User interface</span>
+      <span style="border:1px solid var(--line);border-radius:999px;padding:5px 13px">Information architecture</span>
+      <span style="border:1px solid var(--line);border-radius:999px;padding:5px 13px">User Flow</span>
       <span style="border:1px solid var(--line);border-radius:999px;padding:5px 13px">Wireframing</span>
-      <span style="border:1px solid var(--line);border-radius:999px;padding:5px 13px">Prototiping</span>
-      <span style="border:1px solid var(--line);border-radius:999px;padding:5px 13px">User testing</span>
+      <span style="border:1px solid var(--line);border-radius:999px;padding:5px 13px">Prototyping</span>
+      <span style="border:1px solid var(--line);border-radius:999px;padding:5px 13px">Design System</span>
     </div>
   </div>
 </header>
@@ -104,65 +102,77 @@
  </div>
 </section>
 
+<section style="padding:clamp(56px,10vh,120px) clamp(16px,4vw,48px);border-top:1px solid var(--line)">
+  <h2 style="margin:0 0 clamp(26px,4.5vh,48px);font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--acc);text-align:center">Information architecture &amp; prototyping</h2>
+
+  <div data-reveal style="transition:opacity 1s cubic-bezier(.16,1,.3,1),transform 1s cubic-bezier(.16,1,.3,1);display:flex;flex-wrap:wrap;gap:clamp(20px,4vw,64px);align-items:flex-start;max-width:1100px;margin:0 auto clamp(36px,6vh,64px)">
+    <p style="flex:1 1 380px;margin:0;font-size:clamp(19px,1.8vw,26px);line-height:1.3;letter-spacing:-.015em;text-wrap:pretty">Before designing any screen, the structure of the app was defined: four fixed tabs — Home, Tickets, Status and Profile — that keep every key task one or two taps away.</p>
+    <div style="flex:1 1 380px;display:flex;flex-direction:column;gap:14px;font-size:15px;line-height:1.65;color:var(--dim);text-wrap:pretty">
+      <p style="margin:0">The sitemap groups 16 screens into no more than three levels of depth. On top of that structure, the flows of the main tasks — buying a ticket, travelling with it, checking disruptions, getting support — were mapped, along with a content inventory for each screen.</p>
+      <p style="margin:0">Then, low-fidelity wireframes set the hierarchy of each screen, and a design system with variables and components shapes the interactive mobile prototype.</p>
+    </div>
+  </div>
+
+  <figure data-reveal style="transition:opacity 1s cubic-bezier(.16,1,.3,1),transform 1s cubic-bezier(.16,1,.3,1);max-width:1100px;margin:0 auto clamp(40px,8vh,88px)">
+    <div style="background:#f4f4f7;border-radius:4px;padding:clamp(16px,3vw,40px);overflow-x:auto">
+      <img src="assets/renfe-sitemap.png" alt="Sitemap of the new Renfe app" loading="lazy" style="display:block;width:100%;min-width:820px;height:auto">
+    </div>
+    <figcaption style="margin-top:14px;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);text-align:center">Sitemap</figcaption>
+  </figure>
+
+  <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:clamp(36px,6vw,72px);max-width:1100px;margin:0 auto">
+      <div data-reveal data-wf-row="mobile" style="transition:opacity 1s cubic-bezier(.16,1,.3,1),transform 1s cubic-bezier(.16,1,.3,1);flex:1 1 400px;max-width:540px">
+        <figure style="margin:0;min-width:0">
+          <img src="assets/renfe-lofi-inicio.png" alt="Low-fidelity wireframe of the home screen" loading="lazy" style="display:block;width:100%;height:auto">
+          <figcaption style="margin-top:4px;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);text-align:center">Low fidelity · Home</figcaption>
+        </figure>
+        <span data-wf-arrow aria-hidden="true">→</span>
+        <figure style="margin:0;min-width:0">
+          <img src="assets/renfe-hifi-inicio.png" alt="High-fidelity design of the home screen" loading="lazy" style="display:block;width:100%;height:auto">
+          <figcaption style="margin-top:4px;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);text-align:center">High fidelity · Home</figcaption>
+        </figure>
+      </div>
+      <div data-reveal data-wf-row="mobile" style="transition:opacity 1s cubic-bezier(.16,1,.3,1),transform 1s cubic-bezier(.16,1,.3,1);flex:1 1 400px;max-width:540px">
+        <figure style="margin:0;min-width:0">
+          <img src="assets/renfe-lofi-billete.png" alt="Low-fidelity wireframe of the ticket with QR code" loading="lazy" style="display:block;width:100%;height:auto">
+          <figcaption style="margin-top:4px;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);text-align:center">Low fidelity · Ticket</figcaption>
+        </figure>
+        <span data-wf-arrow aria-hidden="true">→</span>
+        <figure style="margin:0;min-width:0">
+          <img src="assets/renfe-hifi-billete.png" alt="High-fidelity design of the ticket with QR code" loading="lazy" style="display:block;width:100%;height:auto">
+          <figcaption style="margin-top:4px;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);text-align:center">High fidelity · Ticket</figcaption>
+        </figure>
+      </div>
+  </div>
+
+  <div style="display:flex;justify-content:center;margin-top:clamp(32px,6vh,64px)">
+    <a href="https://www.figma.com/design/D83kKWyuZjIOvE7UkrQ5ks/App-Renfe" target="_blank" rel="noopener" data-btn-light style="display:inline-flex;align-items:center;gap:10px;font-family:'Space Mono',monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--bg);background:var(--ink);border:1px solid var(--ink);border-radius:999px;padding:14px 26px;transition:background .35s ease,color .35s ease,border-color .35s ease">View project in Figma ↗</a>
+  </div>
+</section>
+
 <section style="display:flex;flex-wrap:wrap;gap:clamp(24px,5vw,80px);padding:clamp(48px,8vh,96px) clamp(16px,4vw,48px) clamp(56px,10vh,120px);border-top:1px solid var(--line)">
   <h2 style="flex:0 0 auto;margin:0;position:sticky;top:90px;height:fit-content;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--acc)">Tech stack</h2>
   <div style="flex:1 1 460px;min-width:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:1px;background:var(--line)">
     <div data-reveal style="transition:opacity .9s cubic-bezier(.16,1,.3,1),transform .9s cubic-bezier(.16,1,.3,1);background:var(--bg);padding:clamp(20px,3vh,32px) clamp(18px,2.4vw,30px)">
       <span style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.2em;color:var(--acc)">01</span>
-      <h3 style="margin:12px 0 10px;font-weight:700;font-size:clamp(19px,1.8vw,26px);line-height:1.1;letter-spacing:-.02em">Figma</h3>
-      <p style="margin:0;font-size:14px;line-height:1.6;color:var(--dim);text-wrap:pretty">The main tool for wireframing, interface design and building the high-fidelity interactive prototype with more than 30 connected screens.</p>
+      <h3 style="margin:12px 0 10px;font-weight:700;font-size:clamp(19px,1.8vw,26px);line-height:1.1;letter-spacing:-.02em">Information architecture</h3>
+      <p style="margin:0;font-size:14px;line-height:1.6;color:var(--dim);text-wrap:pretty">A 16-screen sitemap with no more than three levels, organised into four fixed tabs: Home, Tickets, Status and Profile.</p>
     </div>
     <div data-reveal style="transition:opacity .9s cubic-bezier(.16,1,.3,1),transform .9s cubic-bezier(.16,1,.3,1);background:var(--bg);padding:clamp(20px,3vh,32px) clamp(18px,2.4vw,30px)">
       <span style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.2em;color:var(--acc)">02</span>
-      <h3 style="margin:12px 0 10px;font-weight:700;font-size:clamp(19px,1.8vw,26px);line-height:1.1;letter-spacing:-.02em">User Research</h3>
-      <p style="margin:0;font-size:14px;line-height:1.6;color:var(--dim);text-wrap:pretty">Qualitative research methods: semi-structured interviews, empirical immersion, competitive analysis and synthesis through affinity diagrams.</p>
+      <h3 style="margin:12px 0 10px;font-weight:700;font-size:clamp(19px,1.8vw,26px);line-height:1.1;letter-spacing:-.02em">User Flow</h3>
+      <p style="margin:0;font-size:14px;line-height:1.6;color:var(--dim);text-wrap:pretty">Flows for the four key tasks — buying a ticket, travelling with it, checking disruptions and getting support — with their decision points.</p>
     </div>
     <div data-reveal style="transition:opacity .9s cubic-bezier(.16,1,.3,1),transform .9s cubic-bezier(.16,1,.3,1);background:var(--bg);padding:clamp(20px,3vh,32px) clamp(18px,2.4vw,30px)">
       <span style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.2em;color:var(--acc)">03</span>
-      <h3 style="margin:12px 0 10px;font-weight:700;font-size:clamp(19px,1.8vw,26px);line-height:1.1;letter-spacing:-.02em">UX Design</h3>
-      <p style="margin:0;font-size:14px;line-height:1.6;color:var(--dim);text-wrap:pretty">Creation of user personas, user journeys, usage scenarios, information architecture, card sorting and thoroughly documented interaction flows.</p>
+      <h3 style="margin:12px 0 10px;font-weight:700;font-size:clamp(19px,1.8vw,26px);line-height:1.1;letter-spacing:-.02em">Wireframing &amp; Prototyping</h3>
+      <p style="margin:0;font-size:14px;line-height:1.6;color:var(--dim);text-wrap:pretty">Low-fidelity wireframes to set the hierarchy, and an interactive mobile prototype: booking, tickets, network status and profile.</p>
     </div>
     <div data-reveal style="transition:opacity .9s cubic-bezier(.16,1,.3,1),transform .9s cubic-bezier(.16,1,.3,1);background:var(--bg);padding:clamp(20px,3vh,32px) clamp(18px,2.4vw,30px)">
       <span style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.2em;color:var(--acc)">04</span>
-      <h3 style="margin:12px 0 10px;font-weight:700;font-size:clamp(19px,1.8vw,26px);line-height:1.1;letter-spacing:-.02em">Usability Testing</h3>
-      <p style="margin:0;font-size:14px;line-height:1.6;color:var(--dim);text-wrap:pretty">Evaluation with real users through specific tasks, post-test questionnaires and analysis of findings to iterate the design.</p>
+      <h3 style="margin:12px 0 10px;font-weight:700;font-size:clamp(19px,1.8vw,26px);line-height:1.1;letter-spacing:-.02em">Design System</h3>
+      <p style="margin:0;font-size:14px;line-height:1.6;color:var(--dim);text-wrap:pretty">Color, radius and spacing variables, text styles and components with variants in Figma.</p>
     </div>
-  </div>
-</section>
-
-<section style="background:var(--surf);color:var(--surf-ink);padding:clamp(48px,9vh,110px) clamp(16px,4vw,48px) clamp(56px,10vh,120px)">
-  <div style="width:min(100%,1100px);margin:0 auto clamp(24px,4vh,44px)">
-    <h2 style="margin:0;font-weight:800;font-size:clamp(34px,7vw,110px);line-height:.9;letter-spacing:-.035em;text-transform:uppercase;text-align:center">Process</h2>
-  </div>
-  <div data-float-box style="position:relative;width:min(100%,1100px);height:clamp(420px,58vh,620px);margin:0 auto;border:1px solid rgba(8,8,10,.18);border-radius:4px;overflow:hidden">
-    <figure data-float tabindex="0" style="position:absolute;left:0;top:0;margin:0;width:200px;will-change:transform;outline:none;perspective:900px">
-      <div data-float-fold style="overflow:hidden;border-radius:3px;background:#d8d4cc;box-shadow:0 10px 30px rgba(8,8,10,.12);transform-style:preserve-3d;backface-visibility:hidden">
-        <img src="assets/renfe-investigacion.jpg" alt="Analysis of comparable rail transport apps" style="display:block;width:100%;height:auto;filter:grayscale(.45);transition:filter .6s ease" draggable="false">
-      </div>
-      <figcaption data-float-cap style="margin-top:10px;font-family:'Space Mono',monospace;font-size:11px;line-height:1.5;letter-spacing:.08em;text-transform:uppercase;color:var(--surf-ink);opacity:0;transform:translateY(-6px);transition:opacity .45s ease,transform .5s cubic-bezier(.16,1,.3,1)">Analysis of comparable rail transport apps</figcaption>
-    </figure>
-    <figure data-float tabindex="0" style="position:absolute;left:0;top:0;margin:0;width:200px;will-change:transform;outline:none;perspective:900px">
-      <div data-float-fold style="overflow:hidden;border-radius:3px;background:#d8d4cc;box-shadow:0 10px 30px rgba(8,8,10,.12);transform-style:preserve-3d;backface-visibility:hidden">
-        <img src="assets/renfe-diseno.jpg" alt="Purchase flow and the problems identified" style="display:block;width:100%;height:auto;filter:grayscale(.45);transition:filter .6s ease" draggable="false">
-      </div>
-      <figcaption data-float-cap style="margin-top:10px;font-family:'Space Mono',monospace;font-size:11px;line-height:1.5;letter-spacing:.08em;text-transform:uppercase;color:var(--surf-ink);opacity:0;transform:translateY(-6px);transition:opacity .45s ease,transform .5s cubic-bezier(.16,1,.3,1)">Purchase flow and the problems identified</figcaption>
-    </figure>
-    <figure data-float tabindex="0" style="position:absolute;left:0;top:0;margin:0;width:200px;will-change:transform;outline:none;perspective:900px">
-      <div data-float-fold style="overflow:hidden;border-radius:3px;background:#d8d4cc;box-shadow:0 10px 30px rgba(8,8,10,.12);transform-style:preserve-3d;backface-visibility:hidden">
-        <img src="assets/renfe-arquitectura.jpg" alt="Information architecture of the app" style="display:block;width:100%;height:auto;filter:grayscale(.45);transition:filter .6s ease" draggable="false">
-      </div>
-      <figcaption data-float-cap style="margin-top:10px;font-family:'Space Mono',monospace;font-size:11px;line-height:1.5;letter-spacing:.08em;text-transform:uppercase;color:var(--surf-ink);opacity:0;transform:translateY(-6px);transition:opacity .45s ease,transform .5s cubic-bezier(.16,1,.3,1)">Information architecture of the app</figcaption>
-    </figure>
-    <figure data-float tabindex="0" style="position:absolute;left:0;top:0;margin:0;width:200px;will-change:transform;outline:none;perspective:900px">
-      <div data-float-fold style="overflow:hidden;border-radius:3px;background:#d8d4cc;box-shadow:0 10px 30px rgba(8,8,10,.12);transform-style:preserve-3d;backface-visibility:hidden">
-        <img src="assets/renfe-flujos.jpg" alt="Interaction flows of the app" style="display:block;width:100%;height:auto;filter:grayscale(.45);transition:filter .6s ease" draggable="false">
-      </div>
-      <figcaption data-float-cap style="margin-top:10px;font-family:'Space Mono',monospace;font-size:11px;line-height:1.5;letter-spacing:.08em;text-transform:uppercase;color:var(--surf-ink);opacity:0;transform:translateY(-6px);transition:opacity .45s ease,transform .5s cubic-bezier(.16,1,.3,1)">Interaction flows of the app</figcaption>
-    </figure>
-  </div>
-
-  <div style="display:flex;justify-content:center;margin-top:clamp(28px,5vh,56px)">
-    <a href="https://www.figma.com/design/D83kKWyuZjIOvE7UkrQ5ks/App-Renfe?node-id=0-1&m=dev&t=vjRm3pRcOm03yjb5-1" target="_blank" rel="noopener" data-btn style="display:inline-flex;align-items:center;gap:10px;font-family:'Space Mono',monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--surf);background:var(--surf-ink);border:1px solid var(--surf-ink);border-radius:999px;padding:14px 26px;transition:background .35s ease,color .35s ease">View interactive prototype ↗</a>
   </div>
 </section>
 
