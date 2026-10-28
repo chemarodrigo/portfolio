@@ -37,13 +37,11 @@
   <div style="position:relative;display:flex;flex-wrap:wrap;gap:clamp(20px,4vw,64px);align-items:flex-start;margin-top:clamp(24px,4vh,48px);padding-top:22px;border-top:1px solid var(--line);animation:fade 1s .7s both">
     <p style="flex:1 1 420px;margin:0;max-width:62ch;font-size:clamp(15px,1.2vw,19px);line-height:1.55;color:var(--dim);text-wrap:pretty">Transformación digital de la plataforma institucional del Ayuntamiento de Castellón mediante un diseño Mobile-First que prioriza la accesibilidad y la experiencia ciudadana</p>
     <div style="flex:0 1 320px;display:flex;flex-wrap:wrap;gap:8px;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.08em;text-transform:uppercase">
-      <span style="border:1px solid var(--line);border-radius:999px;padding:5px 13px">Figma</span>
-      <span style="border:1px solid var(--line);border-radius:999px;padding:5px 13px">UX research</span>
-      <span style="border:1px solid var(--line);border-radius:999px;padding:5px 13px">User experience</span>
-      <span style="border:1px solid var(--line);border-radius:999px;padding:5px 13px">User interface</span>
+      <span style="border:1px solid var(--line);border-radius:999px;padding:5px 13px">Arquitectura de información</span>
+      <span style="border:1px solid var(--line);border-radius:999px;padding:5px 13px">User Flow</span>
       <span style="border:1px solid var(--line);border-radius:999px;padding:5px 13px">Wireframing</span>
-      <span style="border:1px solid var(--line);border-radius:999px;padding:5px 13px">Prototiping</span>
-      <span style="border:1px solid var(--line);border-radius:999px;padding:5px 13px">Mobile-First</span>
+      <span style="border:1px solid var(--line);border-radius:999px;padding:5px 13px">Prototyping</span>
+      <span style="border:1px solid var(--line);border-radius:999px;padding:5px 13px">Design System</span>
     </div>
   </div>
 </header>
@@ -104,60 +102,84 @@
  </div>
 </section>
 
+<section style="padding:clamp(56px,10vh,120px) clamp(16px,4vw,48px);border-top:1px solid var(--line)">
+  <h2 style="margin:0 0 clamp(26px,4.5vh,48px);font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--acc);text-align:center">Arquitectura de información y prototipado</h2>
+
+  <div data-reveal style="transition:opacity 1s cubic-bezier(.16,1,.3,1),transform 1s cubic-bezier(.16,1,.3,1);display:flex;flex-wrap:wrap;gap:clamp(20px,4vw,64px);align-items:flex-start;max-width:1100px;margin:0 auto clamp(36px,6vh,64px)">
+    <p style="flex:1 1 380px;margin:0;font-size:clamp(19px,1.8vw,26px);line-height:1.3;letter-spacing:-.015em;text-wrap:pretty">Antes de rediseñar las pantallas, se reorganizó la web en una portada y tres grandes áreas: Ayuntamiento, La ciudad y Atención ciudadana. Cada una con su propio color para que el ciudadano sepa siempre en qué sección está.</p>
+    <div style="flex:1 1 380px;display:flex;flex-direction:column;gap:14px;font-size:15px;line-height:1.65;color:var(--dim);text-wrap:pretty">
+      <p style="margin:0">Los cuatro colores originales se conservaron y se ampliaron con un tono claro y otro intenso para garantizar el contraste. El mapa del sitio ordena todo el contenido en un máximo de tres niveles, y sobre él se trazaron los flujos de las tareas más habituales: pedir cita previa, saber si un trámite necesita cita, descubrir la ciudad, contactar con el Ayuntamiento y consultar la actividad municipal.</p>
+      <p style="margin:0">Después, los wireframes de baja fidelidad fijaron la jerarquía de cada página, y un design system con variables y componentes con variantes dio forma a la alta fidelidad y a los prototipos interactivos en escritorio y móvil.</p>
+    </div>
+  </div>
+
+  <figure data-reveal style="transition:opacity 1s cubic-bezier(.16,1,.3,1),transform 1s cubic-bezier(.16,1,.3,1);max-width:1100px;margin:0 auto clamp(28px,5vh,56px)">
+    <div style="background:#f4f4f7;border-radius:4px;padding:clamp(16px,3vw,40px);overflow-x:auto">
+      <img src="assets/ayto-color.png" alt="Sistema de color por área de la nueva web del Ayuntamiento de Castellón" loading="lazy" style="display:block;width:100%;min-width:820px;height:auto">
+    </div>
+    <figcaption style="margin-top:14px;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);text-align:center">Sistema de color por área</figcaption>
+  </figure>
+
+  <figure data-reveal style="transition:opacity 1s cubic-bezier(.16,1,.3,1),transform 1s cubic-bezier(.16,1,.3,1);max-width:1100px;margin:0 auto clamp(40px,8vh,88px)">
+    <div style="background:#f4f4f7;border-radius:4px;padding:clamp(16px,3vw,40px);overflow-x:auto">
+      <img src="assets/ayto-sitemap.png" alt="Mapa del sitio de la nueva web del Ayuntamiento de Castellón" loading="lazy" style="display:block;width:100%;min-width:820px;height:auto">
+    </div>
+    <figcaption style="margin-top:14px;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);text-align:center">Mapa del sitio</figcaption>
+  </figure>
+
+  <div style="display:flex;flex-direction:column;gap:clamp(36px,7vh,80px);max-width:1100px;margin:0 auto">
+    <div data-reveal data-wf-row style="transition:opacity 1s cubic-bezier(.16,1,.3,1),transform 1s cubic-bezier(.16,1,.3,1)">
+      <figure style="margin:0;min-width:0">
+        <img src="assets/ayto-lofi-desktop.webp" alt="Wireframe de baja fidelidad de la página de inicio en escritorio" loading="lazy" style="display:block;width:100%;height:auto">
+        <figcaption style="margin-top:4px;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);text-align:center">Baja fidelidad · Desktop</figcaption>
+      </figure>
+      <span data-wf-arrow aria-hidden="true">→</span>
+      <figure style="margin:0;min-width:0">
+        <img src="assets/ayto-hifi-desktop.webp" alt="Diseño de alta fidelidad de la página de inicio en escritorio" loading="lazy" style="display:block;width:100%;height:auto">
+        <figcaption style="margin-top:4px;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);text-align:center">Alta fidelidad · Desktop</figcaption>
+      </figure>
+    </div>
+    <div data-reveal data-wf-row="mobile" style="transition:opacity 1s cubic-bezier(.16,1,.3,1),transform 1s cubic-bezier(.16,1,.3,1);width:min(100%,640px);margin:0 auto">
+      <figure style="margin:0;min-width:0">
+        <img src="assets/ayto-lofi-mobile.webp" alt="Wireframe de baja fidelidad de la página La ciudad en móvil" loading="lazy" style="display:block;width:100%;height:auto">
+        <figcaption style="margin-top:4px;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);text-align:center">Baja fidelidad · Móvil</figcaption>
+      </figure>
+      <span data-wf-arrow aria-hidden="true">→</span>
+      <figure style="margin:0;min-width:0">
+        <img src="assets/ayto-hifi-mobile.webp" alt="Diseño de alta fidelidad de la página La ciudad en móvil" loading="lazy" style="display:block;width:100%;height:auto">
+        <figcaption style="margin-top:4px;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);text-align:center">Alta fidelidad · Móvil</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <div style="display:flex;justify-content:center;margin-top:clamp(32px,6vh,64px)">
+    <a href="https://www.figma.com/design/hvFYlM7bibes4zSMhX2j7j/App_Ayto_Castellon" target="_blank" rel="noopener" data-btn-light style="display:inline-flex;align-items:center;gap:10px;font-family:'Space Mono',monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--bg);background:var(--ink);border:1px solid var(--ink);border-radius:999px;padding:14px 26px;transition:background .35s ease,color .35s ease,border-color .35s ease">Ver proyecto en Figma ↗</a>
+  </div>
+</section>
+
 <section style="display:flex;flex-wrap:wrap;gap:clamp(24px,5vw,80px);padding:clamp(48px,8vh,96px) clamp(16px,4vw,48px) clamp(56px,10vh,120px);border-top:1px solid var(--line)">
   <h2 style="flex:0 0 auto;margin:0;position:sticky;top:90px;height:fit-content;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--acc)">Stack técnico</h2>
   <div style="flex:1 1 460px;min-width:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:1px;background:var(--line)">
     <div data-reveal style="transition:opacity .9s cubic-bezier(.16,1,.3,1),transform .9s cubic-bezier(.16,1,.3,1);background:var(--bg);padding:clamp(20px,3vh,32px) clamp(18px,2.4vw,30px)">
       <span style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.2em;color:var(--acc)">01</span>
-      <h3 style="margin:12px 0 10px;font-weight:700;font-size:clamp(19px,1.8vw,26px);line-height:1.1;letter-spacing:-.02em">Figma</h3>
-      <p style="margin:0;font-size:14px;line-height:1.6;color:var(--dim);text-wrap:pretty">Herramienta principal para el diseño completo: prototipo móvil interactivo, prototipo escritorio interactivo, guía de estilo y mockups. Permitió visualizar y testear rápidamente diferentes versiones del diseño.</p>
+      <h3 style="margin:12px 0 10px;font-weight:700;font-size:clamp(19px,1.8vw,26px);line-height:1.1;letter-spacing:-.02em">Arquitectura de información</h3>
+      <p style="margin:0;font-size:14px;line-height:1.6;color:var(--dim);text-wrap:pretty">Mapa del sitio con la portada y tres áreas (Ayuntamiento, La ciudad y Atención ciudadana) en un máximo de tres niveles, con un color propio por área que orienta al ciudadano.</p>
     </div>
     <div data-reveal style="transition:opacity .9s cubic-bezier(.16,1,.3,1),transform .9s cubic-bezier(.16,1,.3,1);background:var(--bg);padding:clamp(20px,3vh,32px) clamp(18px,2.4vw,30px)">
       <span style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.2em;color:var(--acc)">02</span>
-      <h3 style="margin:12px 0 10px;font-weight:700;font-size:clamp(19px,1.8vw,26px);line-height:1.1;letter-spacing:-.02em">Mobile-First Design</h3>
-      <p style="margin:0;font-size:14px;line-height:1.6;color:var(--dim);text-wrap:pretty">Metodología aplicada desde el inicio para garantizar que la experiencia en dispositivos móviles sea prioritaria y óptima, adaptándose progresivamente a versiones de escritorio.</p>
+      <h3 style="margin:12px 0 10px;font-weight:700;font-size:clamp(19px,1.8vw,26px);line-height:1.1;letter-spacing:-.02em">User Flow</h3>
+      <p style="margin:0;font-size:14px;line-height:1.6;color:var(--dim);text-wrap:pretty">Flujos de las cinco tareas más habituales: pedir cita previa, saber si un trámite necesita cita, descubrir la ciudad, contactar y consultar la actividad municipal, con sus puntos de decisión.</p>
     </div>
     <div data-reveal style="transition:opacity .9s cubic-bezier(.16,1,.3,1),transform .9s cubic-bezier(.16,1,.3,1);background:var(--bg);padding:clamp(20px,3vh,32px) clamp(18px,2.4vw,30px)">
       <span style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.2em;color:var(--acc)">03</span>
-      <h3 style="margin:12px 0 10px;font-weight:700;font-size:clamp(19px,1.8vw,26px);line-height:1.1;letter-spacing:-.02em">Benchmarking</h3>
-      <p style="margin:0;font-size:14px;line-height:1.6;color:var(--dim);text-wrap:pretty">Análisis comparativo de 5 webs gubernamentales internacionales evaluando estructura de información, diseño mobile-first, atractivo visual y accesibilidad para identificar mejores prácticas.</p>
+      <h3 style="margin:12px 0 10px;font-weight:700;font-size:clamp(19px,1.8vw,26px);line-height:1.1;letter-spacing:-.02em">Wireframing &amp; Prototyping</h3>
+      <p style="margin:0;font-size:14px;line-height:1.6;color:var(--dim);text-wrap:pretty">Wireframes de baja fidelidad para fijar la jerarquía y prototipos interactivos en escritorio y móvil: menús desplegables, carrusel de noticias, aviso de cookies...</p>
     </div>
     <div data-reveal style="transition:opacity .9s cubic-bezier(.16,1,.3,1),transform .9s cubic-bezier(.16,1,.3,1);background:var(--bg);padding:clamp(20px,3vh,32px) clamp(18px,2.4vw,30px)">
       <span style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.2em;color:var(--acc)">04</span>
       <h3 style="margin:12px 0 10px;font-weight:700;font-size:clamp(19px,1.8vw,26px);line-height:1.1;letter-spacing:-.02em">Design System</h3>
-      <p style="margin:0;font-size:14px;line-height:1.6;color:var(--dim);text-wrap:pretty">Creación de sistema de diseño con paleta de 4 colores, 4 estilos tipográficos, retículas de 4 y 12 columnas, iconografía cohesiva y componentes reutilizables (menús, modales, banners, formularios).</p>
+      <p style="margin:0;font-size:14px;line-height:1.6;color:var(--dim);text-wrap:pretty">Variables de color por área, radio y espaciado además de estilos tipográficos y componentes con variantes en Figma.</p>
     </div>
-  </div>
-</section>
-
-<section style="background:var(--surf);color:var(--surf-ink);padding:clamp(48px,9vh,110px) clamp(16px,4vw,48px) clamp(56px,10vh,120px)">
-  <div style="width:min(100%,1100px);margin:0 auto clamp(24px,4vh,44px)">
-    <h2 style="margin:0;font-weight:800;font-size:clamp(34px,7vw,110px);line-height:.9;letter-spacing:-.035em;text-transform:uppercase;text-align:center">Proceso</h2>
-  </div>
-  <div data-float-box style="position:relative;width:min(100%,1100px);height:clamp(420px,58vh,620px);margin:0 auto;border:1px solid rgba(8,8,10,.18);border-radius:4px;overflow:hidden">
-    <figure data-float tabindex="0" style="position:absolute;left:0;top:0;margin:0;width:200px;will-change:transform;outline:none;perspective:900px">
-      <div data-float-fold style="overflow:hidden;border-radius:3px;background:#d8d4cc;box-shadow:0 10px 30px rgba(8,8,10,.12);transform-style:preserve-3d;backface-visibility:hidden">
-        <img src="assets/ayto-benchmarking.jpg" alt="Benchmarking de sitios web gubernamentales internacionales" style="display:block;width:100%;height:auto;filter:grayscale(.45);transition:filter .6s ease" draggable="false">
-      </div>
-      <figcaption data-float-cap style="margin-top:10px;font-family:'Space Mono',monospace;font-size:11px;line-height:1.5;letter-spacing:.08em;text-transform:uppercase;color:var(--surf-ink);opacity:0;transform:translateY(-6px);transition:opacity .45s ease,transform .5s cubic-bezier(.16,1,.3,1)">Benchmarking de sitios web gubernamentales internacionales</figcaption>
-    </figure>
-    <figure data-float tabindex="0" style="position:absolute;left:0;top:0;margin:0;width:200px;will-change:transform;outline:none;perspective:900px">
-      <div data-float-fold style="overflow:hidden;border-radius:3px;background:#d8d4cc;box-shadow:0 10px 30px rgba(8,8,10,.12);transform-style:preserve-3d;backface-visibility:hidden">
-        <img src="assets/ayto-decisiones-diseno.jpg" alt="Paleta de color, tipografía, retículas y elementos de interacción del diseño" style="display:block;width:100%;height:auto;filter:grayscale(.45);transition:filter .6s ease" draggable="false">
-      </div>
-      <figcaption data-float-cap style="margin-top:10px;font-family:'Space Mono',monospace;font-size:11px;line-height:1.5;letter-spacing:.08em;text-transform:uppercase;color:var(--surf-ink);opacity:0;transform:translateY(-6px);transition:opacity .45s ease,transform .5s cubic-bezier(.16,1,.3,1)">Paleta de color, tipografía, retículas y elementos de interacción del diseño</figcaption>
-    </figure>
-    <figure data-float tabindex="0" style="position:absolute;left:0;top:0;margin:0;width:200px;will-change:transform;outline:none;perspective:900px">
-      <div data-float-fold style="overflow:hidden;border-radius:3px;background:#d8d4cc;box-shadow:0 10px 30px rgba(8,8,10,.12);transform-style:preserve-3d;backface-visibility:hidden">
-        <img src="assets/ayto-interaccion-mockups.jpg" alt="Elementos de interacción y mockups en versión móvil y escritorio" style="display:block;width:100%;height:auto;filter:grayscale(.45);transition:filter .6s ease" draggable="false">
-      </div>
-      <figcaption data-float-cap style="margin-top:10px;font-family:'Space Mono',monospace;font-size:11px;line-height:1.5;letter-spacing:.08em;text-transform:uppercase;color:var(--surf-ink);opacity:0;transform:translateY(-6px);transition:opacity .45s ease,transform .5s cubic-bezier(.16,1,.3,1)">Elementos de interacción y mockups en versión móvil y escritorio</figcaption>
-    </figure>
-  </div>
-
-  <div style="display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:clamp(28px,5vh,56px)">
-    <a href="https://www.figma.com/design/T0guSWRX2R0iCWY7fTW9i5/Prototipo-interactivo--m%C3%B3vil-?node-id=0-1&m=dev&t=s7u2dRP0NrsCwbv0-1" target="_blank" rel="noopener" data-btn style="display:inline-flex;align-items:center;gap:10px;font-family:'Space Mono',monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--surf);background:var(--surf-ink);border:1px solid var(--surf-ink);border-radius:999px;padding:14px 26px;transition:background .35s ease,color .35s ease">Ver prototipo móvil ↗</a>
-    <a href="https://www.figma.com/design/hvFYlM7bibes4zSMhX2j7j/Prototipo-interactivo--escritorio-?m=dev&t=s7u2dRP0NrsCwbv0-1" rel="noopener" data-btn style="display:inline-flex;align-items:center;gap:10px;font-family:'Space Mono',monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--surf-ink);background:transparent;border:1px solid rgba(8,8,10,.35);border-radius:999px;padding:14px 26px;transition:background .35s ease,color .35s ease">Ver prototipo escritorio ↗</a>
   </div>
 </section>
 
