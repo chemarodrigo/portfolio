@@ -4,10 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Global Map of EV Charging Stations | José María Rodrigo Cruz</title>
-<meta name="description" content="A data visualisation of charging stations built with Leaflet and GeoJSON.">
+<meta name="description" content="Interactive map of electric vehicle charging points with Open Charge Map data, filters and route planning.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Space+Mono:wght@400;700&family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -35,13 +35,14 @@
   </div>
 
   <div style="position:relative;display:flex;flex-wrap:wrap;gap:clamp(20px,4vw,64px);align-items:flex-start;margin-top:clamp(24px,4vh,48px);padding-top:22px;border-top:1px solid var(--line);animation:fade 1s .7s both">
-    <p style="flex:1 1 420px;margin:0;max-width:62ch;font-size:clamp(15px,1.2vw,19px);line-height:1.55;color:var(--dim);text-wrap:pretty">A data visualisation showing an interactive map with route planning for electric vehicles and 10,000 charging points spread across the world.</p>
+    <p style="flex:1 1 420px;margin:0;max-width:62ch;font-size:clamp(15px,1.2vw,19px);line-height:1.55;color:var(--dim);text-wrap:pretty">A data visualisation with an interactive map of electric vehicle charging points. Using real-time data, it lets you filter by country and charging speed, check each station, plan a route and export it to Google Maps.</p>
     <div style="flex:0 1 320px;display:flex;flex-wrap:wrap;gap:8px;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.08em;text-transform:uppercase">
-      <span style="border:1px solid var(--line);border-radius:999px;padding:5px 13px">HTML5</span>
+      <span style="border:1px solid var(--line);border-radius:999px;padding:5px 13px">HTML5/CSS</span>
       <span style="border:1px solid var(--line);border-radius:999px;padding:5px 13px">JavaScript</span>
+      <span style="border:1px solid var(--line);border-radius:999px;padding:5px 13px">Wireframing</span>
+      <span style="border:1px solid var(--line);border-radius:999px;padding:5px 13px">Prototyping</span>
       <span style="border:1px solid var(--line);border-radius:999px;padding:5px 13px">Data Viz</span>
-      <span style="border:1px solid var(--line);border-radius:999px;padding:5px 13px">GeoJson</span>
-      <span style="border:1px solid var(--line);border-radius:999px;padding:5px 13px">Leaflet.js</span>
+      <span style="border:1px solid var(--line);border-radius:999px;padding:5px 13px">API</span>
     </div>
   </div>
 </header>
@@ -102,28 +103,121 @@
  </div>
 </section>
 
-<section style="display:flex;flex-wrap:wrap;gap:clamp(24px,5vw,80px);padding:clamp(48px,8vh,96px) clamp(16px,4vw,48px) clamp(56px,10vh,120px);border-top:1px solid var(--line)">
+<section style="padding:clamp(56px,10vh,120px) clamp(16px,4vw,48px);border-top:1px solid var(--line)">
+  <h2 style="margin:0 0 clamp(26px,4.5vh,48px);font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--acc);text-align:center">Wireframing &amp; prototyping</h2>
+
+  <div data-reveal style="transition:opacity 1s cubic-bezier(.16,1,.3,1),transform 1s cubic-bezier(.16,1,.3,1);display:flex;flex-wrap:wrap;gap:clamp(20px,4vw,64px);align-items:flex-start;max-width:1100px;margin:0 auto clamp(36px,6vh,64px)">
+    <p style="flex:1 1 380px;margin:0;font-size:clamp(19px,1.8vw,26px);line-height:1.3;letter-spacing:-.015em;text-wrap:pretty">The whole app journey was planned and designed in Figma — from information architecture to interactive prototype.</p>
+    <div style="flex:1 1 380px;display:flex;flex-direction:column;gap:14px;font-family:'Space Grotesk',sans-serif;font-size:15px;line-height:1.65;color:var(--dim);text-wrap:pretty">
+      <p style="margin:0">The process started with a map of a single screen with layers that open on top of it, and the main user flows: finding a station, planning and exporting a route, saving it and setting up a profile. On that basis, low-fidelity wireframes were drawn and a design system was built with color, spacing and radius variables, text styles and components with variants.</p>
+      <p style="margin:0">Finally, the prototype connects the filters, popups, creating and editing the route, the history and the vehicle profile, including the browser alerts. The result is a responsive design for desktop and mobile.</p>
+    </div>
+  </div>
+
+  <div style="display:flex;flex-direction:column;gap:clamp(36px,7vh,80px);max-width:1100px;margin:0 auto">
+    <div data-reveal data-wf-row style="transition:opacity 1s cubic-bezier(.16,1,.3,1),transform 1s cubic-bezier(.16,1,.3,1)">
+      <figure style="margin:0;min-width:0">
+        <img src="assets/ev-lofi-desktop.webp" alt="Low-fidelity wireframe of the map with the My Route panel on desktop" loading="lazy" style="display:block;width:100%;height:auto">
+        <figcaption style="margin-top:4px;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);text-align:center">Low fidelity · Desktop</figcaption>
+      </figure>
+      <span data-wf-arrow aria-hidden="true">→</span>
+      <figure style="margin:0;min-width:0">
+        <img src="assets/ev-hifi-desktop.webp" alt="High-fidelity design of the map with the My Route panel on desktop" loading="lazy" style="display:block;width:100%;height:auto">
+        <figcaption style="margin-top:4px;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);text-align:center">High fidelity · Desktop</figcaption>
+      </figure>
+    </div>
+    <div data-reveal data-wf-row="mobile" style="transition:opacity 1s cubic-bezier(.16,1,.3,1),transform 1s cubic-bezier(.16,1,.3,1);width:min(100%,640px);margin:0 auto">
+      <figure style="margin:0;min-width:0">
+        <img src="assets/ev-lofi-mobile.webp" alt="Low-fidelity wireframe of a station popup on mobile" loading="lazy" style="display:block;width:100%;height:auto">
+        <figcaption style="margin-top:4px;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);text-align:center">Low fidelity · Mobile</figcaption>
+      </figure>
+      <span data-wf-arrow aria-hidden="true">→</span>
+      <figure style="margin:0;min-width:0">
+        <img src="assets/ev-hifi-mobile.webp" alt="High-fidelity design of a station popup on mobile" loading="lazy" style="display:block;width:100%;height:auto">
+        <figcaption style="margin-top:4px;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);text-align:center">High fidelity · Mobile</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <div style="display:flex;justify-content:center;margin-top:clamp(32px,6vh,64px)">
+    <a href="https://www.figma.com/design/3MnBaMld3RiE7yuksxp6Bi/TFG" target="_blank" rel="noopener" data-btn-light style="display:inline-flex;align-items:center;gap:10px;font-family:'Space Mono',monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--bg);background:var(--ink);border:1px solid var(--ink);border-radius:999px;padding:14px 26px;transition:background .35s ease,color .35s ease,border-color .35s ease">View project in Figma ↗</a>
+  </div>
+</section>
+
+<section style="padding:clamp(56px,10vh,120px) clamp(16px,4vw,48px);border-top:1px solid var(--line)">
+  <h2 style="margin:0 0 clamp(26px,4.5vh,48px);font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--acc);text-align:center">Page anatomy</h2>
+
+  <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));justify-items:center;gap:clamp(16px,2.5vw,28px);max-width:1100px;margin:0 auto">
+
+    <div data-reveal data-anat tabindex="0" style="transition:opacity 1s cubic-bezier(.16,1,.3,1),transform 1s cubic-bezier(.16,1,.3,1),border-color .5s ease;border:1px solid var(--line);border-radius:4px;padding:clamp(18px,3vh,28px);outline:none;width:100%;max-width:520px">
+      <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:6px">
+        <span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--dim)">Map</span>
+        <span data-anat-code style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.12em;color:var(--dim);transition:color .4s ease">Leaflet + CARTO</span>
+      </div>
+      <h3 style="margin:0 0 16px;font-weight:700;font-size:clamp(19px,2vw,28px);letter-spacing:-.02em">Markers &amp; clusters</h3>
+      <div data-anat-cell style="position:relative;height:120px;border:1px dashed var(--line);border-radius:2px;transition:border-color .5s ease,background .5s ease"><span style="position:absolute;left:14%;top:22%;width:22px;height:22px;border-radius:50%;background:var(--acc);display:grid;place-items:center;font-family:'Space Mono',monospace;font-size:8px;color:#0a0a0a">24</span><span style="position:absolute;left:46%;top:48%;width:26px;height:26px;border-radius:50%;background:var(--acc);display:grid;place-items:center;font-family:'Space Mono',monospace;font-size:8px;color:#0a0a0a">91</span><span style="position:absolute;left:72%;top:18%;width:18px;height:18px;border-radius:50%;background:var(--acc);display:grid;place-items:center;font-family:'Space Mono',monospace;font-size:8px;color:#0a0a0a">8</span><span style="position:absolute;left:30%;top:68%;width:8px;height:8px;border-radius:50%;background:rgba(237,236,234,.4);display:grid;place-items:center;font-family:'Space Mono',monospace;font-size:8px;color:#0a0a0a"></span><span style="position:absolute;left:62%;top:74%;width:8px;height:8px;border-radius:50%;background:rgba(237,236,234,.4);display:grid;place-items:center;font-family:'Space Mono',monospace;font-size:8px;color:#0a0a0a"></span><span style="position:absolute;left:84%;top:58%;width:8px;height:8px;border-radius:50%;background:rgba(237,236,234,.4);display:grid;place-items:center;font-family:'Space Mono',monospace;font-size:8px;color:#0a0a0a"></span><span style="position:absolute;left:22%;top:46%;width:8px;height:8px;border-radius:50%;background:rgba(237,236,234,.4);display:grid;place-items:center;font-family:'Space Mono',monospace;font-size:8px;color:#0a0a0a"></span><span style="position:absolute;left:88%;top:30%;width:8px;height:8px;border-radius:50%;background:rgba(237,236,234,.4);display:grid;place-items:center;font-family:'Space Mono',monospace;font-size:8px;color:#0a0a0a"></span></div>
+      <p style="margin:16px 0 0;font-size:14px;line-height:1.6;color:var(--dim);text-wrap:pretty">Stations are grouped into clusters and, as you zoom in, split into individual markers on the base map.</p>
+    </div>
+
+
+
+    <div data-reveal data-anat tabindex="0" style="transition:opacity 1s cubic-bezier(.16,1,.3,1),transform 1s cubic-bezier(.16,1,.3,1),border-color .5s ease;border:1px solid var(--line);border-radius:4px;padding:clamp(18px,3vh,28px);outline:none;width:100%;max-width:520px">
+      <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:6px">
+        <span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--dim)">Panel</span>
+        <span data-anat-code style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.12em;color:var(--dim);transition:color .4s ease"></span>
+      </div>
+      <h3 style="margin:0 0 16px;font-weight:700;font-size:clamp(19px,2vw,28px);letter-spacing:-.02em">My Route</h3>
+      <div style="display:grid;grid-template-columns:1.3fr 1fr;gap:8px;height:120px"><div data-anat-cell style="position:relative;border:1px dashed var(--line);border-radius:2px;transition:border-color .5s ease,background .5s ease;overflow:hidden"><svg viewBox="0 0 100 100" preserveAspectRatio="none" style="position:absolute;inset:0;width:100%;height:100%"><polyline points="62,90 48,52 74,16" fill="none" stroke="#F44336" stroke-width="2" stroke-dasharray="5 5" vector-effect="non-scaling-stroke" opacity=".8"/></svg></div><div data-anat-cell style="border:1px dashed var(--line);border-radius:2px;transition:border-color .5s ease,background .5s ease;padding:8px;display:flex;flex-direction:column;gap:5px"><div style="display:flex;align-items:center;gap:6px;padding:4px 6px;background:rgba(237,236,234,.06);border-radius:2px"><span style="width:10px;height:10px;border-radius:50%;background:#F44336;opacity:.85"></span><span style="display:block;height:4px;width:60%;background:rgba(237,236,234,0.25);border-radius:2px"></span><span style="margin-left:auto;font-family:'Space Mono',monospace;font-size:9px;color:var(--dim)">×</span></div><div style="display:flex;align-items:center;gap:6px;padding:4px 6px;background:rgba(237,236,234,.06);border-radius:2px"><span style="width:10px;height:10px;border-radius:50%;background:#F44336;opacity:.85"></span><span style="display:block;height:4px;width:60%;background:rgba(237,236,234,0.25);border-radius:2px"></span><span style="margin-left:auto;font-family:'Space Mono',monospace;font-size:9px;color:var(--dim)">×</span></div><div style="display:flex;align-items:center;gap:6px;padding:4px 6px;background:rgba(237,236,234,.06);border-radius:2px"><span style="width:10px;height:10px;border-radius:50%;background:#F44336;opacity:.85"></span><span style="display:block;height:4px;width:60%;background:rgba(237,236,234,0.25);border-radius:2px"></span><span style="margin-left:auto;font-family:'Space Mono',monospace;font-size:9px;color:var(--dim)">×</span></div><span style="flex:1"></span><span style="display:block;height:7px;background:var(--acc);border-radius:2px;opacity:.8"></span><span style="display:block;height:7px;background:var(--acc);border-radius:2px;opacity:.8"></span><span style="display:block;height:7px;background:var(--acc);border-radius:2px;opacity:.8"></span></div></div>
+      <p style="margin:16px 0 0;font-size:14px;line-height:1.6;color:var(--dim);text-wrap:pretty">Numbered stops that can be removed one by one. The route is drawn on the map and can be exported to Google Maps, saved or deleted.</p>
+    </div>
+
+    <div data-reveal data-anat tabindex="0" style="transition:opacity 1s cubic-bezier(.16,1,.3,1),transform 1s cubic-bezier(.16,1,.3,1),border-color .5s ease;border:1px solid var(--line);border-radius:4px;padding:clamp(18px,3vh,28px);outline:none;width:100%;max-width:520px">
+      <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:6px">
+        <span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--dim)">Modal</span>
+        <span data-anat-code style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.12em;color:var(--dim);transition:color .4s ease">scrim + blur</span>
+      </div>
+      <h3 style="margin:0 0 16px;font-weight:700;font-size:clamp(19px,2vw,28px);letter-spacing:-.02em">Filters</h3>
+      <div data-anat-cell style="height:120px;border:1px dashed var(--line);border-radius:2px;transition:border-color .5s ease,background .5s ease;padding:10px 12px;display:flex;flex-direction:column;gap:6px"><span style="display:block;height:13px;border:1px solid var(--line);border-radius:2px"></span><div style="display:flex;align-items:center;gap:6px"><span style="width:8px;height:8px;border:1px solid rgba(237,236,234,.45);border-radius:1px"></span><span style="display:block;height:4px;width:40%;background:rgba(237,236,234,0.2);border-radius:2px"></span></div><div style="display:flex;align-items:center;gap:6px"><span style="width:8px;height:8px;border:1px solid rgba(237,236,234,.45);border-radius:1px"></span><span style="display:block;height:4px;width:55%;background:rgba(237,236,234,0.2);border-radius:2px"></span></div><div style="display:flex;align-items:center;gap:6px"><span style="width:8px;height:8px;border:1px solid rgba(237,236,234,.45);border-radius:1px;background:var(--acc);border-color:var(--acc)"></span><span style="display:block;height:4px;width:45%;background:rgba(237,236,234,0.2);border-radius:2px"></span></div><div style="display:flex;align-items:center;gap:6px"><span style="width:8px;height:8px;border:1px solid rgba(237,236,234,.45);border-radius:1px"></span><span style="display:block;height:4px;width:60%;background:rgba(237,236,234,0.2);border-radius:2px"></span></div><div style="display:grid;grid-template-columns:1fr 1.6fr;gap:6px;margin-top:auto"><span style="height:11px;border:1px solid var(--line);border-radius:2px"></span><span style="height:11px;background:var(--acc);border-radius:2px;opacity:.85"></span></div></div>
+      <p style="margin:16px 0 0;font-size:14px;line-height:1.6;color:var(--dim);text-wrap:pretty">Filter by country and charging speed.</p>
+    </div>
+
+
+    <div data-reveal data-anat tabindex="0" style="transition:opacity 1s cubic-bezier(.16,1,.3,1),transform 1s cubic-bezier(.16,1,.3,1),border-color .5s ease;border:1px solid var(--line);border-radius:4px;padding:clamp(18px,3vh,28px);outline:none;width:100%;max-width:520px">
+      <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:6px">
+        <span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--dim)">Modal</span>
+        <span data-anat-code style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.12em;color:var(--dim);transition:color .4s ease">1 active vehicle</span>
+      </div>
+      <h3 style="margin:0 0 16px;font-weight:700;font-size:clamp(19px,2vw,28px);letter-spacing:-.02em">My Profile</h3>
+      <div style="display:flex;flex-direction:column;gap:7px;height:120px"><div data-anat-cell style="flex:1;border:1px dashed var(--line);border-radius:2px;transition:border-color .5s ease,background .5s ease;background:color-mix(in oklab,var(--acc),transparent 92%);display:flex;align-items:center;gap:8px;padding:0 10px"><span style="width:14px;height:14px;border-radius:50%;background:var(--acc);opacity:.85"></span><span style="flex:1;display:flex;flex-direction:column;gap:4px"><span style="display:block;height:5px;width:55%;background:rgba(237,236,234,0.3);border-radius:2px"></span><span style="display:block;height:4px;width:35%;background:rgba(237,236,234,0.14);border-radius:2px"></span></span><span style="width:8px;height:8px;border-radius:50%;border:1px solid rgba(237,236,234,.45);background:var(--acc)"></span></div><div data-anat-cell style="flex:1;border:1px dashed var(--line);border-radius:2px;transition:border-color .5s ease,background .5s ease;display:flex;align-items:center;gap:8px;padding:0 10px"><span style="width:14px;height:14px;border-radius:50%;background:var(--acc);opacity:.85"></span><span style="flex:1;display:flex;flex-direction:column;gap:4px"><span style="display:block;height:5px;width:55%;background:rgba(237,236,234,0.3);border-radius:2px"></span><span style="display:block;height:4px;width:35%;background:rgba(237,236,234,0.14);border-radius:2px"></span></span><span style="width:8px;height:8px;border-radius:50%;border:1px solid rgba(237,236,234,.45)"></span></div><span style="height:16px;border:1px dashed color-mix(in oklab,var(--acc),transparent 30%);border-radius:2px"></span></div>
+      <p style="margin:16px 0 0;font-size:14px;line-height:1.6;color:var(--dim);text-wrap:pretty">Custom profile: you can add vehicles with their range and set a preferred charging speed.</p>
+    </div>
+
+
+  </div>
+</section>
+
+<section style="display:flex;flex-wrap:wrap;gap:clamp(24px,5vw,80px);padding:0 clamp(16px,4vw,48px) clamp(56px,10vh,120px)">
   <h2 style="flex:0 0 auto;margin:0;position:sticky;top:90px;height:fit-content;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--acc)">Tech stack</h2>
   <div style="flex:1 1 460px;min-width:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:1px;background:var(--line)">
     <div data-reveal style="transition:opacity .9s cubic-bezier(.16,1,.3,1),transform .9s cubic-bezier(.16,1,.3,1);background:var(--bg);padding:clamp(20px,3vh,32px) clamp(18px,2.4vw,30px)">
       <span style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.2em;color:var(--acc)">01</span>
-      <h3 style="margin:12px 0 10px;font-weight:700;font-size:clamp(19px,1.8vw,26px);line-height:1.1;letter-spacing:-.02em">HTML5</h3>
-      <p style="margin:0;font-size:14px;line-height:1.6;color:var(--dim);text-wrap:pretty">The structure of the visualisation, with CSS3 creating a responsive layout that adapts to different devices.</p>
+      <h3 style="margin:12px 0 10px;font-weight:700;font-size:clamp(19px,1.8vw,26px);line-height:1.1;letter-spacing:-.02em">HTML5/CSS</h3>
+      <p style="margin:0;font-size:14px;line-height:1.6;color:var(--dim);text-wrap:pretty">A single page with semantic structure: map, stations card, side panel and modals. CSS variables for color, spacing, radii and media queries to adapt the interface to mobile.</p>
     </div>
     <div data-reveal style="transition:opacity .9s cubic-bezier(.16,1,.3,1),transform .9s cubic-bezier(.16,1,.3,1);background:var(--bg);padding:clamp(20px,3vh,32px) clamp(18px,2.4vw,30px)">
       <span style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.2em;color:var(--acc)">02</span>
       <h3 style="margin:12px 0 10px;font-weight:700;font-size:clamp(19px,1.8vw,26px);line-height:1.1;letter-spacing:-.02em">JavaScript</h3>
-      <p style="margin:0;font-size:14px;line-height:1.6;color:var(--dim);text-wrap:pretty">The engine behind every interaction: it loads the GeoJSON dataset, handles events, calculates distances with mathematical algorithms and coordinates all the map's features.</p>
+      <p style="margin:0;font-size:14px;line-height:1.6;color:var(--dim);text-wrap:pretty">Independent modules (filters, map, route, history and profile) that handle the markers (Leaflet.js and markercluster), the Google Maps export and saving routes and vehicles in local storage.</p>
     </div>
     <div data-reveal style="transition:opacity .9s cubic-bezier(.16,1,.3,1),transform .9s cubic-bezier(.16,1,.3,1);background:var(--bg);padding:clamp(20px,3vh,32px) clamp(18px,2.4vw,30px)">
       <span style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.2em;color:var(--acc)">03</span>
-      <h3 style="margin:12px 0 10px;font-weight:700;font-size:clamp(19px,1.8vw,26px);line-height:1.1;letter-spacing:-.02em">Leaflet.js</h3>
-      <p style="margin:0;font-size:14px;line-height:1.6;color:var(--dim);text-wrap:pretty">An open source library for interactive maps. It allows precise geolocation of individual points using OpenStreetMap while keeping performance optimal with 10,000 records.</p>
+      <h3 style="margin:12px 0 10px;font-weight:700;font-size:clamp(19px,1.8vw,26px);line-height:1.1;letter-spacing:-.02em">Wireframing &amp; Prototyping</h3>
+      <p style="margin:0;font-size:14px;line-height:1.6;color:var(--dim);text-wrap:pretty">App map and user flows, low-fidelity wireframes and an interactive Figma prototype with every screen and state, in desktop and mobile versions.</p>
     </div>
     <div data-reveal style="transition:opacity .9s cubic-bezier(.16,1,.3,1),transform .9s cubic-bezier(.16,1,.3,1);background:var(--bg);padding:clamp(20px,3vh,32px) clamp(18px,2.4vw,30px)">
       <span style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.2em;color:var(--acc)">04</span>
-      <h3 style="margin:12px 0 10px;font-weight:700;font-size:clamp(19px,1.8vw,26px);line-height:1.1;letter-spacing:-.02em">GeoJson</h3>
-      <p style="margin:0;font-size:14px;line-height:1.6;color:var(--dim);text-wrap:pretty">A JSON-based format designed for geospatial data. It stores coordinates (latitude, longitude) that Leaflet.js can process and render precisely on the map.</p>
+      <h3 style="margin:12px 0 10px;font-weight:700;font-size:clamp(19px,1.8vw,26px);line-height:1.1;letter-spacing:-.02em">API</h3>
+      <p style="margin:0;font-size:14px;line-height:1.6;color:var(--dim);text-wrap:pretty">Real-time data from Open Charge Map: stations, connectors, power and cost by country, with a local cache that speeds up later loads.</p>
     </div>
   </div>
 </section>
@@ -134,7 +228,7 @@
   </div>
   <div data-demo tabindex="0" style="position:relative;width:min(100%,900px);margin:0 auto;outline:none">
     <figure style="margin:0;overflow:hidden;border-radius:3px;background:#d8d4cc;aspect-ratio:16/10">
-      <iframe src="https://regal-heliotrope-7c072b.netlify.app/" title="Interactive map of electric vehicle charging stations" loading="lazy" allowfullscreen style="display:block;width:100%;height:100%;border:0"></iframe>
+      <iframe src="https://chemarodrigo.github.io/mapaEV/" title="Interactive map of electric vehicle charging stations" loading="lazy" allowfullscreen style="display:block;width:100%;height:100%;border:0"></iframe>
     </figure>
     <div data-demo-veil style="position:absolute;left:0;right:0;bottom:0;height:40%;border-radius:0 0 3px 3px;background:linear-gradient(to top,rgba(234,231,224,.96),rgba(234,231,224,0));opacity:0;transition:opacity .5s ease;pointer-events:none"></div>
     <div data-demo-actions style="position:absolute;left:0;right:0;bottom:0;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:12px;padding:20px;pointer-events:none">
