@@ -42,6 +42,8 @@ class Component extends DCLogic {
       if (n) { n.style.paddingLeft = '18px'; n.style.color = 'var(--acc)'; }
       const demo = t.closest('[data-demo]');
       if (demo) this.setDemo(demo, true);
+      const an = t.closest('[data-anat]');
+      if (an) { an.setAttribute('data-anat-on', ''); this.setAnat(an, true); }
       const orb = t.closest('[data-orb-row]');
       if (orb) {
         this.ensureLayout();
@@ -70,6 +72,8 @@ class Component extends DCLogic {
       if (n && !(e.relatedTarget && n.contains(e.relatedTarget))) { n.style.paddingLeft = '0px'; n.style.color = ''; }
       const demo = t.closest('[data-demo]');
       if (demo && !(e.relatedTarget && demo.contains(e.relatedTarget))) this.setDemo(demo, false);
+      const an = t.closest('[data-anat]');
+      if (an && !(e.relatedTarget && an.contains(e.relatedTarget))) { an.removeAttribute('data-anat-on'); this.setAnat(an, false); }
       const orb = t.closest('[data-orb-row]');
       if (orb && !(e.relatedTarget && orb.contains(e.relatedTarget))) {
         orb.removeAttribute('data-orb-on');
@@ -452,6 +456,17 @@ class Component extends DCLogic {
     });
   }
 
+  setAnat(card, on) {
+    card.style.border = '1px solid ' + (on ? 'var(--acc)' : 'var(--line)');
+    const code = card.querySelector('[data-anat-code]');
+    if (code) code.style.color = on ? 'var(--acc)' : 'var(--dim)';
+    card.querySelectorAll('[data-anat-cell]').forEach((cell, i) => {
+      cell.style.transitionDelay = on ? (i * 60) + 'ms' : '0ms';
+      cell.style.border = '1px dashed ' + (on ? 'color-mix(in oklab,var(--acc),transparent 40%)' : 'var(--line)');
+      cell.style.background = on ? 'color-mix(in oklab,var(--acc),transparent 93%)' : 'transparent';
+    });
+  }
+
   tick() {
     if (!this.owner()) return; // stale instance: let its loop end
     try { this.frame(); }
@@ -492,6 +507,10 @@ class Component extends DCLogic {
     document.querySelectorAll('[data-reveal]').forEach(el => {
       if (!this.revealed.has(el) && el.getBoundingClientRect().top < vh * 0.9) this.revealed.add(el);
       if (this.revealed.has(el) && el.style.opacity !== '1') this.paint(el);
+    });
+
+    document.querySelectorAll('[data-anat]').forEach(card => {
+      this.setAnat(card, card.hasAttribute('data-anat-on'));
     });
 
     const cur = this.q('cursor', '[data-cursor]');
