@@ -7,7 +7,7 @@
 <meta name="description" content="Dashboard de personajes construido con Vue, Nuxt, Pinia y Tailwind CSS.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Space+Mono:wght@400;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -40,8 +40,9 @@
       <span style="border:1px solid var(--line);border-radius:999px;padding:5px 13px">Vue.js</span>
       <span style="border:1px solid var(--line);border-radius:999px;padding:5px 13px">Nuxt</span>
       <span style="border:1px solid var(--line);border-radius:999px;padding:5px 13px">Pinia</span>
-      <span style="border:1px solid var(--line);border-radius:999px;padding:5px 13px">Tailwind CSS</span>
-      <span style="border:1px solid var(--line);border-radius:999px;padding:5px 13px">API</span>
+      <span style="border:1px solid var(--line);border-radius:999px;padding:5px 13px">Tailwind</span>
+      <span style="border:1px solid var(--line);border-radius:999px;padding:5px 13px">Wireframing</span>
+      <span style="border:1px solid var(--line);border-radius:999px;padding:5px 13px">Prototyping</span>
     </div>
   </div>
 </header>
@@ -102,28 +103,101 @@
  </div>
 </section>
 
-<section style="display:flex;flex-wrap:wrap;gap:clamp(24px,5vw,80px);padding:clamp(48px,8vh,96px) clamp(16px,4vw,48px) clamp(56px,10vh,120px);border-top:1px solid var(--line)">
+<section style="padding:clamp(56px,10vh,120px) clamp(16px,4vw,48px);border-top:1px solid var(--line)">
+  <h2 style="margin:0 0 clamp(26px,4.5vh,48px);font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--acc);text-align:center">Wireframing y prototipado</h2>
+
+  <div data-reveal style="transition:opacity 1s cubic-bezier(.16,1,.3,1),transform 1s cubic-bezier(.16,1,.3,1);display:flex;flex-wrap:wrap;gap:clamp(20px,4vw,64px);align-items:flex-start;max-width:1100px;margin:0 auto clamp(36px,6vh,64px)">
+    <p style="flex:1 1 380px;margin:0;font-size:clamp(19px,1.8vw,26px);line-height:1.3;letter-spacing:-.015em;text-wrap:pretty">El dashboard se planificó y diseñó en Figma con una arquitectura de información sencilla. Posteriormente, se ideó un prototipo interactivo diseñando wireframes de baja y alta fidelidad.</p>
+    <div style="flex:1 1 380px;display:flex;flex-direction:column;gap:14px;font-family:'Space Grotesk',sans-serif;font-size:15px;line-height:1.65;color:var(--dim);text-wrap:pretty">
+      <p style="margin:0">El proceso partió de un mapa del sitio con tres rutas (login, personajes y favoritos) y de los flujos de usuario principales: iniciar sesión, buscar un personaje, guardar favoritos y navegar entre páginas. Con esa base se dibujaron wireframes de baja fidelidad y se construyó un design system con variables de color, radios, espaciado, estilos tipográficos y componentes con variantes.</p>
+      <p style="margin:0">Por último, el prototipo conecta los wireframes diseñados dando como resultado un diseño responsive para escritorio y móvil.</p>
+    </div>
+  </div>
+
+  <div style="display:flex;flex-direction:column;gap:clamp(36px,7vh,80px);max-width:1100px;margin:0 auto">
+    <div data-reveal data-wf-row style="transition:opacity 1s cubic-bezier(.16,1,.3,1),transform 1s cubic-bezier(.16,1,.3,1)">
+      <figure style="margin:0;min-width:0">
+        <img src="assets/rm-lofi-desktop.webp" alt="Wireframe de baja fidelidad de la rejilla de personajes en escritorio" loading="lazy" style="display:block;width:100%;height:auto">
+        <figcaption style="margin-top:4px;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);text-align:center">Baja fidelidad · Desktop</figcaption>
+      </figure>
+      <span data-wf-arrow aria-hidden="true">→</span>
+      <figure style="margin:0;min-width:0">
+        <img src="assets/rm-hifi-desktop.webp" alt="Diseño de alta fidelidad de la rejilla de personajes en escritorio" loading="lazy" style="display:block;width:100%;height:auto">
+        <figcaption style="margin-top:4px;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);text-align:center">Alta fidelidad · Desktop</figcaption>
+      </figure>
+    </div>
+    <div data-reveal data-wf-row="mobile" style="transition:opacity 1s cubic-bezier(.16,1,.3,1),transform 1s cubic-bezier(.16,1,.3,1);width:min(100%,640px);margin:0 auto">
+      <figure style="margin:0;min-width:0">
+        <img src="assets/rm-lofi-mobile.webp" alt="Wireframe de baja fidelidad de la búsqueda de personajes en móvil" loading="lazy" style="display:block;width:100%;height:auto">
+        <figcaption style="margin-top:4px;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);text-align:center">Baja fidelidad · Móvil</figcaption>
+      </figure>
+      <span data-wf-arrow aria-hidden="true">→</span>
+      <figure style="margin:0;min-width:0">
+        <img src="assets/rm-hifi-mobile.webp" alt="Diseño de alta fidelidad de la búsqueda de personajes en móvil" loading="lazy" style="display:block;width:100%;height:auto">
+        <figcaption style="margin-top:4px;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);text-align:center">Alta fidelidad · Móvil</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <div style="display:flex;justify-content:center;margin-top:clamp(32px,6vh,64px)">
+    <a href="https://www.figma.com/design/T0guSWRX2R0iCWY7fTW9i5/Rick_dashboard" target="_blank" rel="noopener" data-btn-light style="display:inline-flex;align-items:center;gap:10px;font-family:'Space Mono',monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--bg);background:var(--ink);border:1px solid var(--ink);border-radius:999px;padding:14px 26px;transition:background .35s ease,color .35s ease,border-color .35s ease">Ver proyecto en Figma ↗</a>
+  </div>
+</section>
+
+<section style="padding:clamp(56px,10vh,120px) clamp(16px,4vw,48px);border-top:1px solid var(--line)">
+  <h2 style="margin:0 0 clamp(26px,4.5vh,48px);font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--acc);text-align:center">Anatomía de la página</h2>
+
+  <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));justify-items:center;gap:clamp(16px,2.5vw,28px);max-width:1100px;margin:0 auto">
+
+    <div data-reveal data-anat tabindex="0" style="transition:opacity 1s cubic-bezier(.16,1,.3,1),transform 1s cubic-bezier(.16,1,.3,1),border-color .5s ease;border:1px solid var(--line);border-radius:4px;padding:clamp(18px,3vh,28px);outline:none;width:100%;max-width:520px">
+      <h3 style="margin:0 0 16px;font-weight:700;font-size:clamp(19px,2vw,28px);letter-spacing:-.02em">Barra de navegación</h3>
+      <div data-anat-cell style="height:120px;border:1px dashed var(--line);border-radius:2px;transition:border-color .5s ease,background .5s ease;display:flex;flex-direction:column"><div style="display:flex;align-items:center;gap:8px;padding:10px 12px;border-bottom:1px solid var(--line)"><span style="width:12px;height:12px;border-radius:50%;background:rgba(237,236,234,.35)"></span><span style="display:block;height:6px;width:18%;background:rgba(237,236,234,0.35);border-radius:2px"></span><span style="flex:1"></span><span style="position:relative;display:flex;gap:8px"><span style="display:block;height:5px;width:34px;background:var(--acc);border-radius:2px"></span><span style="display:block;height:5px;width:30px;background:rgba(237,236,234,0.25);border-radius:2px"></span><span style="position:absolute;right:-7px;top:-7px;width:9px;height:9px;border-radius:50%;background:var(--acc)"></span></span><span style="flex:1"></span><span style="display:block;height:4px;width:16%;background:rgba(237,236,234,0.14);border-radius:2px"></span><span style="width:30px;height:12px;border:1px solid var(--line);border-radius:3px"></span></div><div style="flex:1;padding:12px;display:flex;flex-direction:column;gap:6px"><span style="display:block;height:7px;width:30%;background:rgba(237,236,234,0.3);border-radius:2px"></span><span style="display:block;height:4px;width:50%;background:rgba(237,236,234,0.14);border-radius:2px"></span></div></div>
+      <p style="margin:16px 0 0;font-size:14px;line-height:1.6;color:var(--dim);text-wrap:pretty">Barra de navegación con logotipo, enlaces (personajes y favoritos), email del usuario y botón de cerrar sesión.</p>
+    </div>
+
+    <div data-reveal data-anat tabindex="0" style="transition:opacity 1s cubic-bezier(.16,1,.3,1),transform 1s cubic-bezier(.16,1,.3,1),border-color .5s ease;border:1px solid var(--line);border-radius:4px;padding:clamp(18px,3vh,28px);outline:none;width:100%;max-width:520px">
+      <h3 style="margin:0 0 16px;font-weight:700;font-size:clamp(19px,2vw,28px);letter-spacing:-.02em">Buscador y paginación</h3>
+      <div data-anat-cell style="height:120px;border:1px dashed var(--line);border-radius:2px;transition:border-color .5s ease,background .5s ease;padding:10px 12px;display:flex;flex-direction:column;gap:8px"><div style="display:flex;align-items:center;gap:6px;height:16px;padding:0 6px;border:1px solid color-mix(in oklab,var(--acc),transparent 30%);border-radius:3px"><span style="width:6px;height:6px;border-radius:50%;border:1px solid rgba(237,236,234,.45)"></span><span style="display:block;height:4px;width:22%;background:rgba(237,236,234,0.3);border-radius:2px"></span></div><div style="flex:1;display:flex;gap:6px"><span style="flex:1;border:1px solid var(--line);border-radius:3px;background:rgba(237,236,234,.06)"></span><span style="flex:1;border:1px solid var(--line);border-radius:3px;background:rgba(237,236,234,.06)"></span><span style="flex:1;border:1px solid var(--line);border-radius:3px;background:rgba(237,236,234,.06)"></span><span style="flex:1;border:1px solid var(--line);border-radius:3px;background:rgba(237,236,234,.06)"></span></div><div style="display:flex;justify-content:center;align-items:center;gap:8px"><span style="width:40px;height:11px;border:1px solid var(--line);border-radius:3px;opacity:.5"></span><span style="display:block;height:4px;width:44px;background:rgba(237,236,234,0.25);border-radius:2px"></span><span style="width:34px;height:11px;border:1px solid var(--line);border-radius:3px"></span></div></div>
+      <p style="margin:16px 0 0;font-size:14px;line-height:1.6;color:var(--dim);text-wrap:pretty">La búsqueda se lanza cuando el usuario deja de escribir y la paginación recorre las páginas de la API.</p>
+    </div>
+
+    <div data-reveal data-anat tabindex="0" style="transition:opacity 1s cubic-bezier(.16,1,.3,1),transform 1s cubic-bezier(.16,1,.3,1),border-color .5s ease;border:1px solid var(--line);border-radius:4px;padding:clamp(18px,3vh,28px);outline:none;width:100%;max-width:520px">
+      <h3 style="margin:0 0 16px;font-weight:700;font-size:clamp(19px,2vw,28px);letter-spacing:-.02em">Tarjeta de personaje</h3>
+      <div style="display:flex;justify-content:center;height:120px"><div data-anat-cell style="width:120px;border:1px dashed var(--line);border-radius:2px;transition:border-color .5s ease,background .5s ease;border-radius:6px;overflow:hidden;display:flex;flex-direction:column"><div style="position:relative;height:62px;background:rgba(237,236,234,.08);border-bottom:1px solid var(--line)"><span style="position:absolute;right:6px;top:6px;width:12px;height:12px;border-radius:50%;border:1px solid var(--acc)"></span></div><div style="padding:8px;display:flex;flex-direction:column;gap:5px"><span style="display:block;height:5px;width:70%;background:rgba(237,236,234,0.35);border-radius:2px"></span><div style="display:flex;align-items:center;gap:4px"><span style="width:6px;height:6px;border-radius:50%;background:var(--acc)"></span><span style="display:block;height:4px;width:50%;background:rgba(237,236,234,0.2);border-radius:2px"></span></div><span style="display:block;height:3px;width:40%;background:rgba(237,236,234,0.14);border-radius:2px"></span><span style="display:block;height:3px;width:60%;background:rgba(237,236,234,0.2);border-radius:2px"></span></div></div></div>
+      <p style="margin:16px 0 0;font-size:14px;line-height:1.6;color:var(--dim);text-wrap:pretty">Ficha con imagen, nombre, estado y última ubicación. El corazón añade o quita el personaje de favoritos.</p>
+    </div>
+
+    <div data-reveal data-anat tabindex="0" style="transition:opacity 1s cubic-bezier(.16,1,.3,1),transform 1s cubic-bezier(.16,1,.3,1),border-color .5s ease;border:1px solid var(--line);border-radius:4px;padding:clamp(18px,3vh,28px);outline:none;width:100%;max-width:520px">
+      <h3 style="margin:0 0 16px;font-weight:700;font-size:clamp(19px,2vw,28px);letter-spacing:-.02em">Mis favoritos</h3>
+      <div data-anat-cell style="height:120px;border:1px dashed var(--line);border-radius:2px;transition:border-color .5s ease,background .5s ease;padding:10px 12px;display:flex;flex-direction:column;gap:8px"><div style="display:flex;align-items:center;justify-content:space-between"><span style="display:flex;flex-direction:column;gap:4px;width:40%"><span style="display:block;height:6px;width:80%;background:rgba(237,236,234,0.3);border-radius:2px"></span><span style="display:block;height:4px;width:55%;background:rgba(237,236,234,0.14);border-radius:2px"></span></span><span style="width:38px;height:12px;background:var(--acc);border-radius:3px;opacity:.85"></span></div><div style="flex:1;display:flex;gap:8px"><span style="flex:1;border:1px solid var(--line);border-radius:4px;position:relative;background:rgba(237,236,234,.06)"><span style="position:absolute;right:5px;top:5px;width:10px;height:10px;border-radius:50%;background:var(--acc)"></span></span><span style="flex:1;border:1px solid var(--line);border-radius:4px;position:relative;background:rgba(237,236,234,.06)"><span style="position:absolute;right:5px;top:5px;width:10px;height:10px;border-radius:50%;background:var(--acc)"></span></span><span style="flex:1;border:1px solid var(--line);border-radius:4px;position:relative;background:rgba(237,236,234,.06)"><span style="position:absolute;right:5px;top:5px;width:10px;height:10px;border-radius:50%;background:var(--acc)"></span></span><span style="flex:1;border:1px solid var(--line);border-radius:4px;position:relative;background:rgba(237,236,234,.06)"><span style="position:absolute;right:5px;top:5px;width:10px;height:10px;border-radius:50%;background:var(--acc)"></span></span><span style="flex:1;border:1px solid var(--line);border-radius:4px;position:relative;background:rgba(237,236,234,.06)"><span style="position:absolute;right:5px;top:5px;width:10px;height:10px;border-radius:50%;background:var(--acc)"></span></span></div></div>
+      <p style="margin:16px 0 0;font-size:14px;line-height:1.6;color:var(--dim);text-wrap:pretty">Lista con personajes guardados con su contador, botón para vaciar la lista y estado vacío con enlace de vuelta.</p>
+    </div>
+
+  </div>
+</section>
+
+<section style="display:flex;flex-wrap:wrap;gap:clamp(24px,5vw,80px);padding:0 clamp(16px,4vw,48px) clamp(56px,10vh,120px)">
   <h2 style="flex:0 0 auto;margin:0;position:sticky;top:90px;height:fit-content;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--acc)">Stack técnico</h2>
   <div style="flex:1 1 460px;min-width:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:1px;background:var(--line)">
     <div data-reveal style="transition:opacity .9s cubic-bezier(.16,1,.3,1),transform .9s cubic-bezier(.16,1,.3,1);background:var(--bg);padding:clamp(20px,3vh,32px) clamp(18px,2.4vw,30px)">
       <span style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.2em;color:var(--acc)">01</span>
       <h3 style="margin:12px 0 10px;font-weight:700;font-size:clamp(19px,1.8vw,26px);line-height:1.1;letter-spacing:-.02em">Vue.js / Nuxt</h3>
-      <p style="margin:0;font-size:14px;line-height:1.6;color:var(--dim);text-wrap:pretty">Framework progresivo de JavaScript para construir interfaces de usuario, potenciado con Nuxt para gestionar el enrutamiento, el renderizado y la estructura del proyecto de forma organizada y escalable.</p>
+      <p style="margin:0;font-size:14px;line-height:1.6;color:var(--dim);text-wrap:pretty">Componentes Vue 3 con Composition API sobre Nuxt 3: rutas basadas en archivos y middleware que protege el dashboard.</p>
     </div>
     <div data-reveal style="transition:opacity .9s cubic-bezier(.16,1,.3,1),transform .9s cubic-bezier(.16,1,.3,1);background:var(--bg);padding:clamp(20px,3vh,32px) clamp(18px,2.4vw,30px)">
       <span style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.2em;color:var(--acc)">02</span>
       <h3 style="margin:12px 0 10px;font-weight:700;font-size:clamp(19px,1.8vw,26px);line-height:1.1;letter-spacing:-.02em">Pinia</h3>
-      <p style="margin:0;font-size:14px;line-height:1.6;color:var(--dim);text-wrap:pretty">Gestor de estado oficial de Vue.js, utilizado para centralizar los datos de la aplicación: personajes cargados desde la API, filtros activos, lista de favoritos y estado de autenticación del usuario.</p>
+      <p style="margin:0;font-size:14px;line-height:1.6;color:var(--dim);text-wrap:pretty">Dos tipos de almacenamiento: uno para la sesión simulada y otro para los favoritos. Ambos guardados en el almacenamiento local para conservar el estado al recargar.</p>
     </div>
     <div data-reveal style="transition:opacity .9s cubic-bezier(.16,1,.3,1),transform .9s cubic-bezier(.16,1,.3,1);background:var(--bg);padding:clamp(20px,3vh,32px) clamp(18px,2.4vw,30px)">
       <span style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.2em;color:var(--acc)">03</span>
       <h3 style="margin:12px 0 10px;font-weight:700;font-size:clamp(19px,1.8vw,26px);line-height:1.1;letter-spacing:-.02em">Tailwind CSS</h3>
-      <p style="margin:0;font-size:14px;line-height:1.6;color:var(--dim);text-wrap:pretty">Framework de utilidades CSS que permitió construir una interfaz responsive y visualmente consistente de forma rápida, con una estética dark adaptada a la temática de la serie.</p>
+      <p style="margin:0;font-size:14px;line-height:1.6;color:var(--dim);text-wrap:pretty">Utilidades Tailwind como la paleta de color añadida a la configuración, la rejilla responsive de una a cinco columnas y las transiciones de página y tarjetas.</p>
     </div>
     <div data-reveal style="transition:opacity .9s cubic-bezier(.16,1,.3,1),transform .9s cubic-bezier(.16,1,.3,1);background:var(--bg);padding:clamp(20px,3vh,32px) clamp(18px,2.4vw,30px)">
       <span style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.2em;color:var(--acc)">04</span>
-      <h3 style="margin:12px 0 10px;font-weight:700;font-size:clamp(19px,1.8vw,26px);line-height:1.1;letter-spacing:-.02em">Rick and Morty API</h3>
-      <p style="margin:0;font-size:14px;line-height:1.6;color:var(--dim);text-wrap:pretty">API REST pública y gratuita con datos de más de 800 personajes. Se consume para obtener información paginada, aplicar filtros por nombre, estado y especie, y mostrar los detalles de cada personaje.</p>
+      <h3 style="margin:12px 0 10px;font-weight:700;font-size:clamp(19px,1.8vw,26px);line-height:1.1;letter-spacing:-.02em">Wireframing &amp; Prototyping</h3>
+      <p style="margin:0;font-size:14px;line-height:1.6;color:var(--dim);text-wrap:pretty">Mapa del sitio y flujos de usuario, wireframes de baja fidelidad y un prototipo interactivo en Figma con todas las pantallas y estados, en versiones desktop y móvil.</p>
     </div>
   </div>
 </section>
